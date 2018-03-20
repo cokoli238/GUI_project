@@ -1,4 +1,4 @@
-# Boneless-SIS
+# Plan-By-My-Requirments
 With the growing scale of students enrolling in universities for career paths, traditional enrolling systems are not capable of providing meaningful information and feedback to students as they begin their undergrad studies. 
 
 Our enrollment system hopes to support millions of new students, providing them with an intuitive and efficient interface with information they need to make the best of their educational pathway.
