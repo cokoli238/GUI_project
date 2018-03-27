@@ -1,31 +1,17 @@
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
+function readTextFile(url) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var myObj = JSON.parse(this.responseText);
+      return myObj;
     }
-    rawFile.send(null);
+  };
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();
 }
 
 
-functuon readTextFileJquery(){
-$.getJSON("test.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
-});	
-}
-
-
-function parseJson(fileName)
-{
-   // JavaScript array of JavaScript objects
-var objs = JSON.parse(s);
+function getJson() {
+  //Text field is the URL of the database
+  return readTextFile("data.json");
 }
