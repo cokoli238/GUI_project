@@ -9,7 +9,7 @@ body {
   width: 100;
 }
 
- 
+
 
 li {
     display: inline;
@@ -35,6 +35,15 @@ li {
   text-align: center;
   float: center;
   height: 500px;
+}
+.classDiv{
+  margin: auto;
+  overflow: hidden;
+  background-color: #999999;
+  color: white;
+  padding: 10px;
+  border: 2px solid black;;
+  border-radius: 0px;
 }
 
 .logintext {
@@ -103,4 +112,29 @@ input[type=text] {padding:5px; border:2px solid #ccc;
 .login_button:hover {
   background: lawngreen;
   text-decoration: none;
+}
+.classText{
+  width: 25%;
+  float: left;
+  text-align: left;
+  font-family: "Verdana", Times, sans-serif;
+  font-size: 20px;
+}
+
+.classButton{
+  margin-left: 15%;
+  float:right;
+  margin-left: 20px;
+  background-color: #3333cc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12%;
+  transition: all 0.3s ease 0s;
+}
+
+.classButton:hover, .classButton:focus {
+  background-color: #24248f;
 }

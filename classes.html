@@ -11,8 +11,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Plan By Requirement</title>
   <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
-  <script src="js/Class_Object.js"></script>
-
+  <script src="./js/class_parser.js"></script>
+  <script>getJson();</script>
 </head>
 
 <body background="initial.jpg">
@@ -26,14 +26,18 @@
   </div>
 
   <div class="class_search">
-    
+
     <div>
-      <input type="text" placeholder="Search.." name="search2" class="search_input">
+      <input id="textSearch" type="text" placeholder="Search.." name="search2" class="search_input">
     </div>
-     
+
     <div>
-      <a href="classes.html" id="Class_Search"><button onclick="myFunction()" class="search_button">Class Search</button></a>
-    </div> 
+      <button type="button" id="Class_Search" onclick="searchClasses()" class="search_button">Class Search</button></a>
+    </div>
+  </div>
+
+  <div id = "Classes" class="classDiv">
+
   </div>
 
 </body>
