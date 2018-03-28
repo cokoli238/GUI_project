@@ -11,24 +11,31 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Plan By Requirement</title>
   <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/Class_Object.js"></script>
 
 </head>
 
-<body>
+<body background="initial.jpg">
   <div class="topnav">
     <ul>
       <li><a href="homepage.html">Home</a></li>
       <li><a href="classes.html"><b>Classes</b></a></li>
       <li><a href="login.html">Log in</a></li>
       <li><a href="account.html">My Account</a></li>
-      <li><a href="info_entry.html">Search</a></li>
     </ul>
   </div>
 
-  <div class="class_display">
- <p>SEARCHING REROUTES HERE</p>
- <p>THIS IS WHERE YOU DISPLAY THE CLASSES THAT MATCH THE CRITERIA IN THE SEARCH BAR</p>
-</div>
+  <div class="class_search">
+    
+    <div>
+      <input type="text" placeholder="Search.." name="search2" class="search_input">
+    </div>
+     
+    <div>
+      <a href="classes.html" id="Class_Search"><button onclick="myFunction()" class="search_button">Class Search</button></a>
+    </div> 
+  </div>
+
 </body>
 
 </html>
