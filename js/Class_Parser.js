@@ -1,47 +1,77 @@
+window.database = getJson();
+
+var getJSON2 = function(url, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'json';
+  xhr.onload = function() {
+    var status = xhr.status;
+    if (status === 200) {
+      callback(null, xhr.response);
+    } else {
+      callback(status, xhr.response);
+    }
+  };
+  xhr.send();
+};
+
 function readTextFile(url) {
   var request = new Request(url, {
-  	method: 'POST',
-  	mode: 'cors',
-  	redirect: 'follow',
-  	headers: new Headers({
-  		'Content-Type': 'text/plain'
-  	})
+    method: 'POST',
+    mode: 'cors',
+    headers: new Headers({
+      'Content-Type': 'text/plain'
+    })
   });
 
   console.log('Reading: ', url);
   fetch(request)
-  .then(res => res.json())
-  .then((out) => {
-    console.log('Checkout this JSON! ', out);
-    var test = out.database;
-    test.forEach(constructClass);
-    return out;
-  })
-  .catch(err => { throw err });
+    .then(res => res.json())
+    .then((out) => {
+      console.log('Checkout this JSON! ', out);
+      var database = out.database;
+      database.forEach(constructClass);
+      return database;
+    })
+    .catch(err => {
+      throw err;
+    });
 }
+var url = "cs_catalog.json";
 
 function getJson() {
   //Text field is the URL of the database
   //NOTE: Currently need to disable Cross-Origin restrictios in browser
   //This should be fixed when all files are in a common server
-  var test = readTextFile("file:///Users/tim/GIT/GUI_project/cs_catalog.json");
+  var test = readTextFile("cs_catalog.json");
   return test;
 }
 
-function clearClasses(){
-  var classChildren = document.getElementById("Classes").children;
+function clearSearch() {
+  getJSON2("cs_catalog.json", function(err, data) {
+    data.database.forEach(constructClass);
+  });
+  document.getElementById("textSearch").value = "";
+}
+
+function clearClasses() {
+  var classChildren = document.getElementById("Classes");
   classChildren.innerHTML = "";
 }
 
-function constructClass(classObj, index){
+function searchJson() {
+  getJSON2("cs_catalog.json", searchClasses);
+}
+
+function constructClass(classObj, index) {
   //Create div for individual class and set class name
   var classDiv = document.createElement("div");
   classDiv.className = 'classDiv';
 
-//NOTE: Add a formatting class to the div
+  //NOTE: Add a formatting class to the div
   classDiv.id = classObj.id;
 
-//Add info to the child here
+  //Add info to the child here
   //---Class labels---
   var idLabel = document.createElement("Label");
   idLabel.innerHTML = "<p>" + classObj.id + "</p>";
@@ -62,8 +92,10 @@ function constructClass(classObj, index){
 
   var keywordLabel = document.createElement("Label");
 
-  if(typeof classObj.keywords != "undefined" && classObj.keywords.length > 0){
-    var text = classObj.keywords.reduce(function(final, object){return final + ", " + object;});
+  if (typeof classObj.keywords != "undefined" && classObj.keywords.length > 0) {
+    var text = classObj.keywords.reduce(function(final, object) {
+      return final + ", " + object;
+    });
     text = text.substring(0, text.length - 1);
     keywordLabel.className = "classText";
     keywordLabel.innerHTML = "<p>" + text + "</p>";
@@ -72,7 +104,7 @@ function constructClass(classObj, index){
   keywordLabel.style.display = 'none';
   classDiv.appendChild(keywordLabel);
 
-//---Buttons---
+  //---Buttons---
   var addButton = document.createElement("Label");
   addButton.className = 'button';
   addButton.innerHTML = "Add to schedule";
@@ -85,15 +117,14 @@ function constructClass(classObj, index){
   detailsButton.className = "classButton";
   //Hides and unhides the description and keywords on click
   detailsButton.onclick = function() {
-    if(descLabel.style.display == 'none'){
-          descLabel.style.display = '';
-          keywordLabel.style.display = '';
+    if (descLabel.style.display == 'none') {
+      descLabel.style.display = '';
+      keywordLabel.style.display = '';
 
+    } else {
+      descLabel.style.display = 'none';
+      keywordLabel.style.display = 'none';
     }
-      else {
-          descLabel.style.display = 'none';
-          keywordLabel.style.display = 'none';
-      }
   };
   classDiv.appendChild(detailsButton);
 
@@ -101,43 +132,47 @@ function constructClass(classObj, index){
   document.getElementById("Classes").appendChild(classDiv);
 }
 
-function searchClasses(criteria){
+function searchClasses(err, data) {
+  clearClasses();
+  var database = data.database;
+  var criteria = document.getElementById("textSearch").value;
   var idMatch = [];
   var titleMatch = [];
   var keywordMatch = [];
-  var database = getJson();
   //Split by spaces, then by commas
   var criteriaArraySpace = criteria.split(" ");
   var criteriaArrayComma = criteria.split(",");
-  criteriaArraySpace.forEach(function(criteria, index){
+  criteriaArraySpace.forEach(function(criteria, index) {
     //Iterate through each class
-    database.database.forEach(function(object,index){
-      if(object.id.contains(criteria)){
+    database.forEach(function(object, index) {
+      if (typeof object.id != undefined && object.id.toUpperCase().includes(criteria.toUpperCase())) {
         idMatch[idMatch.length + 1] = object;
         return;
       }
-      if(criteria.contains(object.name)){
+      if (typeof object.name != undefined && (criteria.toUpperCase().includes(object.name.toUpperCase()) || object.name.toUpperCase().includes(criteria.toUpperCase()))) {
         titleMatch[titleMatch.length + 1] = object;
         return;
       }
       var keywordCount = 0;
-      object.keywords.forEach(function(keyword,index){
+      object.keywords.forEach(function(keyword, index) {
         //Iterate through each keyword in class
-          if(keyword == criteria){
-            keywordCount++;
-          }
+        if (keyword == criteria) {
+          keywordCount++;
+        }
       });
-      if(keywordCount > 0){
+      if (keywordCount > 0) {
         keywordMatch[keywordMatch.length + 1] = [keywordCount, object];
       }
-      });
-
     });
 
-    //Now that we have the sorted classes, send them to the div builder
-    //idMatch.forEach(constructClass);
-    //titleMatch.forEach(constructClass);
-    //keywordMatch.sort(function(a, b){return a[0] - b[0]}).forEach(constructClass);
+  });
+
+  //Now that we have the sorted classes, send them to the div builder
+  idMatch.forEach(constructClass);
+  titleMatch.forEach(constructClass);
+  keywordMatch.sort(function(a, b) {
+    return a[0] - b[0]
+  }).forEach(constructClass);
 
 
-  }
+}
