@@ -5,7 +5,7 @@
       "name" : "Calculus I",
       "credits" : "4",
       "description" : "Serves as a first course in calculus. Functions, limits, continuity, derivatives, rules for differentiation of algebraic and transcendental function; chain rule, implicit differentiation, related rate problems, linearization, applied optimization, and curve sketching. Introduction to area and integration.",
-      "keywords" : []
+      "keywords" : ["math"]
     },
     {
       "id" : "MATH.1320",
@@ -17,7 +17,7 @@
           "MATH.1310"
         ]
       },
-      "keywords" : []
+      "keywords" : ["math"]
     },
     {
       "id" : "MATH.3860",
@@ -29,7 +29,7 @@
           "MATH.1320"
         ]
       },
-      "keywords" : []
+      "keywords" : ["math", "AI"]
     },
     {
       "id" : "MATH.3210",
@@ -41,7 +41,7 @@
           "MATH.1310"
         ]
       },
-      "keywords" : []
+      "keywords" : ["logic","math"]
     },
     {
       "id" : "MATH.3220",
@@ -53,7 +53,7 @@
           "MATH.3210"
         ]
       },
-      "keywords" : []
+      "keywords" : ["logic","math"]
     },
     {
       "id" : "EECE.2650",
@@ -65,7 +65,7 @@
           "COMP.1020"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "embedded system", "circuits", "logic"]
     },
     {
       "id" : "MATH.3220",
@@ -77,14 +77,14 @@
           "MATH.3210"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "theory"]
     },
     {
       "id" : "ENGL.1010",
       "name" : "College Writing I",
       "credits" : "3",
       "description" : "A workshop course that thoroughly explores the writing process from pre-writing to revision, with an emphasis on critical thinking, sound essay structure, mechanics, and academic integrity. Students will read, conduct rhetorical analyses, and practice the skills required for participation in academic discourse. Students will write expository essays throughout the semester, producing a minimum of four formal essays.",
-      "keywords" : []
+      "keywords" : ["writing"]
     },
     {
       "id" : "ENGL.1020",
@@ -96,14 +96,14 @@
           "ENGL.1010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["writing"]
     },
     {
       "id" : "COMP.1000",
       "name" : "Media Computing",
       "credits" : "3",
       "description" : "An introductory course to computer programming using multimedia applications such as images, video and audio. Linear data structures representing multimedia data are manipulated with loops and conditionals in the Python language.",
-      "keywords" : []
+      "keywords" : ["cs", "python"]
     },
     {
       "id" : "COMP.1010",
@@ -115,7 +115,7 @@
           "COMP.1030L"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "c/c++"]
     },
     {
       "id" : "COMP.1020",
@@ -128,14 +128,14 @@
           "COMP 1030L"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "c/c++"]
     },
     {
       "id" : "COMP.1030L",
       "name" : "Computing I Lab",
       "credits" : "1",
       "description" : "This is the lab class for COMP.1010  Computing I. This class must be taken with COMP.1010  Computing I in the same semester.",
-      "keywords" : []
+      "keywords" : ["cs", "c/c++", "lab"]
     },
     {
       "id" : "COMP.1040L",
@@ -147,35 +147,35 @@
           "COMP.1020"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "c/c++", "lab"]
     },
     {
       "id" : "COMP.1080",
       "name" : "Intro to App Des & Mobile Comp",
       "credits" : "3",
       "description" : "This course is an introduction to design principles of applications (apps) that run on mobile devices (smart phones and tablet computers). The course focuses on software interaction design and computational thinking. Students will gain theoretical knowledge and design skills in these domains by building a series of apps that run on the Android platform using MIT App. Inventor software. The course will also include discussion of societal impacts of computing.",
-      "keywords" : []
+      "keywords" : ["cs", "app design"]
     },
     {
       "id" : "COMP.1120",
       "name" : "Undeclared Science Seminar",
       "credits" : "1",
       "description" : "Discussions will be conducted on a wide range of topics in the sciences to familiarize the student with the programs, procedures, research, and educational opportunities at the University.",
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.1130",
       "name" : "Exploring the Internet",
       "credits" : "3",
       "description" : "An introduction to internet technologies and how they intersect with social, political, and economic issues. Includes: the history of the internet, how it's presently managed, how information is transferred between servers and clients, collaborative web technologies, search engines, encryption, digital rights management, certificate authorities, phishing and other malware, and privacy concerns. Students will build a basic website using HTML and CSS.",
-      "keywords" : []
+      "keywords" : ["cs", "web development"]
     },
     {
       "id" : "COMP.1500",
       "name" : "Topics In Computer Science",
       "credits" : "3",
       "description" : "There is currently no description available for this course.",
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.2010",
@@ -190,7 +190,7 @@
           "COMP.2010L"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "c/c++"]
     },
     {
       "id" : "COMP.2010L",
@@ -205,7 +205,7 @@
           "COMP.2010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "c/c++", "lab"]
     },
     {
       "id" : "COMP.2030",
@@ -220,7 +220,7 @@
           "COMP.2030L"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "embedded system"]
     },
     {
       "id" : "COMP.2030L",
@@ -235,7 +235,7 @@
           "COMP.2030"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "lab"]
     },
     {
       "id" : "COMP.2040",
@@ -247,7 +247,7 @@
           "COMP.2010"
         ]
       },
-      "keywords" : []
+      "keywords" :["cs", "c/c++"]
     },
     {
       "id" : "COMP.3010",
@@ -259,7 +259,7 @@
           "COMP.2010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "theory"]
     },
     {
       "id" : "COMP.3040",
@@ -272,7 +272,7 @@
           "MATH.3220"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "theory"]
     },
     {
       "id" : "COMP.3050",
@@ -286,7 +286,7 @@
           "COMP.2030"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "embedded systems"]
     },
     {
       "id" : "COMP.3080",
@@ -298,7 +298,7 @@
           "COMP.3050"
         ]
       },
-      "keywords" : []
+      "keywords" :["cs", "embedded systems"]
     },
     {
       "id" : "COMP.3090",
@@ -310,7 +310,7 @@
           "COMP.2040"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development"]
     },
     {
       "id" : "COMP.3100",
@@ -322,7 +322,7 @@
           "COMP.3090"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development"]
     },
     {
       "id" : "COMP.3500",
@@ -334,7 +334,7 @@
           "COMP.3050"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development"]
     },
     {
       "id" : "COMP.3611",
@@ -346,14 +346,14 @@
           "COMP.3050"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "theory"]
     },
     {
       "id" : "COMP.4010",
       "name" : "Software Project I",
       "credits" : "3",
       "description" : "Specification, design, and implementation of a one- or two-semester software project proposed to a directing faculty member. Projects may be proposed as a one- or two-semester effort based on faculty approval. A two-semester effort requires subsequent registration for 91.402. Prerequisite: Students must submit a proposal to the directing faculty member, obtain his/her signed approval, and forward a copy of the signed proposal to department chairperson",
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4020",
@@ -365,7 +365,7 @@
           "COMP.4010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4040",
@@ -379,7 +379,7 @@
           "MATH.3860"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "theory"]
     },
     {
       "id" : "COMP.4050",
@@ -391,14 +391,14 @@
           "COMP.3080"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4060",
       "name" : "Compiler Construction I",
       "credits" : "3",
       "description" : "Includes both theory and practice. A study of grammars; specification and classes; the translation pipeline: lexical analysis, parsing, semantic analysis, code generation and optimization; and syntax-directed translation. Use of automatic generation tools in the actual production of a complete compiler for some language.",
-      "keywords" : []
+      "keywords" : ["cs", "embedded systems"]
     },
     {
       "id" : "COMP.4110",
@@ -410,7 +410,7 @@
           "COMP.2040"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4120",
@@ -422,7 +422,7 @@
           "COMP.4110"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4130",
@@ -434,7 +434,7 @@
           "COMP.3080"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development", "theory"]
     },
     {
       "id" : "COMP.4140",
@@ -446,7 +446,7 @@
           "COMP.4140"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development", "theory"]
     },
     {
       "id" : "COMP.4200",
@@ -459,7 +459,7 @@
           "MATH.3860"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "AI"]
     },
     {
       "id" : "COMP.4210",
@@ -472,7 +472,7 @@
           "COMP.3100"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "AI"]
     },
     {
       "id" : "COMP.4220",
@@ -486,7 +486,7 @@
           "MATH.3860"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "AI"]
     },
     {
       "id" : "COMP.4230",
@@ -500,7 +500,7 @@
           "MATH.3220"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4270",
@@ -512,7 +512,7 @@
           "COMP.2010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "computer vision"]
     },
     {
       "id" : "COMP.4280",
@@ -524,7 +524,7 @@
           "COMP.4280"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs",  "computer vision"]
     },
     {
       "id" : "COMP.4290",
@@ -536,7 +536,7 @@
           "COMP.2010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4420",
@@ -548,7 +548,7 @@
           "COMP.4220"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4500",
@@ -560,7 +560,7 @@
           "COMP.1020"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4510",
@@ -572,7 +572,7 @@
           "COMP.1020"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4570",
@@ -586,7 +586,7 @@
           "COMP.4130"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "theory"]
     },
     {
       "id" : "COMP.4600",
@@ -598,7 +598,7 @@
           "Junior or Senior Status."
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4610",
@@ -610,7 +610,7 @@
           "COMP.2010"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development",  "computer vision"]
     },
     {
       "id" : "COMP.4611",
@@ -622,7 +622,7 @@
           "COMP.4130"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4620",
@@ -634,7 +634,7 @@
           "COMP.4610"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development",  "computer vision"]
     },
     {
       "id" : "COMP.4630",
@@ -646,7 +646,7 @@
           "COMP.2040"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development", "app design"]
     },
     {
       "id" : "COMP.4631",
@@ -658,7 +658,7 @@
           "COMP.4630"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs", "web development", "app design"]
     },
     {
       "id" : "COMP.4800",
@@ -670,7 +670,7 @@
           "Level is Junior or Senior standing."
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4810",
@@ -682,21 +682,21 @@
           "COMP.4800"
         ]
       },
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4900",
       "name" : "Directed Studies in Computer Science",
       "credits" : "1",
       "description" : "Individual study for a student desiring more advanced or more specialized work. This course may not be taken more than twice and may not be substituted for scheduled offerings.",
-      "keywords" : []
+      "keywords" : ["cs"]
     },
     {
       "id" : "COMP.4930",
       "name" : "Cooperative Education in Computer Science",
       "credits" : "1",
       "description" : "Supervision of cooperative educational experiences in Computer Science.",
-      "keywords" : []
+      "keywords" : ["cs"]
     }
   ]
 }
