@@ -1,6 +1,4 @@
-window.database = getJson();
-
-var getJSON2 = function(url, callback) {
+var getJSON = function(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.responseType = 'json';
@@ -15,38 +13,6 @@ var getJSON2 = function(url, callback) {
   xhr.send();
 };
 
-function readTextFile(url) {
-  var request = new Request(url, {
-    method: 'POST',
-    mode: 'cors',
-    headers: new Headers({
-      'Content-Type': 'text/plain'
-    })
-  });
-
-  console.log('Reading: ', url);
-  fetch(request)
-    .then(res => res.json())
-    .then((out) => {
-      console.log('Checkout this JSON! ', out);
-      var database = out.database;
-      database.forEach(constructClass);
-      return database;
-    })
-    .catch(err => {
-      throw err;
-    });
-}
-var url = "cs_catalog.json";
-
-function getJson() {
-  //Text field is the URL of the database
-  //NOTE: Currently need to disable Cross-Origin restrictios in browser
-  //This should be fixed when all files are in a common server
-  var test = readTextFile("cs_catalog.json");
-  return test;
-}
-
 function clearSearch() {
   getJSON2("cs_catalog.json", function(err, data) {
     data.database.forEach(constructClass);
@@ -60,7 +26,7 @@ function clearClasses() {
 }
 
 function searchJson() {
-  getJSON2("cs_catalog.json", searchClasses);
+  getJSON("cs_catalog.json", searchClasses);
 }
 
 function constructClass(classObj, index) {
