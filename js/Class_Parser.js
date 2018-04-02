@@ -98,6 +98,12 @@ function constructClass(classObj, index) {
   document.getElementById("Classes").appendChild(classDiv);
 }
 
+function displayAllClasses(err, data) {
+  clearClasses();
+  data.database.forEach(constructClass);
+}
+
+
 function searchClasses(err, data) {
   clearClasses();
   var database = data.database;
@@ -142,3 +148,5 @@ function searchClasses(err, data) {
 
 
 }
+
+getJSON("cs_catalog.json", displayAllClasses);
