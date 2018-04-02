@@ -14,9 +14,7 @@ var getJSON = function(url, callback) {
 };
 
 function clearSearch() {
-  getJSON2("cs_catalog.json", function(err, data) {
-    data.database.forEach(constructClass);
-  });
+  getJSON("cs_catalog.json", displayAllClasses);
   document.getElementById("textSearch").value = "";
 }
 
@@ -49,12 +47,29 @@ function constructClass(classObj, index) {
   titleLabel.className = "classText";
   classDiv.appendChild(titleLabel);
 
-  var descLabel = document.createElement("Label");
-  descLabel.innerHTML = "<p>" + classObj.description + "</p>";
+  var creditsLabel = document.createElement("Label");
+  creditsLabel.innerHTML = "<p>Credits: " + classObj.credits + "</p>";
+  creditsLabel.className = "classText";
+  classDiv.appendChild(creditsLabel);
+
+  var teacherLabel = document.createElement("Label");
+  teacherLabel.innerHTML = "<p>Teacher: " + classObj.teacher + "</p>";
+  teacherLabel.className = "classText";
+  classDiv.appendChild(teacherLabel);
+
+
+
+  var hiddenDiv = document.createElement("div");
+  hiddenDiv.className = 'classHiddenDiv';
   //Hide text until ready to display
-  descLabel.style.display = 'none';
-  descLabel.className = "classText";
-  classDiv.appendChild(descLabel);
+  hiddenDiv.style.display = 'none';
+
+
+  var descLabel = document.createElement("Label");
+  descLabel.innerHTML = "<p> Description: " + classObj.description + "</p>";
+  //Hide text until ready to display
+  descLabel.className = "classTextDescription";
+  hiddenDiv.appendChild(descLabel);
 
   var keywordLabel = document.createElement("Label");
 
@@ -62,13 +77,52 @@ function constructClass(classObj, index) {
     var text = classObj.keywords.reduce(function(final, object) {
       return final + ", " + object;
     });
-    text = text.substring(0, text.length - 1);
+    text = text.substring(0, text.length);
     keywordLabel.className = "classText";
-    keywordLabel.innerHTML = "<p>" + text + "</p>";
+    keywordLabel.innerHTML = "<p> Keywords: " + text + "</p>";
+    hiddenDiv.appendChild(keywordLabel);
   }
-  //Hide text until ready to display
-  keywordLabel.style.display = 'none';
-  classDiv.appendChild(keywordLabel);
+
+
+
+  var preReqLabel = document.createElement("Label");
+
+  if (typeof classObj.prerequisites != "undefined" && classObj.prerequisites.length > 0) {
+    var text = classObj.prerequisites.reduce(function(final, object) {
+      return final + ", " + object;
+    });
+    text = text.substring(0, text.length);
+    preReqLabel.className = "classText";
+    preReqLabel.innerHTML = "<p> Pre Reqs: " + text + "</p>";
+    hiddenDiv.appendChild(preReqLabel);
+  }
+
+  var coReqLabel = document.createElement("Label");
+
+  if (typeof classObj.corequisites != "undefined" && classObj.corequisites.length > 0) {
+    var text = classObj.corequisites.reduce(function(final, object) {
+      return final + ", " + object;
+    });
+    text = text.substring(0, text.length);
+    coReqLabel.className = "classText";
+    coReqLabel.innerHTML = "<p> Pre Reqs: " + text + "</p>";
+    hiddenDiv.appendChild(coReqLabel);
+  }
+
+  var teacherRating = document.createElement("Label");
+  var ratingText = "";
+  for (i = 1; i < 6; i++) {
+    if (i <= classObj.rating) {
+      ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
+    } else {
+      ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
+    }
+  }
+  teacherRating.innerHTML = "<p>Teacher Rating: " + ratingText + "</p>";
+  teacherRating.className = "classText";
+  hiddenDiv.appendChild(teacherRating);
+
+
 
   //---Buttons---
   var addButton = document.createElement("Label");
@@ -83,16 +137,17 @@ function constructClass(classObj, index) {
   detailsButton.className = "classButton";
   //Hides and unhides the description and keywords on click
   detailsButton.onclick = function() {
-    if (descLabel.style.display == 'none') {
-      descLabel.style.display = '';
-      keywordLabel.style.display = '';
+    if (hiddenDiv.style.display == 'none') {
+      hiddenDiv.style.display = '';
 
     } else {
-      descLabel.style.display = 'none';
-      keywordLabel.style.display = 'none';
+      hiddenDiv.style.display = 'none';
     }
   };
   classDiv.appendChild(detailsButton);
+
+  //Attach the hidden div after the buttons
+  classDiv.appendChild(hiddenDiv);
 
   //Append the individual class to the Classes div
   document.getElementById("Classes").appendChild(classDiv);
@@ -144,9 +199,12 @@ function searchClasses(err, data) {
   titleMatch.forEach(constructClass);
   keywordMatch.sort(function(a, b) {
     return a[0] - b[0]
-  }).forEach(constructClass);
+  }).forEach(function(obj, index) {
+    constructClass(obj[1], index);
+  });
 
 
 }
 
+//Start the page by displaying all Classes
 getJSON("cs_catalog.json", displayAllClasses);

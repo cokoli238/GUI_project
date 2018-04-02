@@ -9,10 +9,8 @@ body {
   width: 100;
 }
 
-
-
 li {
-    display: inline;
+  display: inline;
 }
 
 .topnav {
@@ -29,29 +27,22 @@ li {
   font-size: 17px;
 }
 
-.loginnav{
-  
+.checked {
+  color: orange;
+}
+
+.loginnav {
   background-color: beige;
   text-align: center;
   float: center;
   height: 500px;
 }
-.classDiv{
-  margin: auto;
-  overflow: hidden;
-  background-color: #999999;
-  color: white;
-  padding: 10px;
-  border: 2px solid black;;
-  border-radius: 0px;
-}
 
 .logintext {
   font-size: 70px;
-  
 }
 
-.class_search{
+.class_search {
   border: 2px red solid;
   text-align: center;
   float: center;
@@ -77,6 +68,7 @@ li {
   font-size: 15px;
   text-decoration: none;
 }
+
 .search_button:hover {
   background: #3cb0fd;
   text-decoration: none;
@@ -86,14 +78,17 @@ li {
   width: 30%;
   height: 100%;
 }
-input[type=text] {padding:5px; border:2px solid #ccc; 
-  -webkit-border-radius: 5px;
-      border-radius: 5px;
-  }
 
-.login_button{
+input[type=text] {
+  padding: 5px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.login_button {
   background: #3498db;
-  background-image: -webkit-linear-gradient(top,green, green);
+  background-image: -webkit-linear-gradient(top, green, green);
   background-image: -moz-linear-gradient(top, green, green);
   background-image: -ms-linear-gradient(top, green, green);
   background-image: -o-linear-gradient(top, green, green);
@@ -109,21 +104,47 @@ input[type=text] {padding:5px; border:2px solid #ccc;
   font-size: 15px;
   text-decoration: none;
 }
+
 .login_button:hover {
   background: lawngreen;
   text-decoration: none;
 }
-.classText{
-  width: 25%;
+
+.classDiv {
+  margin: auto;
+  overflow: hidden;
+  background-color: #999999;
+  color: white;
+  padding: 0px;
+  border: 2px solid black;
+  border-radius: 0px;
+}
+
+.classText {
+  width: 15%;
+  padding: 20px;
   float: left;
   text-align: left;
   font-family: "Verdana", Times, sans-serif;
   font-size: 20px;
 }
 
-.classButton{
+.classTextDescription {
+  width: 15%;
+  text-align: left;
+  font-family: "Verdana", Times, sans-serif;
+  font-size: 20px;
+}
+
+.classHiddenDiv {
+  width: 60%;
+  clear: both;
+  display: block;
+}
+
+.classButton {
   margin-left: 15%;
-  float:right;
+  float: right;
   margin-left: 20px;
   background-color: #3333cc;
   color: white;
