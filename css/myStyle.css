@@ -55,6 +55,7 @@ li {
   float: center;
   margin: 0 auto;
   display: block;
+  
 }
 
 .search_button {
@@ -84,6 +85,7 @@ li {
 .search_input {
   width: 30%;
   height: 100%;
+  font-size: 17px;
 }
 
 input[type=text] {
