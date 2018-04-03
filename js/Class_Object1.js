@@ -11,8 +11,8 @@ var start = document.getElementById("start").value;
 
 var idArray = start.match(idp);
 var len = idArray.length();
+}
 
- 
 
 function getMatches(text,pattern){
 
