@@ -100,7 +100,7 @@
       "corequisites": [
         "COMP.1030L"
       ],
-      "keywords": ["cs", "c", "c++"]
+      "keywords": ["cs", "c"]
     }, {
       "id": "COMP.1020",
       "name": "Computing II",
@@ -112,7 +112,7 @@
         "COMP 1010",
         "COMP 1030L"
       ],
-      "keywords": ["cs", "c", "c++"]
+      "keywords": ["cs", "c", "data", "structures"]
     },
     {
       "id": "COMP.1030L",
@@ -409,7 +409,7 @@
 
         "COMP.3080"
       ],
-      "keywords": ["cs", "web development", "theory"]
+      "keywords": ["cs", "web", "development", "theory", "network", "networking"]
     }, {
       "id": "COMP.4140",
       "name": "Data Communications II",
@@ -420,7 +420,7 @@
 
         "COMP.4140"
       ],
-      "keywords": ["cs", "web development", "theory"]
+      "keywords": ["cs", "web", "development", "theory", "network", "networking"]
     }, {
       "id": "COMP.4200",
       "name": "Artificial Intelligence",
