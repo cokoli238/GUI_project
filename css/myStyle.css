@@ -1,7 +1,7 @@
 /* CSS for adding content example */
 
 body {
-  background: url('/Users/doshi/Documents/Spring-2018/GUI2/GUI_project/initial.jpg'); /*or whatever path*/
+  background: url('GUI_project/initial.jpg'); /*or whatever path*/
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-size: cover;
