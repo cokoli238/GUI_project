@@ -39,22 +39,22 @@ function constructClass(classObj, index) {
   //---Class labels---
   var idLabel = document.createElement("Label");
   idLabel.innerHTML = "<p>" + classObj.id + "</p>";
-  idLabel.className = "classText";
+  idLabel.className = "classTextTitle";
   classDiv.appendChild(idLabel);
 
   var titleLabel = document.createElement("Label");
   titleLabel.innerHTML = "<p>" + classObj.name + "</p>";
-  titleLabel.className = "classText";
+  titleLabel.className = "classTextTitle";
   classDiv.appendChild(titleLabel);
 
   var creditsLabel = document.createElement("Label");
   creditsLabel.innerHTML = "<p>Credits: " + classObj.credits + "</p>";
-  creditsLabel.className = "classText";
+  creditsLabel.className = "classTextTitle";
   classDiv.appendChild(creditsLabel);
 
   var teacherLabel = document.createElement("Label");
   teacherLabel.innerHTML = "<p>Teacher: " + classObj.teacher + "</p>";
-  teacherLabel.className = "classText";
+  teacherLabel.className = "classTextTitle";
   classDiv.appendChild(teacherLabel);
 
 
@@ -125,12 +125,6 @@ function constructClass(classObj, index) {
 
 
   //---Buttons---
-  var addButton = document.createElement("Label");
-  addButton.className = 'button';
-  addButton.innerHTML = "Add to schedule";
-  addButton.className = "classButton";
-  classDiv.appendChild(addButton);
-
   var detailsButton = document.createElement("Label");
   detailsButton.className = 'button';
   detailsButton.innerHTML = "Details";
@@ -145,6 +139,14 @@ function constructClass(classObj, index) {
     }
   };
   classDiv.appendChild(detailsButton);
+
+  var addButton = document.createElement("Label");
+  addButton.className = 'button';
+  addButton.innerHTML = "Add to schedule";
+  addButton.className = "classButton";
+  classDiv.appendChild(addButton);
+
+
 
   //Attach the hidden div after the buttons
   classDiv.appendChild(hiddenDiv);

@@ -124,6 +124,18 @@ input[type=text] {
   border-radius: 0px;
 }
 
+.classTextTitle {
+  width: 250px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: left;
+  text-align: left;
+  font-family: "Verdana", Times, sans-serif;
+  font-size: 25px;
+  text-shadow: 3px 3px black;
+}
+
 .classText {
   padding: 20px;
   padding-left: 50px;
@@ -132,18 +144,23 @@ input[type=text] {
   text-align: left;
   font-family: "Verdana", Times, sans-serif;
   font-size: 20px;
+  text-shadow: 3px 3px black;
 }
 
 .classTextDescription {
+  float: left;
   padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: left;
   width: auto;
   font-family: "Verdana", Times, sans-serif;
   font-size: 20px;
+  text-shadow: 3px 3px black;
 }
 
 .classHiddenDiv {
-  padding: 20px;
+  font-size: 20px;
   width: 80%;
   clear: both;
   display: block;
@@ -152,6 +169,7 @@ input[type=text] {
 .classButton {
   float: right;
   margin-left: 20px;
+  margin-top: 20px;
   background-color: #3333cc;
   color: white;
   padding: 16px;
