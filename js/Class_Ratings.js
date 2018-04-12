@@ -250,7 +250,7 @@ reviewTextDiv.appendChild(starDiv);
 
 function displayClass(err, data) {
   var found = false;
-  var name = getClassName();
+  var name = getClassID();
   data.database.forEach(function(obj){
     found = constructClass(obj,name);
   });
