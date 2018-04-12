@@ -21,6 +21,28 @@
 
 
 <head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+</style>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Plan By Requirement</title>
@@ -37,6 +59,251 @@
       <li><a href="account.html">My Account</a></li>
     </ul>
   </div>
+
+   <tr>
+<td><input type="text" name="start" id="start"></td>
+</tr>
+
+<tr>
+<td><button onclick="makeClass()">Insert Course History</button></td>
+</tr>  
+
+<table id="freshmanTable">
+  <tr>
+    <th colspan="4">Freshman Fall</th>
+    <th colspan="4">Freshman Spring</th>
+  </tr>
+  <tr>
+    <td>COMP.1010/COMP.1030L</td>
+    <td> 3/1</td>
+    <td>Computing I</td>
+    <td id="Computing I"> </td>
+     <td>COMP.1020/COMP.1040L </td>
+    <td> 3/1</td>
+    <td>Computing II</td>
+    <td id="Computing II"> </td>
+  </tr>
+  <tr>
+    <td>MATH.1310</td>
+    <td> 4 </td>
+    <td>Calculus I</td>
+    <td id="Calculus I"> </td>
+    <td>MATH.1320</td>
+    <td> 4 </td>
+    <td>Calculus II</td>
+    <td id="Calculus II"> </td>
+  </tr>
+  <tr>
+    <td>ENGL.1010</td>
+     <td> 3 </td>
+     <td>College Writing I</td>
+     <td id="College Writing I"> </td>
+    <td>ENGL.1020</td>
+     <td> 3 </td>
+     <td>College Writing II</td>
+    <td id="College Writing II"> </td>
+  </tr>
+  <tr>
+    <td id="ah1_id"> </td>
+    <td> 3 </td>
+    <td>Gen Ed (AH)</td>
+    <td id="AH1">  N/A </td>
+    <td id="ah2_id"> </td>
+    <td> 3 </td>
+    <td>Gen Ed (AH)</td>
+    <td id="AH2"> N/A </td>
+  </tr>
+ 
+
+</table>
+<br/>
+
+<table id="sophmoreTable">
+  <tr>
+    <th colspan="4">Sophmore Fall</th>
+    <th colspan="4">Sophmore Spring</th>
+  </tr>
+  <tr>
+    <td>COMP.1010/COMP.1030L</td>
+    <td> 3/1</td>
+    <td>Computing III</td>
+    <td id="Computing III"> </td>
+     <td>COMP.2010/COMP.2010L </td>
+    <td> 4</td>
+    <td>Computing IV</td>
+    <td id="Computing IV"> </td>
+  </tr>
+  <tr>
+    <td>COMP.2030/COMP.2030L</td>
+    <td> 3/1 </td>
+    <td>Assembly Language</td>
+    <td id="Comp Org & Assembly Lang"> </td>
+    <td>MATH.3860</td>
+    <td> 3 </td>
+    <td>Prob. & Stats I</td>
+    <td id="Prob. & Stats. I"> </td>
+  </tr>
+  <tr>
+    <td>MATH.3210</td>
+     <td> 3 </td>
+     <td>Discrete Structures I</td>
+     <td id="Discrete Structures I"> </td>
+    <td>MATH.3220</td>
+     <td> 3 </td>
+     <td>Discrete Structures II</td>
+    <td id="Discrete Structures II"> </td>
+  </tr>
+  <tr>
+    <td> EECE.2650</td>
+    <td> 3 </td>
+    <td>Logic Design</td>
+    <td id="Logic Design">   </td>
+    <td id="oral">ENGL.2200 </td>
+    <td> 3 </td>
+    <td>Gen Ed: Oral & Written (AH)</td>
+    <td id="Oral & Written"> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td>  </td>
+    <td> </td>
+    <td id="blank12">N/A</td>
+    <td id="ns1_id"> </td>
+    <td> 4 </td>
+    <td>Natural Lab Sciene: </td>
+    <td id="nat_sci1">N/A</td>
+  </tr>
+
+</table>
+
+<br/>
+
+<table id="JuniorTable">
+  <tr>
+    <th colspan="4">Junior Fall</th>
+    <th colspan="4">Junior Spring</th>
+  </tr>
+  <tr>
+    <td>COMP.3040   </td>
+    <td> 3</td>
+    <td>Foundations of CS</td>
+    <td id="Foundations of CS"> </td>
+     <td>COMP.3010</td>
+    <td> 3 </td>
+    <td>Org. of Prog. Lang.</td>
+    <td id="Org. of Prog. Lang."> </td>
+  </tr>
+  <tr>
+    <td>COMP.3050   </td>
+    <td> 3 </td>
+    <td>Computer Architecture</td>
+    <td id="Computer Architecture"> </td>
+    <td>MATH.3880</td>
+    <td> 3 </td>
+    <td>Intro to Operating Sys.</td>
+    <td id="Intro to Operating Sys."> </td>
+  </tr>
+  <tr>
+    <td> </td>
+     <td> 4 </td>
+     <td>Natural Science & Lab </td>
+     <td id="nat_sci2"> N/A </td>
+    <td> </td>
+     <td> 4 </td>
+     <td>Natural Science & Lab </td>
+     <td id="nat_sci3"> N/A </td>
+  </tr>
+
+  <tr>
+    <td id="social_sci1_id">  </td>
+    <td> 3 </td>
+    <td>Gen Ed: (SS)</td>
+    <td id="social_sci1"> N/A  </td>
+    <td id="social_sci2_id">  </td>
+    <td> 3 </td>
+    <td>Gen Ed: (SS)</td>
+    <td id="social_sci2">N/A </td>
+  </tr>
+
+  <tr>
+    <td> </td>
+    <td> 3 </td>
+    <td>Free Elective </td>
+    <td id="fe1"> N/A</td>
+    <td> </td>
+    <td> 3 </td>
+    <td>Free Elective </td>
+    <td id="fe2">N/A</td>
+  </tr>
+
+</table>
+
+<br/>
+
+<table id="SeniorTable">
+  <tr>
+    <th colspan="4">Senior Fall</th>
+    <th colspan="4">Senior Spring</th>
+  </tr>
+  <tr>
+    <td>COMP. </td>
+    <td> 3 </td>
+    <td>CS Elective: </td>
+    <td id="cs_elect1"> </td>
+     <td>COMP.</td>
+    <td> 3 </td>
+    <td>CS Elective: </td>
+    <td id="cs_elect2"> </td>
+  </tr>
+
+  <tr>
+    <td>COMP.   </td>
+    <td> 3 </td>
+    <td>Project Course I: </td>
+    <td id="project1"> N/A </td>
+    <td>COMP.</td>
+    <td> 3 </td>
+    <td>Project Course II:.</td>
+    <td id="project2"> N/A </td>
+  </tr>
+
+  <tr>
+    <td>COMP.4040 </td>
+     <td> 3 </td>
+     <td>Analysis of Algorithms </td>
+     <td id="alog">  </td>
+    <td id="tech_elect1_id">  </td>
+     <td> 3 </td>
+     <td>Technical Elective:  </td>
+     <td id="tech_elect1"> N/A </td>
+  </tr>
+
+  <tr>
+    <td id="tech_elect2_id">  </td>
+    <td> 3 </td>
+    <td>Technical Elective:  </td>
+    <td id="tech_elect2"> N/A  </td>
+    <td id="fe3_id">  </td>
+    <td> 3 </td>
+    <td>Free Elective </td>
+    <td id="fe3">N/A </td>
+  </tr>
+
+  <tr>
+    <td id="social_sci3_id"> </td>
+    <td> 3 </td>
+    <td>Free Elective </td>
+    <td id="social_sci3"> N/A</td>
+    <td id="fe4_id">  </td>
+    <td> 3 </td>
+    <td>Free Elective </td>
+    <td id="fe4">N/A</td>
+  </tr>
+
+</table>
+
+
+
 
 </body>
 
