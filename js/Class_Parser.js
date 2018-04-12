@@ -109,7 +109,10 @@ function constructClass(classObj, index) {
     hiddenDiv.appendChild(coReqLabel);
   }
 
-  var teacherRating = document.createElement("Label");
+
+  var classRatingDiv =  document.createElement("div");
+  classRatingDiv.className = "classText";
+  var classRating = document.createElement("Label");
   var ratingText = "";
   for (i = 1; i < 6; i++) {
     if (i <= classObj.rating) {
@@ -118,10 +121,68 @@ function constructClass(classObj, index) {
       ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
     }
   }
-  teacherRating.innerHTML = "<p>Teacher Rating: " + ratingText + "</p>";
-  teacherRating.className = "classText";
-  hiddenDiv.appendChild(teacherRating);
+  var classRatingStars = document.createElement("Label");
+  classRatingStars.innerHTML = ratingText;
+  classRatingStars.className = "classText";
+classRatingStars.style.paddingLeft = "5px";
+classRatingStars.style.paddingRight = "5px";
 
+  classRating.innerHTML = "Class Rating: ";
+  classRating.className = "classText";
+  classRating.style.paddingRight = "5px";
+    classRatingDiv.appendChild(classRating);
+    classRatingDiv.appendChild(classRatingStars);
+
+var reviewButtonDiv =   document.createElement("div");
+    var reviewButton = document.createElement("Label");  
+    reviewButton.className = 'classButton';  
+    reviewButton.innerHTML = "Class Reviews";  
+    reviewButton.className = "classButton";  
+    reviewButton.style.float = "none";
+    reviewButton.style.padding = "5px";
+    reviewButton.onclick = function() {
+      window.location = 'class_ratings.html?' + classObj.id;
+    };
+    reviewButtonDiv.appendChild(reviewButton);
+    classRatingDiv.appendChild(reviewButtonDiv);
+  hiddenDiv.appendChild(classRatingDiv);
+
+  var teacherRatingDiv =  document.createElement("div");
+    teacherRatingDiv.className = "classText";
+    var teacherRating = document.createElement("Label");
+    var ratingText = "";
+    for (i = 1; i < 6; i++) {
+      if (i <= classObj.rating) {
+        ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
+      } else {
+        ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
+      }
+    }
+    var teacherRatingStars = document.createElement("Label");
+    teacherRatingStars.innerHTML = ratingText;
+    teacherRatingStars.className = "classText";
+  teacherRatingStars.style.paddingLeft = "5px";
+  teacherRatingStars.style.paddingRight = "5px";
+
+    teacherRating.innerHTML = "Teacher Rating: ";
+    teacherRating.className = "classText";
+    teacherRating.style.paddingRight = "5px";
+      teacherRatingDiv.appendChild(teacherRating);
+      teacherRatingDiv.appendChild(teacherRatingStars);
+
+  var teacherReviewButtonDiv =   document.createElement("div");
+      var teacherReviewButton = document.createElement("Label");  
+      teacherReviewButton.className = 'classButton';  
+      teacherReviewButton.innerHTML = "Teacher Reviews";  
+      teacherReviewButton.className = "classButton";  
+      teacherReviewButton.style.float = "none";
+      teacherReviewButton.style.padding = "5px";
+      teacherReviewButton.onclick = function() {
+        window.location = 'teacher_ratings.html?' + classObj.id;
+      };
+      teacherReviewButtonDiv.appendChild(teacherReviewButton);
+  teacherRatingDiv.appendChild(teacherReviewButtonDiv);
+  hiddenDiv.appendChild(teacherRatingDiv);
 
 
   //---Buttons---
@@ -146,14 +207,7 @@ function constructClass(classObj, index) {
   addButton.className = "classButton";
   classDiv.appendChild(addButton);
 
-  var reviewButton = document.createElement("Label");  
-  reviewButton.className = 'button';  
-  reviewButton.innerHTML = "Review Class";  
-  reviewButton.className = "classButton";  
-  reviewButton.onclick = function() {
-    window.location = 'class_ratings.html?' + classObj.id;
-  };
-  classDiv.appendChild(reviewButton);
+
 
 
 

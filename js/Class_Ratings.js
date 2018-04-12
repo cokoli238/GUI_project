@@ -1,3 +1,5 @@
+var userRating = 0;
+
 var getJSON = function(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
@@ -41,6 +43,7 @@ function constructClass(classObj) {
 
 
   var reviewDiv = document.createElement("div");
+
   reviewDiv.className = 'classHiddenDiv';
   var reviewText = "";
   var avgRev = 0;
@@ -59,8 +62,9 @@ function constructClass(classObj) {
     }
 
     var reviewsLabel = document.createElement("Label");
+    reviewsLabel.id = "reviews";
     reviewsLabel.className = "classText";
-    reviewsLabel.innerHTML = "<p> Reviews: " + reviewText + "</p>";
+    reviewsLabel.innerHTML = "<p>" + reviewText + "</p>";
     reviewDiv.appendChild(reviewsLabel);
 
     avgRev = avgRev / classObj.reviews.length;
@@ -86,9 +90,108 @@ function constructClass(classObj) {
   reviewTextDiv.className = 'userReview';
   var reviewText = document.createElement('TEXTAREA');
   reviewText.type = "text";
+  reviewText.id = "userReview";
   reviewText.rows = "10";
   reviewText.style.fontSize = "25px";
   reviewTextDiv.appendChild(reviewText);
+
+var starDiv = document.createElement("div");
+var starOne = document.createElement("Label");
+starOne.innerHTML = "<span class=\"fa fa-star\"></span>";
+starOne.onclick = function(){
+  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starTwo.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+  //Clear the div and readd the stars
+  starDiv.innerHTML = "";
+  starDiv.appendChild(starOne);
+  starDiv.appendChild(starTwo);
+  starDiv.appendChild(starThree);
+  starDiv.appendChild(starFour);
+  starDiv.appendChild(starFive);
+  userRating = 1;
+}
+starDiv.appendChild(starOne);
+
+var starTwo = document.createElement("Label");
+starTwo.innerHTML = "<span class=\"fa fa-star\"></span>";
+starTwo.onclick = function(){
+  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+  //Clear the div and readd the stars
+  starDiv.innerHTML = "";
+  starDiv.appendChild(starOne);
+  starDiv.appendChild(starTwo);
+  starDiv.appendChild(starThree);
+  starDiv.appendChild(starFour);
+  starDiv.appendChild(starFive);
+  userRating = 2;
+}
+starDiv.appendChild(starTwo);
+
+var starThree = document.createElement("Label");
+starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
+starThree.onclick = function(){
+  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+  //Clear the div and readd the stars
+  starDiv.innerHTML = "";
+  starDiv.appendChild(starOne);
+  starDiv.appendChild(starTwo);
+  starDiv.appendChild(starThree);
+  starDiv.appendChild(starFour);
+  starDiv.appendChild(starFive);
+  userRating = 3;
+}
+starDiv.appendChild(starThree);
+
+var starFour = document.createElement("Label");
+starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+starFour.onclick = function(){
+  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starFour.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+  //Clear the div and readd the stars
+  starDiv.innerHTML = "";
+  starDiv.appendChild(starOne);
+  starDiv.appendChild(starTwo);
+  starDiv.appendChild(starThree);
+  starDiv.appendChild(starFour);
+  starDiv.appendChild(starFive);
+  userRating = 4;
+}
+starDiv.appendChild(starFour);
+
+var starFive = document.createElement("Label");
+starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+starFive.onclick = function(){
+  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starFour.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  starFive.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  //Clear the div and readd the stars
+  starDiv.innerHTML = "";
+  starDiv.appendChild(starOne);
+  starDiv.appendChild(starTwo);
+  starDiv.appendChild(starThree);
+  starDiv.appendChild(starFour);
+  starDiv.appendChild(starFive);
+  userRating = 5;
+}
+starDiv.appendChild(starFive);
+
+reviewTextDiv.appendChild(starDiv);
 
   var submitButton = document.createElement("Label");
   submitButton.className = 'button';
@@ -96,7 +199,18 @@ function constructClass(classObj) {
   submitButton.className = "classButton";
   //Hides and unhides the description and keywords on click
   submitButton.onclick = function() {
+    var reviews = document.getElementById("reviews");
+    var userText = document.getElementById("userReview").value;
+    var ratingTextStars = "";
+      for (var j = 1; j < 6; j++) {
+        if (j <= userRating) {
+          ratingTextStars = ratingTextStars + "<span class=\"fa fa-star checked\"></span>";
+        } else {
+          ratingTextStars = ratingTextStars + "<span class=\"fa fa-star\"></span>";
+        }
+      }
 
+    reviews.innerHTML = "<p>" + ratingTextStars + "</p>" + "<p>" + userText + "</p>" + reviews.innerHTML;
   };
   reviewTextDiv.appendChild(submitButton);
 
