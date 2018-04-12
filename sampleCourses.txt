@@ -1,0 +1,176 @@
+14 199
+	
+Civil Eng 100 level elective
+	
+2014 Fall
+	
+T
+	
+1.33
+	
+Transferred
+25 107
+	
+Intro to Engineering I
+	
+2014 Fall
+	
+T
+	
+1.33
+	
+Transferred
+25 108
+	
+Intro To Engineering II
+	
+2014 Fall
+	
+T
+	
+1.33
+	
+Transferred
+42 101
+	
+College Writing I
+	
+2014 Fall
+	
+T
+	
+2.00
+	
+Transferred
+42 102
+	
+College Writing II
+	
+2014 Fall
+	
+T
+	
+2.00
+	
+Transferred
+46 101
+	
+Intro to American Politics
+	
+2015 Spring
+	
+A-
+	
+3.00
+	
+Taken
+47 101
+	
+General Psychology
+	
+2014 Fall
+	
+A-
+	
+3.00
+	
+Taken
+83 101
+	
+Life Science I
+	
+2014 Fall
+	
+A
+	
+3.00
+	
+Taken
+83 103
+	
+Life Science I Laboratory
+	
+2014 Fall
+	
+B-
+	
+1.00
+	
+Taken
+89 215
+	
+Forensic Geology
+	
+2015 Spring
+	
+B+
+	
+3.00
+	
+Taken
+90 268
+	
+C++ Programming
+	
+2014 Fall
+	
+T
+	
+2.00
+	
+Transferred
+90 268
+	
+C++ Programming
+	
+2014 Fall
+	
+T
+	
+2.00
+	
+Transferred
+91 101
+	
+Computing I
+	
+2014 Fall
+	
+A
+	
+3.00
+	
+Taken
+91 102
+	
+Computing II
+	
+2015 Spring
+	
+B+
+	
+3.00
+	
+Taken
+91 103
+	
+Computing I Lab
+	
+2014 Fall
+	
+A
+	
+1.00
+	
+Taken
+91 104
+	
+Computing II Lab
+	
+2015 Spring
+	
+B+
+	
+1.00
+	
+Taken
