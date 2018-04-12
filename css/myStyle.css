@@ -33,8 +33,7 @@ li {
 }
 
 .loginnav {
- 
-  background-color:lightgrey;
+  background-color: lightgrey;
   border-radius: 10px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +54,6 @@ li {
   float: center;
   margin: 0 auto;
   display: block;
-  
 }
 
 .search_button {
@@ -74,7 +72,7 @@ li {
   color: #000000;
   font-size: 15px;
   text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .search_button:hover {
@@ -94,7 +92,8 @@ input[type=text] {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-.login_button{
+
+.login_button {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -110,16 +109,16 @@ input[type=text] {
   color: #000000;
   font-size: 15px;
   text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .login_button:hover {
   background: #3cb0fd;
   text-decoration: none;
 }
 
-
-
 /* */
+
 .classDiv {
   width: 85%;
   margin: auto;
@@ -190,14 +189,21 @@ input[type=text] {
   transition: all 0.3s ease 0s;
 }
 
+.userReview {
+  float: right;
+  color: white;
+  padding: 16px;
+  font-size: 23px;
+  border: none;
+}
+
 .classButton:hover, .classButton:focus {
   background-color: #24248f;
 }
 
-
 /* Account.html button */
 
-.UpdateInfo_button, .ViewPreviousClass_button, .RateClasses_button, .RateTeachers_button, .ViewMySequences_button{
+.UpdateInfo_button, .ViewPreviousClass_button, .RateClasses_button, .RateTeachers_button, .ViewMySequences_button {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -213,7 +219,7 @@ input[type=text] {
   color: #000000;
   font-size: 15px;
   text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -222,23 +228,27 @@ input[type=text] {
   width: 20%;
 }
 
-.UpdateInfo_button:hover{
+.UpdateInfo_button:hover {
   background: #3cb0fd;
   text-decoration: none;
 }
-.ViewPreviousClass_button:hover{
+
+.ViewPreviousClass_button:hover {
   background: #3cb0fd;
   text-decoration: none;
 }
-.RateClasses_button:hover{
+
+.RateClasses_button:hover {
   background: #3cb0fd;
   text-decoration: none;
 }
-.RateTeachers_button:hover{
+
+.RateTeachers_button:hover {
   background: #3cb0fd;
   text-decoration: none;
 }
-.ViewMySequences_button:hover{
+
+.ViewMySequences_button:hover {
   background: #3cb0fd;
   text-decoration: none;
 }

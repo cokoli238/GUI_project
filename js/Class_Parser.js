@@ -146,6 +146,15 @@ function constructClass(classObj, index) {
   addButton.className = "classButton";
   classDiv.appendChild(addButton);
 
+  var reviewButton = document.createElement("Label");  
+  reviewButton.className = 'button';  
+  reviewButton.innerHTML = "Review Class";  
+  reviewButton.className = "classButton";  
+  reviewButton.onclick = function() {
+    window.location = 'class_ratings.html?' + classObj.id;
+  };
+  classDiv.appendChild(reviewButton);
+
 
 
   //Attach the hidden div after the buttons
