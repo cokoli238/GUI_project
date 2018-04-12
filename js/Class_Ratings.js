@@ -15,8 +15,7 @@ var getJSON = function(url, callback) {
   xhr.send();
 };
 
-function constructClass(classObj) {
-  var id = getClassID();
+function constructClass(classObj, id) {
   if (classObj.id != id) {
     return;
   }
@@ -42,6 +41,12 @@ function constructClass(classObj) {
 
 
 
+//Reviews
+  var reviewsLabel = document.createElement("Label");
+  reviewsLabel.id = "reviews";
+  reviewsLabel.className = "classText";
+
+
   var reviewDiv = document.createElement("div");
 
   reviewDiv.className = 'classHiddenDiv';
@@ -60,12 +65,7 @@ function constructClass(classObj) {
       reviewText = reviewText + "<p>" + ratingText + "</p> <p>" + classObj.reviews[i].text + "</p>";
       avgRev = avgRev + classObj.reviews[i].rating;
     }
-
-    var reviewsLabel = document.createElement("Label");
-    reviewsLabel.id = "reviews";
-    reviewsLabel.className = "classText";
     reviewsLabel.innerHTML = "<p>" + reviewText + "</p>";
-    reviewDiv.appendChild(reviewsLabel);
 
     avgRev = avgRev / classObj.reviews.length;
     var ratingText = "";
@@ -78,11 +78,11 @@ function constructClass(classObj) {
     }
     //After processing the reviews, get the average we calculated
     var avgReviewLabel = document.createElement("Label");
-    avgReviewLabel.innerHTML = "<p>Avgerage Rating: </p><p>" + ratingText + "(" + avgRev + ")" + "</p>";
+    avgReviewLabel.innerHTML = "<p>Avgerage Rating: </p><p>" + ratingText + " (" + avgRev + ")" + "</p>";
     avgReviewLabel.className = "classTextTitle";
     classDiv.appendChild(avgReviewLabel);
   }
-
+  reviewDiv.appendChild(reviewsLabel);
 
 
   //---Comment Box-
@@ -211,6 +211,9 @@ reviewTextDiv.appendChild(starDiv);
       }
 
     reviews.innerHTML = "<p>" + ratingTextStars + "</p>" + "<p>" + userText + "</p>" + reviews.innerHTML;
+
+    this.innerHTML = "Thanks for reviewing!";
+    submitButton.onclick = "";
   };
   reviewTextDiv.appendChild(submitButton);
 
@@ -246,8 +249,17 @@ reviewTextDiv.appendChild(starDiv);
 }
 
 function displayClass(err, data) {
-  data.database.forEach(constructClass);
-  constructClass(data);
+  var found = false;
+  var name = getClassName();
+  data.database.forEach(function(obj){
+    found = constructClass(obj,name);
+  });
+  if(!found){
+    var notFoundLabel = document.createElement("Label");
+    notFoundLabel.innerHTML = "<p>" + "Couldn't find class: " + name + "</p>";
+    notFoundLabel.style.fontSize = "30px";
+    document.getElementById("Class").appendChild(notFoundLabel);
+  }
 }
 
 function getClassID() {

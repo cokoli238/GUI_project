@@ -52,10 +52,17 @@ function constructClass(classObj, index) {
   creditsLabel.className = "classTextTitle";
   classDiv.appendChild(creditsLabel);
 
+if(typeof classObj.teacher != "undefined"){
   var teacherLabel = document.createElement("Label");
-  teacherLabel.innerHTML = "<p>Teacher: " + classObj.teacher + "</p>";
+  teacherLabel.innerHTML = "<p>Teacher: " + "</p><p>" + classObj.teacher + "</p>";
   teacherLabel.className = "classTextTitle";
+  //teacherLabel.style.textDecoration = "underline";
+  teacherLabel.style.cursor = "pointer";
+  teacherLabel.onclick = function() {
+    window.location = 'teacher_ratings.html?' + classObj.teacher.replace(" ","_");
+  };
   classDiv.appendChild(teacherLabel);
+}
 
 
 
@@ -86,7 +93,6 @@ function constructClass(classObj, index) {
 
 
   var preReqLabel = document.createElement("Label");
-
   if (typeof classObj.prerequisites != "undefined" && classObj.prerequisites.length > 0) {
     var text = classObj.prerequisites.reduce(function(final, object) {
       return final + ", " + object;
@@ -178,7 +184,7 @@ var reviewButtonDiv =   document.createElement("div");
       teacherReviewButton.style.float = "none";
       teacherReviewButton.style.padding = "5px";
       teacherReviewButton.onclick = function() {
-        window.location = 'teacher_ratings.html?' + classObj.id;
+        window.location = 'teacher_ratings.html?' + classObj.teacher.replace(" ","_");
       };
       teacherReviewButtonDiv.appendChild(teacherReviewButton);
   teacherRatingDiv.appendChild(teacherReviewButtonDiv);
@@ -234,21 +240,26 @@ function searchClasses(err, data) {
   //Split by spaces, then by commas
   var criteriaArraySpace = criteria.split(" ");
   var criteriaArrayComma = criteria.split(",");
-  criteriaArraySpace.forEach(function(criteria, index) {
-    //Iterate through each class
-    database.forEach(function(object, index) {
-      if (typeof object.id != undefined && object.id.toUpperCase().includes(criteria.toUpperCase())) {
-        idMatch[idMatch.length + 1] = object;
-        return;
-      }
-      if (typeof object.name != undefined && (criteria.toUpperCase().includes(object.name.toUpperCase()) || object.name.toUpperCase().includes(criteria.toUpperCase()))) {
+  database.forEach(function(object, index) {
+    if(typeof object.teacher != "undefined" && (object.teacher.toUpperCase().includes(criteria.toUpperCase()))){
+      idMatch[idMatch.length + 1] = object;
+      return;
+    }
+    if (typeof object.id != "undefined" && object.id.toUpperCase().includes(criteria.toUpperCase())) {
+      idMatch[idMatch.length + 1] = object;
+      return;
+    }
+
+    //Process each word seperated by spaces
+    criteriaArraySpace.forEach(function(criteria, index) {
+      if (typeof object.name != "undefined" && (criteria.toUpperCase().includes(object.name.toUpperCase()) || object.name.toUpperCase().includes(criteria.toUpperCase()))) {
         titleMatch[titleMatch.length + 1] = object;
         return;
       }
       var keywordCount = 0;
       object.keywords.forEach(function(keyword, index) {
         //Iterate through each keyword in class
-        if (keyword == criteria) {
+        if (keyword.toUpperCase() == criteria.toUpperCase()) {
           keywordCount++;
         }
       });
@@ -256,7 +267,6 @@ function searchClasses(err, data) {
         keywordMatch[keywordMatch.length + 1] = [keywordCount, object];
       }
     });
-
   });
 
   //Now that we have the sorted classes, send them to the div builder

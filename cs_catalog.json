@@ -1,659 +1,855 @@
 {
-  "database": [{
-      "id": "MATH.1310",
-      "name": "Calculus I",
-      "credits": "4",
-      "rating": 3,
-      "description": "Serves as a first course in calculus. Functions, limits, continuity, derivatives, rules for differentiation of algebraic and transcendental function; chain rule, implicit differentiation, related rate problems, linearization, applied optimization, and curve sketching. Introduction to area and integration.",
-      "keywords": ["math"]
+  "database" : [
+    {
+      "id" : "MATH.1310",
+      "name" : "Calculus I",
+      "credits" : "4",
+      "rating" : 3,
+      "description" : "Serves as a first course in calculus. Functions, limits, continuity, derivatives, rules for differentiation of algebraic and transcendental function; chain rule, implicit differentiation, related rate problems, linearization, applied optimization, and curve sketching. Introduction to area and integration.",
+      "keywords" : [
+        "math"
+      ],
+      "teacher" : "Maureen Hamilton"
     },
     {
-      "id": "MATH.1320",
-      "name": "Calculus II",
-      "credits": "4",
-      "rating": 4,
-      "description": "Serves as a continuation of Calculus I. Integration and techniques of integration including the substitution method, integration by parts, trigonometric integrals, trigonometric substitution, integration of rational functions by partial fractions, numerical integration, and improper integrals. Volumes using cross-sections, the disk method, the washer method and the shell method. Arc length and surface area. Infinite series, power series, Maclaurin and Taylor series. Polar coordinates and areas and lengths in polar coordinates.",
-      "prerequisites": [
+      "id" : "MATH.1320",
+      "name" : "Calculus II",
+      "credits" : "4",
+      "rating" : 4,
+      "description" : "Serves as a continuation of Calculus I. Integration and techniques of integration including the substitution method, integration by parts, trigonometric integrals, trigonometric substitution, integration of rational functions by partial fractions, numerical integration, and improper integrals. Volumes using cross-sections, the disk method, the washer method and the shell method. Arc length and surface area. Infinite series, power series, Maclaurin and Taylor series. Polar coordinates and areas and lengths in polar coordinates.",
+      "prerequisites" : [
         "MATH.1310"
       ],
-      "keywords": ["math"]
+      "keywords" : [
+        "math"
+      ],
+      "teacher" : "Maureen Hamilton"
     },
     {
-      "id": "MATH.3860",
-      "name": "Probability & Statistics I",
-      "credits": "3",
-      "rating": 2,
-      "description": "Provides a one-semester course in probability and statistics with applications in the engineering sciences. Probability of events, discrete and continuous random variables cumulative distribution, moment generatory functions, chi-square distribution, density functions, distributions. Introduction to estimation, hypothesis testing, regression and correlation. No credit for both MATH.3860 and MATH.4070.",
-      "prerequisites": [
-
+      "id" : "MATH.3860",
+      "name" : "Probability & Statistics I",
+      "credits" : "3",
+      "rating" : 2,
+      "description" : "Provides a one-semester course in probability and statistics with applications in the engineering sciences. Probability of events, discrete and continuous random variables cumulative distribution, moment generatory functions, chi-square distribution, density functions, distributions. Introduction to estimation, hypothesis testing, regression and correlation. No credit for both MATH.3860 and MATH.4070.",
+      "prerequisites" : [
         "MATH.1320"
       ],
-      "keywords": ["math", "AI"]
+      "keywords" : [
+        "math",
+        "AI"
+      ],
+      "teacher" : "Maureen Hamilton"
     },
     {
-      "id": "MATH.3210",
-      "name": "Discrete Structures I",
-      "credits": "3",
-      "rating": 4,
-      "description": "Presents propositional logic, combinatorics, methods of proof, mathematical systems, algebra of sets, matrix algebra, relations and functions, recursion and generating functions, applications to computer science, and graph theory.",
-      "prerequisites": [
-
+      "id" : "MATH.3210",
+      "name" : "Discrete Structures I",
+      "credits" : "3",
+      "rating" : 4,
+      "description" : "Presents propositional logic, combinatorics, methods of proof, mathematical systems, algebra of sets, matrix algebra, relations and functions, recursion and generating functions, applications to computer science, and graph theory.",
+      "prerequisites" : [
         "MATH.1310"
       ],
-      "keywords": ["logic", "math"]
+      "keywords" : [
+        "logic",
+        "math"
+      ],
+      "teacher" : "Ravi Montenegro"
     },
     {
-      "id": "MATH.3220",
-      "name": "Discrete Structures II",
-      "credits": "3",
-      "rating": 5,
-      "description": "Examines graph theory, trees, algebraic systems, Boolean algebra, groups, monoids, automata, machines, rings and fields, applications to coding theory, logic design, and sorting.",
-      "prerequisites": [
-
+      "id" : "MATH.3220",
+      "name" : "Discrete Structures II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Examines graph theory, trees, algebraic systems, Boolean algebra, groups, monoids, automata, machines, rings and fields, applications to coding theory, logic design, and sorting.",
+      "prerequisites" : [
         "MATH.3210"
       ],
-      "keywords": ["logic", "math"]
+      "keywords" : [
+        "logic",
+        "math"
+      ],
+      "teacher" : "Ravi Montenegro"
     },
     {
-      "id": "EECE.2650",
-      "name": "Logic Design",
-      "credits": "3",
-      "rating": 3,
-      "description": "Number systems and binary codes. Boolean algebra. Canonical and fundamental forms of Boolean functions. Function expansion and its applications to digital circuit design. Minimization of Boolean functions by Boolean algebra and Karnaugh maps. Two-level and multi-level digital circuits. Decoder, encoders, multiplexers, and de-multiplexers. Latches and flip-flops. Registers and counters. Analysis and synthesis of synchronous sequential circuits. Design of more complex circuits: data-path and control circuits. This course includes a laboratory component in which students apply the design principles learned in lectures to the design of combinational circuits, synchronous sequential circuits, and a serial arithmetic processor.",
-      "prerequisites": [
-
+      "id" : "EECE.2650",
+      "name" : "Logic Design",
+      "credits" : "3",
+      "rating" : 3,
+      "description" : "Number systems and binary codes. Boolean algebra. Canonical and fundamental forms of Boolean functions. Function expansion and its applications to digital circuit design. Minimization of Boolean functions by Boolean algebra and Karnaugh maps. Two-level and multi-level digital circuits. Decoder, encoders, multiplexers, and de-multiplexers. Latches and flip-flops. Registers and counters. Analysis and synthesis of synchronous sequential circuits. Design of more complex circuits: data-path and control circuits. This course includes a laboratory component in which students apply the design principles learned in lectures to the design of combinational circuits, synchronous sequential circuits, and a serial arithmetic processor.",
+      "prerequisites" : [
         "COMP.1020"
       ],
-      "keywords": ["cs", "embedded system", "circuits", "logic"]
-    }, {
-      "id": "ENGL.1010",
-      "name": "College Writing I",
-      "credits": "3",
-      "rating": 5,
-      "description": "A workshop course that thoroughly explores the writing process from pre-writing to revision, with an emphasis on critical thinking, sound essay structure, mechanics, and academic integrity. Students will read, conduct rhetorical analyses, and practice the skills required for participation in academic discourse. Students will write expository essays throughout the semester, producing a minimum of four formal essays.",
-      "keywords": ["writing"]
-    }, {
-      "id": "ENGL.1020",
-      "name": "College Writing II",
-      "credits": "3",
-      "rating": 5,
-      "description": "A workshop course that thoroughly explores the academic research writing process with an emphasis on entering into academic conversation. Building on the skills acquired in College Writing I, students will learn to write extensively with source material. Key skills addressed include finding,assessing, and integrating primary and secondary sources, and using proper documentation to ensure academic integrity. Students will produce analytical writing throughout the semester, including a minimum of four formal, researched essays.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "embedded system",
+        "circuits",
+        "logic"
+      ]
+    },
+    {
+      "id" : "ENGL.1010",
+      "name" : "College Writing I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A workshop course that thoroughly explores the writing process from pre-writing to revision, with an emphasis on critical thinking, sound essay structure, mechanics, and academic integrity. Students will read, conduct rhetorical analyses, and practice the skills required for participation in academic discourse. Students will write expository essays throughout the semester, producing a minimum of four formal essays.",
+      "keywords" : [
+        "writing"
+      ]
+    },
+    {
+      "id" : "ENGL.1020",
+      "name" : "College Writing II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A workshop course that thoroughly explores the academic research writing process with an emphasis on entering into academic conversation. Building on the skills acquired in College Writing I, students will learn to write extensively with source material. Key skills addressed include finding,assessing, and integrating primary and secondary sources, and using proper documentation to ensure academic integrity. Students will produce analytical writing throughout the semester, including a minimum of four formal, researched essays.",
+      "prerequisites" : [
         "ENGL.1010"
       ],
-      "keywords": ["writing"]
-    }, {
-      "id": "COMP.1000",
-      "name": "Media Computing",
-      "credits": "3",
-      "rating": 5,
-      "description": "An introductory course to computer programming using multimedia applications such as images, video and audio. Linear data structures representing multimedia data are manipulated with loops and conditionals in the Python language.",
-      "keywords": ["cs", "python"]
-    }, {
-      "id": "COMP.1010",
-      "name": "Computing I",
-      "credits": "3",
-      "rating": 5,
-      "description": "Introduction to computing environments: introduction to an integrated development environment; C, C++, or a similar language. Linear data structures; arrays, records, and linked lists. Abstract data types, stacks, and queues. Simple sorting via exchange, selection, and insertion, basic file I/O. Programming style documentation and testing. Ethical and social issues. Effective Fall 2013, corequisites 91.103 Computing 1 Lab.",
-
-      "corequisites": [
+      "keywords" : [
+        "writing"
+      ]
+    },
+    {
+      "id" : "COMP.1000",
+      "name" : "Media Computing",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "An introductory course to computer programming using multimedia applications such as images, video and audio. Linear data structures representing multimedia data are manipulated with loops and conditionals in the Python language.",
+      "keywords" : [
+        "cs",
+        "python"
+      ]
+    },
+    {
+      "id" : "COMP.1010",
+      "name" : "Computing I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Introduction to computing environments: introduction to an integrated development environment; C, C++, or a similar language. Linear data structures; arrays, records, and linked lists. Abstract data types, stacks, and queues. Simple sorting via exchange, selection, and insertion, basic file I/O. Programming style documentation and testing. Ethical and social issues. Effective Fall 2013, corequisites 91.103 Computing 1 Lab.",
+      "corequisites" : [
         "COMP.1030L"
       ],
-      "keywords": ["cs", "c"]
-    }, {
-      "id": "COMP.1020",
-      "name": "Computing II",
-      "credits": "3",
-      "rating": 5,
-      "description": "Computing II focuses on the implementation and applications of data structures, including arrays, linked lists, stacks, queues, trees, binary trees, binary search trees, heaps, graphs, and hash tables. Recursive approaches are used. Performance analysis is discussed. Attention is paid to programming style, documentation, and testing. This course includes extensive laboratory work. Effective Fall 2013, corequisites: Computing 2 Lab.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "c"
+      ],
+      "teacher" : "David Adams"
+    },
+    {
+      "id" : "COMP.1020",
+      "name" : "Computing II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Computing II focuses on the implementation and applications of data structures, including arrays, linked lists, stacks, queues, trees, binary trees, binary search trees, heaps, graphs, and hash tables. Recursive approaches are used. Performance analysis is discussed. Attention is paid to programming style, documentation, and testing. This course includes extensive laboratory work. Effective Fall 2013, corequisites: Computing 2 Lab.",
+      "prerequisites" : [
         "COMP 1010",
         "COMP 1030L"
       ],
-      "keywords": ["cs", "c", "data", "structures"]
+      "keywords" : [
+        "cs",
+        "c",
+        "data",
+        "structures"
+      ],
+      "teacher" : "David Adams"
     },
     {
-      "id": "COMP.1030L",
-      "name": "Computing I Lab",
-      "credits": "1",
-      "rating": 5,
-      "description": "This is the lab class for COMP.1010  Computing I. This class must be taken with COMP.1010  Computing I in the same semester.",
-      "keywords": ["cs", "c", "c++", "lab"]
+      "id" : "COMP.1030L",
+      "name" : "Computing I Lab",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "This is the lab class for COMP.1010  Computing I. This class must be taken with COMP.1010  Computing I in the same semester.",
+      "keywords" : [
+        "cs",
+        "c",
+        "c++",
+        "lab"
+      ],
+      "teacher" : "David Adams"
     },
     {
-      "id": "COMP.1040L",
-      "name": "Computing II Lab",
-      "credits": "1",
-      "rating": 5,
-      "description": "This is a lab class for 91.102 Computing II. This class must be taken with 91.102 Computing II in the same semester.",
-      "corequisites": [
+      "id" : "COMP.1040L",
+      "name" : "Computing II Lab",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "This is a lab class for 91.102 Computing II. This class must be taken with 91.102 Computing II in the same semester.",
+      "corequisites" : [
         "COMP.1020"
       ],
-      "keywords": ["cs", "c", "c++", "lab"]
+      "keywords" : [
+        "cs",
+        "c",
+        "c++",
+        "lab"
+      ],
+      "teacher" : "David Adams"
     },
     {
-      "id": "COMP.1080",
-      "name": "Intro to App Des & Mobile Comp",
-      "credits": "3",
-      "rating": 5,
-      "description": "This course is an introduction to design principles of applications (apps) that run on mobile devices (smart phones and tablet computers). The course focuses on software interaction design and computational thinking. Students will gain theoretical knowledge and design skills in these domains by building a series of apps that run on the Android platform using MIT App. Inventor software. The course will also include discussion of societal impacts of computing.",
-      "keywords": ["cs", "app design"]
+      "id" : "COMP.1080",
+      "name" : "Intro to App Des & Mobile Comp",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This course is an introduction to design principles of applications (apps) that run on mobile devices (smart phones and tablet computers). The course focuses on software interaction design and computational thinking. Students will gain theoretical knowledge and design skills in these domains by building a series of apps that run on the Android platform using MIT App. Inventor software. The course will also include discussion of societal impacts of computing.",
+      "keywords" : [
+        "cs",
+        "app design"
+      ]
     },
     {
-      "id": "COMP.1120",
-      "name": "Undeclared Science Seminar",
-      "credits": "1",
-      "rating": 5,
-      "description": "Discussions will be conducted on a wide range of topics in the sciences to familiarize the student with the programs, procedures, research, and educational opportunities at the University.",
-      "keywords": ["cs"]
+      "id" : "COMP.1120",
+      "name" : "Undeclared Science Seminar",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "Discussions will be conducted on a wide range of topics in the sciences to familiarize the student with the programs, procedures, research, and educational opportunities at the University.",
+      "keywords" : [
+        "cs"
+      ]
     },
     {
-      "id": "COMP.1130",
-      "name": "Exploring the Internet",
-      "credits": "3",
-      "rating": 5,
-      "description": "An introduction to internet technologies and how they intersect with social, political, and economic issues. Includes: the history of the internet, how it's presently managed, how information is transferred between servers and clients, collaborative web technologies, search engines, encryption, digital rights management, certificate authorities, phishing and other malware, and privacy concerns. Students will build a basic website using HTML and CSS.",
-      "keywords": ["cs", "web development"]
+      "id" : "COMP.1130",
+      "name" : "Exploring the Internet",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "An introduction to internet technologies and how they intersect with social, political, and economic issues. Includes: the history of the internet, how it's presently managed, how information is transferred between servers and clients, collaborative web technologies, search engines, encryption, digital rights management, certificate authorities, phishing and other malware, and privacy concerns. Students will build a basic website using HTML and CSS.",
+      "keywords" : [
+        "cs",
+        "web development"
+      ]
     },
     {
-      "id": "COMP.1500",
-      "name": "Topics In Computer Science",
-      "credits": "3",
-      "rating": 5,
-      "description": "There is currently no description available for this course.",
-      "keywords": ["cs"]
+      "id" : "COMP.1500",
+      "name" : "Topics In Computer Science",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "There is currently no description available for this course.",
+      "keywords" : [
+        "cs"
+      ]
     },
     {
-      "id": "COMP.2010",
-      "name": "Computing III",
-      "credits": "3",
-      "rating": 5,
-      "description": "This course presents an introduction to object-oriented software development using the C++ programming language. The main ideas are encapsulation, class hierarchy and inheritance, polymorphism, copy control, operator overloading, dynamic memory management, and templates. Additional topics include the Standard Template Library (containers and iterators), class design diagrams, and exception handling.",
-      "prerequisites": [
-
+      "id" : "COMP.2010",
+      "name" : "Computing III",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This course presents an introduction to object-oriented software development using the C++ programming language. The main ideas are encapsulation, class hierarchy and inheritance, polymorphism, copy control, operator overloading, dynamic memory management, and templates. Additional topics include the Standard Template Library (containers and iterators), class design diagrams, and exception handling.",
+      "prerequisites" : [
         "COMP.1020"
       ],
-      "corequisites": [
+      "corequisites" : [
         "COMP.2010L"
       ],
-      "keywords": ["cs", "c", "c++", "object-oriented"]
+      "keywords" : [
+        "cs",
+        "c",
+        "c++",
+        "object-oriented"
+      ],
+      "teacher" : "David Adams"
     },
     {
-      "id": "COMP.2010L",
-      "name": "Computing III Lab",
-      "credits": "1",
-      "rating": 5,
-      "description": "This is the lab class for COMP.2010  Computing lll. This class must be taken with COMP.2010  Computing lll in the same semester.",
-      "prerequisites": [
-
+      "id" : "COMP.2010L",
+      "name" : "Computing III Lab",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "This is the lab class for COMP.2010  Computing lll. This class must be taken with COMP.2010  Computing lll in the same semester.",
+      "prerequisites" : [
         "COMP.1020"
       ],
-      "corequisites": [
+      "corequisites" : [
         "COMP.2010"
       ],
-      "keywords": ["cs", "c", "c++", "lab"]
+      "keywords" : [
+        "cs",
+        "c",
+        "c++",
+        "lab"
+      ],
+      "teacher" : "David Adams"
     },
     {
-      "id": "COMP.2030",
-      "name": "Assembly Language Programming",
-      "credits": "3",
-      "rating": 5,
-      "description": "Presents the organization and operation of a conventional computer, including principal instruction types, data representation, addressing modes, program control, I/O, assembly language programming, including instruction mnemonics, symbolic addresses, assembler directives, system calls, and macros, the usage of text editors, symbolic debuggers, and loaders, and the use of pseudocode in guiding structured assembly language programming.",
-      "prerequisites": [
-
+      "id" : "COMP.2030",
+      "name" : "Assembly Language Programming",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Presents the organization and operation of a conventional computer, including principal instruction types, data representation, addressing modes, program control, I/O, assembly language programming, including instruction mnemonics, symbolic addresses, assembler directives, system calls, and macros, the usage of text editors, symbolic debuggers, and loaders, and the use of pseudocode in guiding structured assembly language programming.",
+      "prerequisites" : [
         "COMP.1020"
       ],
-      "corequisites": [
+      "corequisites" : [
         "COMP.2030L"
       ],
-      "keywords": ["cs", "embedded"]
-    }, {
-      "id": "COMP.2030L",
-      "name": "Assembly Language Programming Lab",
-      "credits": "1",
-      "rating": 5,
-      "description": "This is the lab class for COMP.2030  Computer Organization and Assembly Language. This class must be taken with COMP.2030  in the same semester.",
-      "prerequisites": [
-
-        "COMP.1020"
+      "keywords" : [
+        "cs",
+        "embedded"
       ],
-      "corequisites": [
-        "COMP.2030"
-      ],
-      "keywords": ["cs", "lab"]
+      "teacher" : "David Hendrickson"
     },
     {
-      "id": "COMP.2040",
-      "name": "Computing IV",
-      "credits": "3",
-      "rating": 5,
-      "description": "Advanced C++ programming, which deepens students' understanding of object-oriented analysis and design. Basic software engineering principles and practice, including work with APIs. Topics may include program translation, web software, parsing, and regular expressions.",
-      "prerequisites": [
-
+      "id" : "COMP.2030L",
+      "name" : "Assembly Language Programming Lab",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "This is the lab class for COMP.2030  Computer Organization and Assembly Language. This class must be taken with COMP.2030  in the same semester.",
+      "prerequisites" : [
+        "COMP.1020"
+      ],
+      "corequisites" : [
+        "COMP.2030"
+      ],
+      "keywords" : [
+        "cs",
+        "lab"
+      ],
+      "teacher" : "David Hendrickson"
+    },
+    {
+      "id" : "COMP.2040",
+      "name" : "Computing IV",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Advanced C++ programming, which deepens students' understanding of object-oriented analysis and design. Basic software engineering principles and practice, including work with APIs. Topics may include program translation, web software, parsing, and regular expressions.",
+      "prerequisites" : [
         "COMP.2010"
       ],
-      "keywords": ["cs", "c", "c++"]
-    }, {
-      "id": "COMP.3010",
-      "name": "Organization of Programming Languages",
-      "credits": "3",
-      "rating": 5,
-      "description": "Analytical approach to the study of programming languages. Description of the salient features of the imperative, functional, logical, and object-oriented programming paradigms in a suitable metalanguage such as Scheme. Topics include iteration, recursion, higher-order functions, types, inheritance, unification, message passing, orders of evaluation, and scope rules. Elementary syntactic and semantic descriptions. Implementation of simple interpreters.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "c",
+        "c++"
+      ],
+      "teacher" : "David Adams"
+    },
+    {
+      "id" : "COMP.3010",
+      "name" : "Organization of Programming Languages",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Analytical approach to the study of programming languages. Description of the salient features of the imperative, functional, logical, and object-oriented programming paradigms in a suitable metalanguage such as Scheme. Topics include iteration, recursion, higher-order functions, types, inheritance, unification, message passing, orders of evaluation, and scope rules. Elementary syntactic and semantic descriptions. Implementation of simple interpreters.",
+      "prerequisites" : [
         "COMP.2010"
       ],
-      "keywords": ["cs", "theory"]
-    }, {
-      "id": "COMP.3040",
-      "name": "Foundations of Computer Science",
-      "credits": "3",
-      "rating": 5,
-      "description": "A survey of the mathematical foundations of Computer Science. Finite automata and regular languages. Stack Acceptors and Context-Free Languages. Turing Machines, recursive and recursively enumerable sets. Decidability. Complexity. This course involves no computer programming.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "theory"
+      ]
+    },
+    {
+      "id" : "COMP.3040",
+      "name" : "Foundations of Computer Science",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A survey of the mathematical foundations of Computer Science. Finite automata and regular languages. Stack Acceptors and Context-Free Languages. Turing Machines, recursive and recursively enumerable sets. Decidability. Complexity. This course involves no computer programming.",
+      "prerequisites" : [
         "COMP.1020",
         "MATH.3220"
       ],
-      "keywords": ["cs", "theory"]
-    }, {
-      "id": "COMP.3050",
-      "name": "Computer Architecture",
-      "credits": "3",
-      "rating": 5,
-      "description": "Examines the basic functional components of a computer system including the CPU, memory systems, and I/O systems. Each of these three areas will be developed in detail with a focus on the system design and component integration. Topics will include CPU control and ALU operation, computer timing, data address and I/O bus activity, addressing model, programmed and DMA I/O, and instruction sets and micro code.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "theory"
+      ]
+    },
+    {
+      "id" : "COMP.3050",
+      "name" : "Computer Architecture",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Examines the basic functional components of a computer system including the CPU, memory systems, and I/O systems. Each of these three areas will be developed in detail with a focus on the system design and component integration. Topics will include CPU control and ALU operation, computer timing, data address and I/O bus activity, addressing model, programmed and DMA I/O, and instruction sets and micro code.",
+      "prerequisites" : [
         "EECE.2650",
         "COMP.1020",
         "COMP.2030"
       ],
-      "keywords": ["cs", "embedded systems"]
-    }, {
-      "id": "COMP.3080",
-      "name": "Operating Systems",
-      "credits": "3",
-      "rating": 5,
-      "description": "Presents an introduction to major operating systems and their components. Topics include processes, concurrency and synchronization, deadlock, processor allocation, memory management, I/O devices and file management, and distributed processing. Techniques in operating system design, implementation, and evaluation will be examined.",
-      "prerequisites": [
-
-        "COMP.3050"
+      "keywords" : [
+        "cs",
+        "embedded systems"
       ],
-      "keywords": ["cs", "embedded systems"]
+      "teacher" : "David Hendrickson"
     },
     {
-      "id": "COMP.3090",
-      "name": "Database I",
-      "credits": "3",
-      "rating": 5,
-      "description": "The Database I and II course pair provides students with a comprehensive introduction to data modeling, design of databases, use of database management systems for applications, and exploration into the building of databases. Database I covers relational data models, relational algebra and SQL -- The standard language for creating, querying, and modifying relational databases.",
-      "prerequisites": [
-
+      "id" : "COMP.3080",
+      "name" : "Operating Systems",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Presents an introduction to major operating systems and their components. Topics include processes, concurrency and synchronization, deadlock, processor allocation, memory management, I/O devices and file management, and distributed processing. Techniques in operating system design, implementation, and evaluation will be examined.",
+      "prerequisites" : [
+        "COMP.3050"
+      ],
+      "keywords" : [
+        "cs",
+        "embedded systems"
+      ],
+      "Teacher" : "Bill Maloney"
+    },
+    {
+      "id" : "COMP.3090",
+      "name" : "Database I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "The Database I and II course pair provides students with a comprehensive introduction to data modeling, design of databases, use of database management systems for applications, and exploration into the building of databases. Database I covers relational data models, relational algebra and SQL -- The standard language for creating, querying, and modifying relational databases.",
+      "prerequisites" : [
         "COMP.2040"
       ],
-      "keywords": ["cs", "web development"]
-    }, {
-      "id": "COMP.3100",
-      "name": "Database II",
-      "credits": "3",
-      "rating": 5,
-      "description": "Advanced topics in database systems. The database I and II course pair provides students with a comprehensive introduction to data modeling, design of databases, use of database management systems for applications, and exploration into the building of databases. Database II focuses on database design with Entity-Relationship (E-R) models. Students design and implement a web-based database using MySQL and PHP.",
-      "prerequisites": [
-
-        "COMP.3090"
-      ],
-      "keywords": ["cs", "web development"]
-    }, {
-      "id": "COMP.3500",
-      "name": "Special Topics",
-      "credits": "3",
-      "rating": 5,
-      "description": "This course will study the emerging IOT (Internet of Things) market; the technology, technology drivers, market segments, market segment difference, industry trends, security implications, and current residential commercial offering. The course will require a hands on lab. During this lab each student will be required to create an IOT device with a Raspberry Pi and their choice of sensor. The device will need to be managed with IOS or Android application. The group will have an opportunity to get extra credit creating a system environment that federates the devices created and starts a rudimentary lab data analytics capability.",
-      "prerequisites": [
-
-        "COMP.3050"
-      ],
-      "keywords": ["cs", "web development"]
-    }, {
-      "id": "COMP.3611",
-      "name": "Introduction to Computer Security",
-      "credits": "3",
-      "rating": 5,
-      "description": "This class introduces students to computer security. The class will cover topics including overview of computer security, access control matrix, foundational results, security policies, confidentiality policies, integrity policies, hybrid policies, basic cryptography, key management, cipher techniques, authentication, design principles, representing identity, access control mechanisms, information flow, confinement problem, introduction to assurance, evaluating systems, malicious logic, vulnerability analysis, auditing, Intrusion detection, network security, system security, user security, program security, lattices, the extended euclidean algorithm, virtual machines.",
-      "prerequisites": [
-
-        "COMP.3050"
-      ],
-      "keywords": ["cs", "theory"]
-    }, {
-      "id": "COMP.4010",
-      "name": "Software Project I",
-      "credits": "3",
-      "rating": 5,
-      "description": "Specification, design, and implementation of a one- or two-semester software project proposed to a directing faculty member. Projects may be proposed as a one- or two-semester effort based on faculty approval. A two-semester effort requires subsequent registration for 91.402. Prerequisite: Students must submit a proposal to the directing faculty member, obtain his/her signed approval, and forward a copy of the signed proposal to department chairperson",
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4020",
-      "name": "Software Project II",
-      "credits": "3",
-      "rating": 5,
-      "description": "A continuation of 91.401. Students must submit a proposal to the directing faculty member, obtain his/her signed approval, and forward a copy of the signed proposal to the department chairperson.",
-      "prerequisites": [
-
-        "COMP.4010"
-      ],
-      "keywords": ["cs"]
+      "keywords" : [
+        "cs",
+        "web development"
+      ]
     },
     {
-      "id": "COMP.4040",
-      "name": "Analysis of Algorithms",
-      "credits": "3",
-      "rating": 5,
-      "description": "Development of more sophisticated ideas in data type and structure, with an introduction to the connection between data structures and the algorithms they support. Data abstraction. Controlled access structures. Trees, lists, stacks, queues, graphs, arrays, hash tables. Algorithm design strategies such as divide and conquer. Elementary techniques for analysis; asymptotic analysis, recursion equations, estimation methods, elementary combinatorial arguments. Examination of problem areas such as searching and sorting, and the indicated representations and algorithms. The student will use the techniques learned in this course and in previous courses to solve a number of logically complex programming problems using pseudocode, with an emphasis on establishing algorithmic correctness and estimating time and space complexity.",
-      "prerequisites": [
-
+      "id" : "COMP.3100",
+      "name" : "Database II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Advanced topics in database systems. The database I and II course pair provides students with a comprehensive introduction to data modeling, design of databases, use of database management systems for applications, and exploration into the building of databases. Database II focuses on database design with Entity-Relationship (E-R) models. Students design and implement a web-based database using MySQL and PHP.",
+      "prerequisites" : [
+        "COMP.3090"
+      ],
+      "keywords" : [
+        "cs",
+        "web development"
+      ]
+    },
+    {
+      "id" : "COMP.3500",
+      "name" : "Special Topics",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This course will study the emerging IOT (Internet of Things) market; the technology, technology drivers, market segments, market segment difference, industry trends, security implications, and current residential commercial offering. The course will require a hands on lab. During this lab each student will be required to create an IOT device with a Raspberry Pi and their choice of sensor. The device will need to be managed with IOS or Android application. The group will have an opportunity to get extra credit creating a system environment that federates the devices created and starts a rudimentary lab data analytics capability.",
+      "prerequisites" : [
+        "COMP.3050"
+      ],
+      "keywords" : [
+        "cs",
+        "web development"
+      ]
+    },
+    {
+      "id" : "COMP.3611",
+      "name" : "Introduction to Computer Security",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This class introduces students to computer security. The class will cover topics including overview of computer security, access control matrix, foundational results, security policies, confidentiality policies, integrity policies, hybrid policies, basic cryptography, key management, cipher techniques, authentication, design principles, representing identity, access control mechanisms, information flow, confinement problem, introduction to assurance, evaluating systems, malicious logic, vulnerability analysis, auditing, Intrusion detection, network security, system security, user security, program security, lattices, the extended euclidean algorithm, virtual machines.",
+      "prerequisites" : [
+        "COMP.3050"
+      ],
+      "keywords" : [
+        "cs",
+        "theory"
+      ]
+    },
+    {
+      "id" : "COMP.4010",
+      "name" : "Software Project I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Specification, design, and implementation of a one- or two-semester software project proposed to a directing faculty member. Projects may be proposed as a one- or two-semester effort based on faculty approval. A two-semester effort requires subsequent registration for 91.402. Prerequisite: Students must submit a proposal to the directing faculty member, obtain his/her signed approval, and forward a copy of the signed proposal to department chairperson",
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4020",
+      "name" : "Software Project II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A continuation of 91.401. Students must submit a proposal to the directing faculty member, obtain his/her signed approval, and forward a copy of the signed proposal to the department chairperson.",
+      "prerequisites" : [
+        "COMP.4010"
+      ],
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4040",
+      "name" : "Analysis of Algorithms",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Development of more sophisticated ideas in data type and structure, with an introduction to the connection between data structures and the algorithms they support. Data abstraction. Controlled access structures. Trees, lists, stacks, queues, graphs, arrays, hash tables. Algorithm design strategies such as divide and conquer. Elementary techniques for analysis; asymptotic analysis, recursion equations, estimation methods, elementary combinatorial arguments. Examination of problem areas such as searching and sorting, and the indicated representations and algorithms. The student will use the techniques learned in this course and in previous courses to solve a number of logically complex programming problems using pseudocode, with an emphasis on establishing algorithmic correctness and estimating time and space complexity.",
+      "prerequisites" : [
         "MATH.3220",
         "COMP.1020",
         "MATH.3860"
       ],
-      "keywords": ["cs", "theory"]
-    }, {
-      "id": "COMP.4050",
-      "name": "Parallel Processing",
-      "credits": "3",
-      "rating": 5,
-      "description": "A study of parallel architectures and parallel algorithms, including classification of architectures,characterization of performance, design of parallel algorithms, evaluation of parallelsoftware, and languages for parallel processing. Students will write and execute programs for several different parallel machines.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "theory"
+      ]
+    },
+    {
+      "id" : "COMP.4050",
+      "name" : "Parallel Processing",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A study of parallel architectures and parallel algorithms, including classification of architectures,characterization of performance, design of parallel algorithms, evaluation of parallelsoftware, and languages for parallel processing. Students will write and execute programs for several different parallel machines.",
+      "prerequisites" : [
         "COMP.3080"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4060",
-      "name": "Compiler Construction I",
-      "credits": "3",
-      "rating": 5,
-      "description": "Includes both theory and practice. A study of grammars; specification and classes; the translation pipeline: lexical analysis, parsing, semantic analysis, code generation and optimization; and syntax-directed translation. Use of automatic generation tools in the actual production of a complete compiler for some language.",
-      "keywords": ["cs", "embedded systems"]
-    }, {
-      "id": "COMP.4110",
-      "name": "Software Engineering I",
-      "credits": "3",
-      "rating": 5,
-      "description": "Software Engineering is an essential discipline for any computer science major. In this class you will learn skills that will help you design and build software projects for advanced computer science classes This course provides an introduction to systematic techniques for development of software, i.e. , the Engineering of Software. Topics to be discussed include software life-cycle, group coordination, requirements specification, software design, software testing and software maintenance. Emphasis is given to the development of one complex software system and the system documentation necessary for such a complete software product The students will mock the software cycle via a medium-to-large semester-long project.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4060",
+      "name" : "Compiler Construction I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Includes both theory and practice. A study of grammars; specification and classes; the translation pipeline: lexical analysis, parsing, semantic analysis, code generation and optimization; and syntax-directed translation. Use of automatic generation tools in the actual production of a complete compiler for some language.",
+      "keywords" : [
+        "cs",
+        "embedded systems"
+      ]
+    },
+    {
+      "id" : "COMP.4110",
+      "name" : "Software Engineering I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Software Engineering is an essential discipline for any computer science major. In this class you will learn skills that will help you design and build software projects for advanced computer science classes This course provides an introduction to systematic techniques for development of software, i.e. , the Engineering of Software. Topics to be discussed include software life-cycle, group coordination, requirements specification, software design, software testing and software maintenance. Emphasis is given to the development of one complex software system and the system documentation necessary for such a complete software product The students will mock the software cycle via a medium-to-large semester-long project.",
+      "prerequisites" : [
         "COMP.2040"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4120",
-      "name": "Software Engineering II",
-      "credits": "3",
-      "rating": 5,
-      "description": "Software development methodologies for large-scale systems. Project organization, life cycle concept, data modeling, structured analysis and design, information hiding, and the use of computer-aided software engineering (CASE) tools. Team projects are required; these emphasize the design, documentation, and maintenance of complex software systems. Not open to students who have taken 91.523 Software Engineering I.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4120",
+      "name" : "Software Engineering II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Software development methodologies for large-scale systems. Project organization, life cycle concept, data modeling, structured analysis and design, information hiding, and the use of computer-aided software engineering (CASE) tools. Team projects are required; these emphasize the design, documentation, and maintenance of complex software systems. Not open to students who have taken 91.523 Software Engineering I.",
+      "prerequisites" : [
         "COMP.4110"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4130",
-      "name": "Data Communications I",
-      "credits": "3",
-      "rating": 5,
-      "description": "This course provides an introduction to fundamental concepts in the design and implementation of computer communication networks, their protocols, and applications. Topics include: TCP/IP and OSI layered network architectures and associated protocols, application layer, network programming API (sockets), transport, congestion, flow control, routing, addressing, autonomous systems, multicast and link layer. Examples will be drawn primarily from the Internet.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4130",
+      "name" : "Data Communications I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This course provides an introduction to fundamental concepts in the design and implementation of computer communication networks, their protocols, and applications. Topics include: TCP/IP and OSI layered network architectures and associated protocols, application layer, network programming API (sockets), transport, congestion, flow control, routing, addressing, autonomous systems, multicast and link layer. Examples will be drawn primarily from the Internet.",
+      "prerequisites" : [
         "COMP.3080"
       ],
-      "keywords": ["cs", "web", "development", "theory", "network", "networking"]
-    }, {
-      "id": "COMP.4140",
-      "name": "Data Communications II",
-      "credits": "3",
-      "rating": 5,
-      "description": "A continuation of 91.413. Topics include Multimedia Networks, network Management, Network Security, Wireless and Mobile Networks. Students will track discussion in IETF committees and work in a dedicated network laboratory. Meets Core Curriculum Essential Learning Outcome for Applied & Integrative Learning (AIL) and Information Literacy (IL).",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "web",
+        "development",
+        "theory",
+        "network",
+        "networking"
+      ],
+      "teacher" : "Benyuan Liu"
+    },
+    {
+      "id" : "COMP.4140",
+      "name" : "Data Communications II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A continuation of 91.413. Topics include Multimedia Networks, network Management, Network Security, Wireless and Mobile Networks. Students will track discussion in IETF committees and work in a dedicated network laboratory. Meets Core Curriculum Essential Learning Outcome for Applied & Integrative Learning (AIL) and Information Literacy (IL).",
+      "prerequisites" : [
         "COMP.4140"
       ],
-      "keywords": ["cs", "web", "development", "theory", "network", "networking"]
-    }, {
-      "id": "COMP.4200",
-      "name": "Artificial Intelligence",
-      "credits": "3",
-      "rating": 5,
-      "description": "Topics include: search techniques and their properties, including A*; game-playing, including adversarial and stochastic search; probabilistic reasoning, including Markov Decision Processes and Hidden Markov Models; and reinforcement learning, including value iteration and q-learning. Topics are developed theoretically and with programming assignments. The course includes a student-directed final project and paper.",
-
-      "corequisites": [
+      "keywords" : [
+        "cs",
+        "web",
+        "development",
+        "theory",
+        "network",
+        "networking"
+      ],
+      "teacher" : "Benyuan Liu"
+    },
+    {
+      "id" : "COMP.4200",
+      "name" : "Artificial Intelligence",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Topics include: search techniques and their properties, including A*; game-playing, including adversarial and stochastic search; probabilistic reasoning, including Markov Decision Processes and Hidden Markov Models; and reinforcement learning, including value iteration and q-learning. Topics are developed theoretically and with programming assignments. The course includes a student-directed final project and paper.",
+      "corequisites" : [
         "COMP.3010",
         "MATH.3860"
       ],
-      "keywords": ["cs", "AI"]
-    }, {
-      "id": "COMP.4210",
-      "name": "Data Mining",
-      "credits": "3",
-      "rating": 5,
-      "description": "This introductory data mining course will give an overview of the models and algorithms used in data mining, including association rules, classification, and clustering. The course will teach the theory of these algorithms and students will learn how and why the algorithms work through computer labs.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "AI"
+      ]
+    },
+    {
+      "id" : "COMP.4210",
+      "name" : "Data Mining",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This introductory data mining course will give an overview of the models and algorithms used in data mining, including association rules, classification, and clustering. The course will teach the theory of these algorithms and students will learn how and why the algorithms work through computer labs.",
+      "prerequisites" : [
         "COMP.4200",
         "COMP.3100"
       ],
-      "keywords": ["cs", "AI"]
+      "keywords" : [
+        "cs",
+        "AI"
+      ]
     },
     {
-      "id": "COMP.4220",
-      "name": "Machine Learning",
-      "credits": "3",
-      "rating": 5,
-      "description": "This introductory course gives an overview of machine learning techniques used in data mining and pattern recognition applications. Topics include: foundations of machine learning, including statistical and structural methods; feature discovery and selection; parametric and non-parametric classification; supervised and unsupervised learning; use of contextual evidence; clustering, recognition with strings; small sample-size problems and applications to large datasets.",
-      "prerequisites": [
-
+      "id" : "COMP.4220",
+      "name" : "Machine Learning",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This introductory course gives an overview of machine learning techniques used in data mining and pattern recognition applications. Topics include: foundations of machine learning, including statistical and structural methods; feature discovery and selection; parametric and non-parametric classification; supervised and unsupervised learning; use of contextual evidence; clustering, recognition with strings; small sample-size problems and applications to large datasets.",
+      "prerequisites" : [
         "COMP.1020",
         "MATH.3220",
         "MATH.3860"
       ],
-      "keywords": ["cs", "AI"]
-    }, {
-      "id": "COMP.4230",
-      "name": "Computer Vision I",
-      "credits": "3",
-      "rating": 5,
-      "description": "Computer vision has seen remarkable progress in the last decade, fueled by the ready availability of large online image collections, rapid growth of computational power, and advances in representations and algorithms. Applications range from 3-D scene reconstruction, to visual Simultaneous Localization and Mapping (SLAM) for robotics, to real-time human body pose estimation. This introductory computer vision course explores various fundamental topics in the area, including the principles of image formation, local feature analysis, segmentation, multi-view geometry, image warping and stitching, structure from motion, and object recognition.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "AI"
+      ]
+    },
+    {
+      "id" : "COMP.4230",
+      "name" : "Computer Vision I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Computer vision has seen remarkable progress in the last decade, fueled by the ready availability of large online image collections, rapid growth of computational power, and advances in representations and algorithms. Applications range from 3-D scene reconstruction, to visual Simultaneous Localization and Mapping (SLAM) for robotics, to real-time human body pose estimation. This introductory computer vision course explores various fundamental topics in the area, including the principles of image formation, local feature analysis, segmentation, multi-view geometry, image warping and stitching, structure from motion, and object recognition.",
+      "prerequisites" : [
         "COMP.1020",
         "MATH.1320",
         "MATH.3220"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4270",
-      "name": "Computer Graphics I",
-      "credits": "3",
-      "rating": 5,
-      "description": "Introduction to graphics systems and concepts. History of graphics. Introduction to hardware, software, and mathematical tools. Graphics languages and APIs (OpenGL and other traditional and web-based libraries). Graphics data structures and algorithms for 2D and 3D modeling and viewing. Input, archiving, and display architectures.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4270",
+      "name" : "Computer Graphics I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Introduction to graphics systems and concepts. History of graphics. Introduction to hardware, software, and mathematical tools. Graphics languages and APIs (OpenGL and other traditional and web-based libraries). Graphics data structures and algorithms for 2D and 3D modeling and viewing. Input, archiving, and display architectures.",
+      "prerequisites" : [
         "COMP.2010"
       ],
-      "keywords": ["cs", "computer vision"]
-    }, {
-      "id": "COMP.4280",
-      "name": "Computer Graphics",
-      "credits": "3",
-      "rating": 5,
-      "description": "An advanced course in computer graphics for students familiar with basic issues in computer graphics. Details on hidden line and surface removal. 2D and 3D curve and surface generation, rendering, illumination, and color models, realism through precision (ray tracing) and imprecision (fractals), modern hardware architectures, and animation and simulation systems.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "computer vision"
+      ]
+    },
+    {
+      "id" : "COMP.4280",
+      "name" : "Computer Graphics",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "An advanced course in computer graphics for students familiar with basic issues in computer graphics. Details on hidden line and surface removal. 2D and 3D curve and surface generation, rendering, illumination, and color models, realism through precision (ray tracing) and imprecision (fractals), modern hardware architectures, and animation and simulation systems.",
+      "prerequisites" : [
         "COMP.4280"
       ],
-      "keywords": ["cs", "computer vision"]
-    }, {
-      "id": "COMP.4290",
-      "name": "Bioinformatics for CS",
-      "credits": "3",
-      "rating": 5,
-      "description": "Complete genomic sequences of human, other mammals, and numerous other organisms are known for some time. From early on, comparisons or analyses of genomic sequences require aids of computer programming. After brief introductions to molecular biology for Computer Science students, the course will examine computer algorithms used in bioinformatics problems including sequence alignment, phylogeny, DNA sequencing, and data analyses.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs",
+        "computer vision"
+      ]
+    },
+    {
+      "id" : "COMP.4290",
+      "name" : "Bioinformatics for CS",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Complete genomic sequences of human, other mammals, and numerous other organisms are known for some time. From early on, comparisons or analyses of genomic sequences require aids of computer programming. After brief introductions to molecular biology for Computer Science students, the course will examine computer algorithms used in bioinformatics problems including sequence alignment, phylogeny, DNA sequencing, and data analyses.",
+      "prerequisites" : [
         "COMP.2010"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4420",
-      "name": "Natural Language Processing",
-      "credits": "3",
-      "rating": 5,
-      "description": "This course introduces principles and techniques behind natural language processing (NLP), and covers a large selection of important automatic text processing tasks. Selected topics include n-gram language models, part-of-speech tagging, statistical parsing, word sense disambiguation, discourse segmentation, information extraction, sentiment analysis, machine translation. Quantitative techniques are emphasized, with a focus on applying statistical models to large collections of text. The course provides students with a hands-on experience in building a substantial NLP application of their choice.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4420",
+      "name" : "Natural Language Processing",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This course introduces principles and techniques behind natural language processing (NLP), and covers a large selection of important automatic text processing tasks. Selected topics include n-gram language models, part-of-speech tagging, statistical parsing, word sense disambiguation, discourse segmentation, information extraction, sentiment analysis, machine translation. Quantitative techniques are emphasized, with a focus on applying statistical models to large collections of text. The course provides students with a hands-on experience in building a substantial NLP application of their choice.",
+      "prerequisites" : [
         "COMP.4220"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4500",
-      "name": "Mobile Robotics I",
-      "credits": "3",
-      "rating": 5,
-      "description": "An introduction to robotics, including laboratory. In the lab, students build and program robots. Topics include sensors, locomotion, deliberative, reactive, and hybrid control architectures, computer vision, application domains, and current research.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4500",
+      "name" : "Mobile Robotics I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "An introduction to robotics, including laboratory. In the lab, students build and program robots. Topics include sensors, locomotion, deliberative, reactive, and hybrid control architectures, computer vision, application domains, and current research.",
+      "prerequisites" : [
         "COMP.1020"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4510",
-      "name": "Mobile Robotics II",
-      "credits": "3",
-      "rating": 5,
-      "description": "Advanced topics in robotics, including laboratory. Topics to be covered include probabilistic methods, including sensor modeling, hidden Markov models, particle filters, localization, and map making. Research-level robots are used in the laboratories.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4510",
+      "name" : "Mobile Robotics II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Advanced topics in robotics, including laboratory. Topics to be covered include probabilistic methods, including sensor modeling, hidden Markov models, particle filters, localization, and map making. Research-level robots are used in the laboratories.",
+      "prerequisites" : [
         "COMP.1020"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4570",
-      "name": "Computer Security",
-      "credits": "3",
-      "rating": 5,
-      "description": "Basic concepts of cryptography, data security, information theory, complexity, number theory, and finite field theory; encryption algorithms including the Data Encryption Standard (DES) and public key systems; incorporating cryptographic controls into computers; key management; access controls; information flow controls; and inference controls.",
-      "prerequisites": [
-
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4570",
+      "name" : "Computer Security",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Basic concepts of cryptography, data security, information theory, complexity, number theory, and finite field theory; encryption algorithms including the Data Encryption Standard (DES) and public key systems; incorporating cryptographic controls into computers; key management; access controls; information flow controls; and inference controls.",
+      "prerequisites" : [
         "MATH.3210",
         "COMP.4040",
         "COMP.4130"
       ],
-      "keywords": ["cs", "theory"]
-    }, {
-      "id": "COMP.4600",
-      "name": "Selected Topics",
-      "credits": "3",
-      "rating": 5,
-      "description": "Depends on faculty interest, student demand, and developments in the field.",
-      "prerequisites": [
-
-        "Junior or Senior Status."
-      ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4610",
-      "name": "Graphical User Interface Programming I",
-      "credits": "3",
-      "rating": 5,
-      "description": "This is a first course in the design and implementation of graphical user interfaces (GUIs) for web-based environments. The course requires the completion of several client-side programming projects that are evaluated on design and layout of the user interface, coding style, and comprehensiveness of documentation. Students learn to create web pages using HTML, CSS, JavaScript, jQuery, and a variety of jQuery plugins. Server-side techniques using PHP and MySQL are explored if time permits. The course may be taken on its own, but is intended to be followed by 91.462 to complete a two-course CS project sequence.",
-      "prerequisites": [
-
-        "COMP.2010"
-      ],
-      "keywords": ["cs", "web development", "computer vision"]
-    }, {
-      "id": "COMP.4611",
-      "name": "Cyber Crime Investigation",
-      "credits": "3",
-      "rating": 5,
-      "description": "This class introduces students to computer forensics and network forensics, which are two major components of digital forensics. The class will cover topics including introduction to criminology, legal compliance, applicable laws, affidavits, root cause analysis, case law, chain of custody, digital Investigations, authentication of evidence, metadata, using virtual machines for analysis, how to testify, E-Discovery, HIPAA/FERPA, computer security act, Sarbanes - Oxley Act, Gramm - Leach - Bliley Act, Children's Online Privacy Protection Act (COPPA), payment card industry data security standard (PCI D55), state, US and international standards/Jurisdictions, laws and authorities, US Patriot Act, problem solving, log-file analysis, interlacing of device and network forensics, etc.",
-      "prerequisites": [
-
-        "COMP.4130"
-      ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4620",
-      "name": "Graphical User Interface Programming II",
-      "credits": "3",
-      "rating": 5,
-      "description": "A second course in the design and implementation of graphical user interfaces for web-based environments. The course requires the completion of a semester-long project done with others as a team. It explores the writing of a project proposal, the development and presentation of alpha and beta versions, usability testing, and a final presentation to an external audience.",
-      "prerequisites": [
-
-        "COMP.4610"
-      ],
-      "keywords": ["cs", "web development", "computer vision"]
-    }, {
-      "id": "COMP.4630",
-      "name": "Mobile App Programming l",
-      "credits": "3",
-      "rating": 5,
-      "description": "This is a first course in the design and implementation of mobile applications. The course requires the completion of several Android programming projects that are evaluated on the functional correctness, coding style, and documentation. Students learn the fundamental principles of Android components, application architectures, and common Android libraries to create non-trivial mobile applications. The course may be taken on its own, but is intended to be followed by Mobile App Programming ll to complete a two-course CS project sequence.",
-      "prerequisites": [
-
-        "COMP.2040"
-      ],
-      "keywords": ["cs", "web development", "app design"]
-    }, {
-      "id": "COMP.4631",
-      "name": "Mobile App Programming ll",
-      "credits": "3",
-      "rating": 5,
-      "description": "A second course in the design and implementation of mobile applications on Android platform. The course requires the completion of a semester-long project done with others as a team. It explores the writing of a project proposal, the development and presentation of alpha and beta versions, usability testing, and a final presentation to an external audience.",
-      "prerequisites": [
-
-        "COMP.4630"
-      ],
-      "keywords": ["cs", "web development", "app design"]
-    }, {
-      "id": "COMP.4800",
-      "name": "Honors Project I",
-      "credits": "3",
-      "rating": 5,
-      "description": "This course provides an undergraduate research experience for Computer Science majors enrolled in the Honors Program. Each student develops a project idea in consultation with the instructor. The student writes a proposal for the project, reads the relevant literature, performs the project, writes a project report or thesis, and makes an oral presentation about the project.",
-      "prerequisites": [
-
-        "Level is Junior or Senior standing."
-      ],
-      "keywords": ["cs"]
+      "keywords" : [
+        "cs",
+        "theory"
+      ]
     },
     {
-      "id": "COMP.4810",
-      "name": "Honors Project II",
-      "credits": "3",
-      "rating": 5,
-      "description": "In this course, students continue and complete the project started in 91.480 Honors Project I.",
-      "prerequisites": [
-
+      "id" : "COMP.4600",
+      "name" : "Selected Topics",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "Depends on faculty interest, student demand, and developments in the field.",
+      "prerequisites" : [
+        "Junior or Senior Status."
+      ],
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4610",
+      "name" : "Graphical User Interface Programming I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This is a first course in the design and implementation of graphical user interfaces (GUIs) for web-based environments. The course requires the completion of several client-side programming projects that are evaluated on design and layout of the user interface, coding style, and comprehensiveness of documentation. Students learn to create web pages using HTML, CSS, JavaScript, jQuery, and a variety of jQuery plugins. Server-side techniques using PHP and MySQL are explored if time permits. The course may be taken on its own, but is intended to be followed by 91.462 to complete a two-course CS project sequence.",
+      "prerequisites" : [
+        "COMP.2010"
+      ],
+      "keywords" : [
+        "cs",
+        "web development",
+        "computer vision"
+      ]
+    },
+    {
+      "id" : "COMP.4611",
+      "name" : "Cyber Crime Investigation",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This class introduces students to computer forensics and network forensics, which are two major components of digital forensics. The class will cover topics including introduction to criminology, legal compliance, applicable laws, affidavits, root cause analysis, case law, chain of custody, digital Investigations, authentication of evidence, metadata, using virtual machines for analysis, how to testify, E-Discovery, HIPAA/FERPA, computer security act, Sarbanes - Oxley Act, Gramm - Leach - Bliley Act, Children's Online Privacy Protection Act (COPPA), payment card industry data security standard (PCI D55), state, US and international standards/Jurisdictions, laws and authorities, US Patriot Act, problem solving, log-file analysis, interlacing of device and network forensics, etc.",
+      "prerequisites" : [
+        "COMP.4130"
+      ],
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4620",
+      "name" : "Graphical User Interface Programming II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A second course in the design and implementation of graphical user interfaces for web-based environments. The course requires the completion of a semester-long project done with others as a team. It explores the writing of a project proposal, the development and presentation of alpha and beta versions, usability testing, and a final presentation to an external audience.",
+      "prerequisites" : [
+        "COMP.4610"
+      ],
+      "keywords" : [
+        "cs",
+        "web development",
+        "computer vision"
+      ]
+    },
+    {
+      "id" : "COMP.4630",
+      "name" : "Mobile App Programming l",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This is a first course in the design and implementation of mobile applications. The course requires the completion of several Android programming projects that are evaluated on the functional correctness, coding style, and documentation. Students learn the fundamental principles of Android components, application architectures, and common Android libraries to create non-trivial mobile applications. The course may be taken on its own, but is intended to be followed by Mobile App Programming ll to complete a two-course CS project sequence.",
+      "prerequisites" : [
+        "COMP.2040"
+      ],
+      "keywords" : [
+        "cs",
+        "web development",
+        "app design"
+      ]
+    },
+    {
+      "id" : "COMP.4631",
+      "name" : "Mobile App Programming ll",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "A second course in the design and implementation of mobile applications on Android platform. The course requires the completion of a semester-long project done with others as a team. It explores the writing of a project proposal, the development and presentation of alpha and beta versions, usability testing, and a final presentation to an external audience.",
+      "prerequisites" : [
+        "COMP.4630"
+      ],
+      "keywords" : [
+        "cs",
+        "web development",
+        "app design"
+      ]
+    },
+    {
+      "id" : "COMP.4800",
+      "name" : "Honors Project I",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "This course provides an undergraduate research experience for Computer Science majors enrolled in the Honors Program. Each student develops a project idea in consultation with the instructor. The student writes a proposal for the project, reads the relevant literature, performs the project, writes a project report or thesis, and makes an oral presentation about the project.",
+      "prerequisites" : [
+        "Level is Junior or Senior standing."
+      ],
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4810",
+      "name" : "Honors Project II",
+      "credits" : "3",
+      "rating" : 5,
+      "description" : "In this course, students continue and complete the project started in 91.480 Honors Project I.",
+      "prerequisites" : [
         "COMP.4800"
       ],
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4900",
-      "name": "Directed Studies in Computer Science",
-      "credits": "1",
-      "rating": 5,
-      "description": "Individual study for a student desiring more advanced or more specialized work. This course may not be taken more than twice and may not be substituted for scheduled offerings.",
-      "keywords": ["cs"]
-    }, {
-      "id": "COMP.4930",
-      "name": "Cooperative Education in Computer Science",
-      "credits": "1",
-      "rating": 5,
-      "description": "Supervision of cooperative educational experiences in Computer Science.",
-      "keywords": ["cs"]
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4900",
+      "name" : "Directed Studies in Computer Science",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "Individual study for a student desiring more advanced or more specialized work. This course may not be taken more than twice and may not be substituted for scheduled offerings.",
+      "keywords" : [
+        "cs"
+      ]
+    },
+    {
+      "id" : "COMP.4930",
+      "name" : "Cooperative Education in Computer Science",
+      "credits" : "1",
+      "rating" : 5,
+      "description" : "Supervision of cooperative educational experiences in Computer Science.",
+      "keywords" : [
+        "cs"
+      ]
     }
   ]
 }

@@ -1,0 +1,58 @@
+{
+  "database" : [
+    {
+      "name" : "David Hendrickson",
+      "reviews" : [
+        {
+          "text" : "Very good teacher. Is enthusiastic about teaching and always answeres questions.",
+          "rating" : 5
+        }
+      ]
+    },
+    {
+      "name" : "Bill Malony",
+      "reviews" : [
+        {
+          "text" : "Very knowledgable about the subjects he teaches. Expect alot of homework, but he gives you alot of starter code.",
+          "rating" : 4
+        }
+      ]
+    },
+    {
+      "name" : "Benyuan Liu",
+      "reviews" : [
+        {
+          "text" : "Cool teacher! Class is layed back but that atmosphere helps you learn alot about the material. Tests are difficult but very managable if you payed atention in class.",
+          "rating" : 5
+        }
+      ]
+    },
+    {
+      "name" : "David Adams",
+      "reviews" : [
+        {
+          "text" : "Great teacher! Really knows what he is talking about and is willing to help his students learn.",
+          "rating" : 5
+        }
+      ]
+    },
+    {
+      "name" : "Maureen Hamilton",
+      "reviews" : [
+        {
+          "text" : "Avoid at all costs!",
+          "rating" : 1
+        }
+      ]
+    },
+    {
+      "name" : "Ravi Montenegro",
+      "reviews" : [
+        {
+          "text" : "Difficult but really good. Teaches alot of new material that isn't typically taught in scool.",
+          "rating" : 4
+        }
+      ]
+    }
+  ]
+}
