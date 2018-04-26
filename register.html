@@ -1,0 +1,61 @@
+<!--
+ Christian Okoli, Rushabh Doshi, Tim Barber
+ GUI Programming II
+-->
+
+<!doctype html>
+<html lang="en">
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCt8C-S2Z-T6ROWW52P-m5mE4FbOVlJ_dY",
+    authDomain: "plan-by-requirments.firebaseapp.com",
+    databaseURL: "https://plan-by-requirments.firebaseio.com",
+    projectId: "plan-by-requirments",
+    storageBucket: "plan-by-requirments.appspot.com",
+    messagingSenderId: "25522755792"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Plan By Requirement</title>
+  <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body background="initial.jpg">
+
+  <!--Form to enter table paremeters-->
+  <div id=TableEntry>
+    <form name="regForm" onsubmit="return validateForm()" method="post">
+      Email: <input type="text" onkeydown="return isEmail(event)" name="email" required><br>
+      Password: <input type="text" name="pass" required><br>
+      Confirm Password: <input type="text" onkeydown="return isValidPass(event)" name="confPass" required><br>
+      First Name: <input type="text" name="firstName" required><br>
+      Last Name: <input type="text" name="lastName" required><br>
+      Major: <select name="cars">
+      <option value="CS">Computer Science</option>
+      <option value="ME">Mechanical Engineering</option>
+      <option value="EE">Electrical Engineering</option>
+      <option value="CE">Computer Engineering</option>
+      </select><br>
+      Minor: <select name="cars">
+      <option value="none">None</option>
+      <option value="CS">Computer Science</option>
+      <option value="ME">Mechanical Engineering</option>
+      <option value="EE">Electrical Engineering</option>
+      <option value="CE">Computer Engineering</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
