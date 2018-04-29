@@ -1,0 +1,12 @@
+var headerDiv = document.createElement("div");
+headerDiv.className = "topnav";
+//var list = document.createElement("LI");
+var val = "<ul>";
+val += "<li><a href=\"homepage.html\">Home</a></li>";
+val += "<li><a href=\"classes.html\">Search</a></li>";
+val += "<li><a href=\"login.html\">Login</a></li>";
+val += "<li><a href=\"register.html\">Register</a></li>";
+val += "<li><a href=\"account.html\">My Account</a></li>";
+val += "</ul>";
+headerDiv.innerHTML = val;
+document.documentElement.appendChild(headerDiv);

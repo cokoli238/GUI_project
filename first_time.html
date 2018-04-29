@@ -1,0 +1,56 @@
+<!--
+ Christian Okoli, Rushabh Doshi, Tim Barber
+ GUI Programming II
+-->
+
+<!doctype html>
+<html lang="en">
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCt8C-S2Z-T6ROWW52P-m5mE4FbOVlJ_dY",
+    authDomain: "plan-by-requirments.firebaseapp.com",
+    databaseURL: "https://plan-by-requirments.firebaseio.com",
+    projectId: "plan-by-requirments",
+    storageBucket: "plan-by-requirments.appspot.com",
+    messagingSenderId: "25522755792"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="js/Construct_Header.js"></script>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Plan By Requirement</title>
+  <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/Registration.js"></script>
+</head>
+
+
+  <!--Form to enter table paremeters-->
+  <div id=TableEntry class="register">
+    <h2 class="registerHeader">Information</h2>
+    <h3 class="registerHeader">For personalized results and to be able to leave reviews, we need some information from you.</h3>
+    <hr>
+    <form name="regForm" onsubmit="if(validateFormUserInfo()){//Go to first time setup }" method="post">
+      <br>First
+      Name: <br><input type="text" class="inputBox" id="firstName" required><br> <br>Last Name: <br><input type="text" class="inputBox" id="lastName" required><br> <br>Major: <br><select class="inputDropdown" id="major">
+      <option value="CS">Computer Science</option>
+      <option value="ME">Mechanical Engineering</option>
+      <option value="EE">Electrical Engineering</option>
+      <option value="CE">Computer Engineering</option>
+    </select><br> <br>Minor: <br><select class="inputDropdown" id="minor">
+      <option value="none">None</option>
+      <option value="CS">Computer Science</option>
+      <option value="ME">Mechanical Engineering</option>
+      <option value="EE">Electrical Engineering</option>
+      <option value="CE">Computer Engineering</option>
+      </select>
+      <input class="button" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>

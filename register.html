@@ -7,6 +7,8 @@
 <html lang="en">
 
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -19,7 +21,7 @@
   };
   firebase.initializeApp(config);
 </script>
-
+  <script src="js/Construct_Header.js"></script>
 <head>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -28,27 +30,16 @@
   <script src="js/Registration.js"></script>
 </head>
 
-<body background="initial.jpg">
 
   <!--Form to enter table paremeters-->
-  <div id=TableEntry>
-    <form name="regForm" onsubmit="return validateForm()" method="post">
-      Email: <input type="text" onkeydown="return isEmail(event)" name="email" required><br> Password: <input type="text" name="pass" required><br> Confirm Password: <input type="text" onkeydown="return isValidPass(event)" name="passConf" required><br>First
-      Name: <input type="text" name="firstName" required><br> Last Name: <input type="text" name="lastName" required><br> Major: <select name="major">
-      <option value="CS">Computer Science</option>
-      <option value="ME">Mechanical Engineering</option>
-      <option value="EE">Electrical Engineering</option>
-      <option value="CE">Computer Engineering</option>
-    </select><br> Minor: <select name="minor">
-      <option value="none">None</option>
-      <option value="CS">Computer Science</option>
-      <option value="ME">Mechanical Engineering</option>
-      <option value="EE">Electrical Engineering</option>
-      <option value="CE">Computer Engineering</option>
-      </select>
-
-      <input type="submit" value="Submit">
-    </form>
+  <div id=TableEntry class="register">
+    <h2 class="registerHeader">Register</h2>
+    <hr>
+    <div name="regForm" method="post">
+      <br>Email: <br><input class="inputBox" type="text" id="email"><br> <br>Password: <br><input type="text" class="inputBox" id="pass"><br> <br>Confirm Password: <br><input type="text" class="inputBox" id="passConf"><br>
+<br>
+      <button class="button" onclick="validateForm()">Submit </button>
+    </div>
   </div>
 </body>
 
