@@ -1,44 +1,54 @@
 //Called by the submit button, checks if every paremeter is correct to build a valid table
 function validateForm() {
-  var startPrice = parseFloat(document.forms["tableForm"]["startPrice"].value);
-  var endPrice = parseFloat(document.forms["tableForm"]["endPrice"].value);
-  var priceStep = parseFloat(document.forms["tableForm"]["priceStep"].value);
-  var startMPG = parseFloat(document.forms["tableForm"]["startMPG"].value);
-  var endMPG = parseFloat(document.forms["tableForm"]["endMPG"].value);
-  var MPGStep = parseFloat(document.forms["tableForm"]["MPGStep"].value);
+  var email = document.forms["regForm"]["email"].value;
+  var pass = document.forms["regForm"]["pass"].value;
+  var passConf = document.forms["regForm"]["passConf"].value;
+  var major = document.forms["regForm"]["major"].value;
+  var minor = document.forms["regForm"]["minor"].value;
+  var firstName = document.forms["regForm"]["firstName"].value;
+  var lastName = document.forms["regForm"]["lastName"].value;
 
-  //Check to make sure no numbers are less than 0
-  if (startPrice < 1) {
-    alert("Starting Price cannot be less than 1");
+  if (!email.includes("@")) {
+    alert("Not a valid email");
     return false;
   }
-  if (endPrice < 1) {
-    alert("Ending Price cannot be less than 1");
-    return false;
-  }
-  if (priceStep < 1) {
-    alert("Price Step cannot be less than 1");
-    return false;
-  }
-  if (startMPG < 1) {
-    alert("Starting MPG cannot be less than 1");
-    return false;
-  }
-  if (endMPG < 1) {
-    alert("Ending MPG cannot be less than 1");
-    return false;
-  }
-  if (MPGStep < 1) {
-    alert("MPG Step cannot be less than 1");
+  if (passConf != pass) {
+    alert("Passwords do not match");
     return false;
   }
 
-  //Check to make sure starting values arn't greater than or equal to the ending value
-  if (startPrice >= endPrice) {
-    alert("Starting Price cannot be greater than or equal to ending price");
-    return false;
+  // Register a new user
+  firebase.auth().createUserWithEmailAndPassword(email, pass)
+    .catch(function(err) {
+      // Handle errors
+    });
+
+  var currentUser = firebase.auth().currentUser;
+  currentUser.updateProfile({
+    displayName: (firstName + lastName)
+  });
+
+  return true;
+}
+
+firebase.auth().onAuthStateChanged(function(user) {
+  window.user = user; // user is undefined if no user signed in
+});
+
+function isEmail() {
+  var email = document.forms["regForm"]["email"].value;
+  if (!email.includes("@")) {
+    //return false;
   }
-  if (startMPG >= endMPG) {
-    alert("Starting MPG cannot be greater than or equal to ending MPG");
-    return false;
+  return true;
+}
+
+function isValidPass() {
+  var pass = document.forms["regForm"]["pass"].value;
+  var passConf = document.forms["regForm"]["passConf"].value;
+  if (passConf != pass) {
+    //alert("Passwords do not match");
+    //return false;
   }
+  return true;
+}

@@ -25,25 +25,21 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Plan By Requirement</title>
   <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
-
+  <script src="js/Registration.js"></script>
 </head>
+
 <body background="initial.jpg">
 
   <!--Form to enter table paremeters-->
   <div id=TableEntry>
     <form name="regForm" onsubmit="return validateForm()" method="post">
-      Email: <input type="text" onkeydown="return isEmail(event)" name="email" required><br>
-      Password: <input type="text" name="pass" required><br>
-      Confirm Password: <input type="text" onkeydown="return isValidPass(event)" name="confPass" required><br>
-      First Name: <input type="text" name="firstName" required><br>
-      Last Name: <input type="text" name="lastName" required><br>
-      Major: <select name="cars">
+      Email: <input type="text" onkeydown="return isEmail(event)" name="email" required><br> Password: <input type="text" name="pass" required><br> Confirm Password: <input type="text" onkeydown="return isValidPass(event)" name="passConf" required><br>First
+      Name: <input type="text" name="firstName" required><br> Last Name: <input type="text" name="lastName" required><br> Major: <select name="major">
       <option value="CS">Computer Science</option>
       <option value="ME">Mechanical Engineering</option>
       <option value="EE">Electrical Engineering</option>
       <option value="CE">Computer Engineering</option>
-      </select><br>
-      Minor: <select name="cars">
+    </select><br> Minor: <select name="minor">
       <option value="none">None</option>
       <option value="CS">Computer Science</option>
       <option value="ME">Mechanical Engineering</option>
@@ -54,8 +50,6 @@
       <input type="submit" value="Submit">
     </form>
   </div>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
