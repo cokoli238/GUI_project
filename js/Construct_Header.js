@@ -1,7 +1,7 @@
   var headerDiv = document.createElement("div");
   headerDiv.className = "topnav";
   headerDiv.id = "header";
-
+//  headerDiv.innerHTML = "<ul></ul>";
   document.documentElement.appendChild(headerDiv);
   firebase.auth().onAuthStateChanged(function(user) {
     //var headerDiv = document.createElement("div");

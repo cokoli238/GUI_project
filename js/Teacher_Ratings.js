@@ -24,7 +24,7 @@ function removeReview(uid) {
   firebase.database().ref('/teachers/' + teacher).set({
     reviews: reviewsJson
   }).then(function() {
-
+    window.location.reload();
   }).catch(function(err) {
     // Handle errors
     alert(err.message);
@@ -48,7 +48,7 @@ function add_review(rating, text) {
   firebase.database().ref('/teachers/' + teacher).set({
     reviews: reviewsJson
   }).then(function() {
-
+    window.location.reload();
   }).catch(function(err) {
     // Handle errors
     alert(err.message);
@@ -243,8 +243,6 @@ function constructTeacher(classObj, name) {
 
   removeButton.onclick = function() {
     removeReview(window.user.uid);
-    removeButton.style.display = 'none';
-    submitButton.style.display = '';
   };
 
   submitButton.onclick = function() {
@@ -252,19 +250,6 @@ function constructTeacher(classObj, name) {
     var reviews = document.getElementById("reviews");
     var userText = document.getElementById("userReview").value;
     add_review(userRating, userText)
-    var ratingTextStars = "";
-    for (var j = 1; j < 6; j++) {
-      if (j <= userRating) {
-        ratingTextStars = ratingTextStars + "<span class=\"fa fa-star checked\"></span>";
-      } else {
-        ratingTextStars = ratingTextStars + "<span class=\"fa fa-star\"></span>";
-      }
-    }
-
-    reviews.innerHTML = "<p>" + ratingTextStars + "</p>" + "<p>" + userText + "</p>" + reviews.innerHTML;
-
-    submitButton.style.display = 'none';
-    removeButton.style.display = '';
   };
 
   if (reviewAlreadyPosted) {

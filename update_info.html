@@ -37,7 +37,6 @@
 <!--Form to enter table paremeters-->
 <div id=TableEntry class="register">
   <h2 class="registerHeader">Information</h2>
-  <h3 class="registerHeader">For personalized results and to be able to leave reviews, we need some information from you.</h3>
   <hr>
   <div name="regForm">
     <br>First Name: <br><input type="text" class="inputBox" id="firstName"><br> <br>Last Name: <br><input type="text" class="inputBox" id="lastName"><br> <br>Major: <br><select class="inputDropdown" id="major">
@@ -53,7 +52,8 @@
       <option value="CE">Computer Engineering</option>
       </select>
       <div>
-    <button class="button" onclick="validateFormUserInfo()">Finish</button>
+    <button class="button" onclick="validateFormUserInfo()">Update</button>
+    <button class="button" onclick="window.history.back();">Cancel</button>
   </div>
   </div>
 </div>
