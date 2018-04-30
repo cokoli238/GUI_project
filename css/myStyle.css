@@ -46,12 +46,11 @@ li {
 }
 
 /* Add a background color when the inputs get focus */
+
 input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+  background-color: #ddd;
+  outline: none;
 }
-
-
 
 .register {
   box-shadow: 10px 10px 10px #888888;
@@ -68,36 +67,38 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   width: 500px;
   font-size: 20px;
-  text-align:center;
+  text-align: center;
 }
 
-.button{
+.button {
   background-color: blue;
   font-size: 20px;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 10px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;
 }
+
 .button:hover {
-    opacity:1;
+  opacity: 1;
 }
 
-.registerHeader{
-    text-align:center;
-    font-size: 30px;
+.registerHeader {
+  text-align: center;
+  font-size: 30px;
 }
 
-.inputBox{
-  width:80%;
+.inputBox {
+  width: 80%;
   font-size: 15px;
 }
-.inputDropdown{
-  width:80%;
+
+.inputDropdown {
+  width: 80%;
   font-size: 30px;
 }
 
@@ -237,6 +238,20 @@ input[type=text] {
   margin-left: 20px;
   margin-top: 20px;
   background-color: #3333cc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12%;
+  transition: all 0.3s ease 0s;
+}
+
+.classButtonRemove {
+  float: right;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: red;
   color: white;
   padding: 16px;
   font-size: 16px;

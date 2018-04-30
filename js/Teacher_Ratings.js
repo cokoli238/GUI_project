@@ -118,6 +118,8 @@ function constructTeacher(classObj, name) {
     avgReviewLabel.innerHTML = "<p>Average Rating: </p><p>" + ratingText + " (" + avgRev + ")" + "</p>";
     avgReviewLabel.className = "classTextTitle";
     classDiv.appendChild(avgReviewLabel);
+  } else {
+    reviewsLabel.innerHTML = "No reviews yet";
   }
   reviewDiv.appendChild(reviewsLabel);
 
@@ -126,6 +128,7 @@ function constructTeacher(classObj, name) {
   var reviewTextDiv = document.createElement("div");
   reviewTextDiv.className = 'userReview';
   var reviewText = document.createElement('TEXTAREA');
+  reviewText.placeholder = "Write review here...";
   reviewText.type = "text";
   reviewText.id = "userReview";
   reviewText.rows = "10";
@@ -238,7 +241,7 @@ function constructTeacher(classObj, name) {
   var removeButton = document.createElement("Label");
   removeButton.className = 'button';
   removeButton.innerHTML = "Remove Review";
-  removeButton.className = "classButton";
+  removeButton.className = "classButtonRemove";
   //Hides and unhides the description and keywords on click
 
   removeButton.onclick = function() {
@@ -246,10 +249,12 @@ function constructTeacher(classObj, name) {
   };
 
   submitButton.onclick = function() {
-
-    var reviews = document.getElementById("reviews");
     var userText = document.getElementById("userReview").value;
-    add_review(userRating, userText)
+    if (userRating < 1) {
+      alert("Must rate 1 star or higher");
+    } else {
+      add_review(userRating, userText)
+    }
   };
 
   if (reviewAlreadyPosted) {
@@ -306,10 +311,7 @@ function displayTeacher() {
   if (snapshot.val()) {
     constructTeacher(data, name);
   } else {
-    var objTemp = {};
-    objTemp.id = name;
-    objTemp.name = name;
-    objTemp.reviews = [];
+    var objTemp = [];
     constructTeacher(objTemp, name);
   }
 }
