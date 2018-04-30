@@ -7,6 +7,10 @@
 <html lang="en">
 
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+
 <script>
   // Initialize Firebase
   var config = {
@@ -19,24 +23,24 @@
   };
   firebase.initializeApp(config);
 </script>
-  <script src="js/Construct_Header.js"></script>
+<script src="js/Construct_Header.js"></script>
+
 <head>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Plan By Requirement</title>
   <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
-  <script src="js/Registration.js"></script>
+  <script src="js/Update_Info.js"></script>
 </head>
 
 
-  <!--Form to enter table paremeters-->
-  <div id=TableEntry class="register">
-    <h2 class="registerHeader">Information</h2>
-    <h3 class="registerHeader">For personalized results and to be able to leave reviews, we need some information from you.</h3>
-    <hr>
-    <form name="regForm" onsubmit="if(validateFormUserInfo()){//Go to first time setup }" method="post">
-      <br>First
-      Name: <br><input type="text" class="inputBox" id="firstName" required><br> <br>Last Name: <br><input type="text" class="inputBox" id="lastName" required><br> <br>Major: <br><select class="inputDropdown" id="major">
+<!--Form to enter table paremeters-->
+<div id=TableEntry class="register">
+  <h2 class="registerHeader">Information</h2>
+  <h3 class="registerHeader">For personalized results and to be able to leave reviews, we need some information from you.</h3>
+  <hr>
+  <div name="regForm">
+    <br>First Name: <br><input type="text" class="inputBox" id="firstName"><br> <br>Last Name: <br><input type="text" class="inputBox" id="lastName"><br> <br>Major: <br><select class="inputDropdown" id="major">
       <option value="CS">Computer Science</option>
       <option value="ME">Mechanical Engineering</option>
       <option value="EE">Electrical Engineering</option>
@@ -48,9 +52,9 @@
       <option value="EE">Electrical Engineering</option>
       <option value="CE">Computer Engineering</option>
       </select>
-      <input class="button" type="submit" value="Submit">
-    </form>
+    <button class="button" onclick="validateFormUserInfo()">Submit</button>
   </div>
+</div>
 </body>
 
 </html>

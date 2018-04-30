@@ -1,3 +1,5 @@
+var snapshot;
+
 var getJSON = function(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
@@ -13,79 +15,9 @@ var getJSON = function(url, callback) {
   xhr.send();
 };
 
-function addToSchedule(classId) {
-  firebase.database().ref('/users/' + window.user.uid).once('value').then(function(val) {
-    snapshot = val;
-    var classes = get_my_classes();
-    var firstName = get_user_first_name();
-    var lastName = get_user_last_name();
-    var major = get_user_major();
-    var minor = get_user_minor();
-    classes.push(classId);
-    var classesJson = JSON.stringify(classes);
-    firebase.database().ref('users/' + window.user.uid).set({
-      firstName: firstName,
-      lastName: lastName,
-      major: major,
-      minor: minor,
-      classes: classesJson
-    }).then(function() {
-
-    }).catch(function(err) {
-      // Handle errors
-      alert(err.message);
-    });
-  }).catch(function(err) {
-    // Handle Errors here.
-    alert(err.message);
-  });
-
-}
-
-function removeFromSchedule(classId) {
-  firebase.database().ref('/users/' + window.user.uid).once('value').then(function(val) {
-    snapshot = val;
-    var classes = get_my_classes();
-    var firstName = get_user_first_name();
-    var lastName = get_user_last_name();
-    var major = get_user_major();
-    var minor = get_user_minor();
-    var index = classes.indexOf(classId);
-    if (index > -1) {
-      classes.splice(index, 1);
-    }
-    var classesJson = JSON.stringify(classes);
-    firebase.database().ref('users/' + window.user.uid).set({
-      firstName: firstName,
-      lastName: lastName,
-      major: major,
-      minor: minor,
-      classes: classesJson
-    }).then(function() {
-
-    }).catch(function(err) {
-      // Handle errors
-      alert(err.message);
-    });
-  }).catch(function(err) {
-    // Handle Errors here.
-    alert(err.message);
-  });
-
-}
-
-function clearSearch() {
-  getJSON("cs_catalog.json", displayAllClasses);
-  document.getElementById("textSearch").value = "";
-}
-
 function clearClasses() {
   var classChildren = document.getElementById("Classes");
   classChildren.innerHTML = "";
-}
-
-function searchJson() {
-  getJSON("cs_catalog.json", searchClasses);
 }
 
 function get_my_classes() {
@@ -93,6 +25,17 @@ function get_my_classes() {
 }
 
 function constructClass(classObj, index) {
+  var classes = get_my_classes();
+  var classExists = false;
+  classes.forEach(function(obj) {
+    if (obj == classObj.id) {
+      classExists = true;
+    }
+
+  });
+  if (!classExists) {
+    return;
+  }
 
   //Create div for individual class and set class name
   var classDiv = document.createElement("div");
@@ -273,41 +216,14 @@ function constructClass(classObj, index) {
   };
   classDiv.appendChild(detailsButton);
 
-  var classes = get_my_classes();
-  var classExists = false;
-  classes.forEach(function(obj) {
-    if (obj == classObj.id) {
-      classExists = true;
-    }
-  });
   var addButton = document.createElement("Label");
-  addButton.innerHTML = "Add To Schedule";
+  addButton.className = 'button';
+  addButton.innerHTML = "Remove from schedule";
   addButton.className = "classButton";
   addButton.onclick = function() {
-    addToSchedule(classObj.id);
-    addButton.style.display = 'none';
-    removeButton.style.display = '';
-  };
-  var removeButton = document.createElement("Label");
-  removeButton.innerHTML = "Remove From Schedule";
-  removeButton.className = "classButton";
-  removeButton.onclick = function() {
     removeFromSchedule(classObj.id);
-    removeButton.style.display = 'none';
-    addButton.style.display = '';
   };
-
-  if (classExists) {
-    addButton.style.display = 'none';
-    removeButton.style.display = '';
-  } else {
-    removeButton.style.display = 'none';
-    addButton.style.display = '';
-  }
-
-
   classDiv.appendChild(addButton);
-  classDiv.appendChild(removeButton);
 
 
   //Attach the hidden div after the buttons
@@ -317,78 +233,10 @@ function constructClass(classObj, index) {
   document.getElementById("Classes").appendChild(classDiv);
 }
 
-function displayAllClasses(err, data) {
+function displayMyClasses(err, data) {
   clearClasses();
   data.database.forEach(constructClass);
 }
-
-
-function searchClasses(err, data) {
-  clearClasses();
-  var database = data.database;
-  var criteria = document.getElementById("textSearch").value;
-  var idMatch = [];
-  var titleMatch = [];
-  var keywordMatch = [];
-  //Split by spaces, then by commas
-  var criteriaArraySpace = criteria.split(" ");
-  var criteriaArrayComma = criteria.split(",");
-  database.forEach(function(object, index) {
-    if (typeof object.teacher != "undefined" && (object.teacher.toUpperCase().includes(criteria.toUpperCase()))) {
-      idMatch[idMatch.length + 1] = object;
-      return;
-    }
-    if (typeof object.id != "undefined" && object.id.toUpperCase().includes(criteria.toUpperCase())) {
-      idMatch[idMatch.length + 1] = object;
-      return;
-    }
-
-    //Process each word seperated by spaces
-    criteriaArraySpace.forEach(function(criteria, index) {
-      if (typeof object.name != "undefined" && (criteria.toUpperCase().includes(object.name.toUpperCase()) || object.name.toUpperCase().includes(criteria.toUpperCase()))) {
-        titleMatch[titleMatch.length + 1] = object;
-        return;
-      }
-      var keywordCount = 0;
-      object.keywords.forEach(function(keyword, index) {
-        //Iterate through each keyword in class
-        if (keyword.toUpperCase() == criteria.toUpperCase()) {
-          keywordCount++;
-        }
-      });
-      if (keywordCount > 0) {
-        keywordMatch[keywordMatch.length + 1] = [keywordCount, object];
-      }
-    });
-  });
-
-  //Now that we have the sorted classes, send them to the div builder
-  idMatch.forEach(constructClass);
-  titleMatch.forEach(constructClass);
-  keywordMatch.sort(function(a, b) {
-    return a[0] - b[0]
-  }).forEach(function(obj, index) {
-    constructClass(obj[1], index);
-  });
-
-
-}
-
-//Associate enter key with search
-// Get the input field
-var input = document.getElementById("textSearch");
-
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Cancel the default action, if needed
-  event.preventDefault();
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Trigger the button element with a click
-    document.getElementById("Class_Search").click();
-  }
-});
-
 
 
 firebase.auth().onAuthStateChanged(function(user) {
@@ -427,9 +275,43 @@ function get_snapshot() {
   firebase.database().ref('/users/' + window.user.uid).once('value').then(function(val) {
     snapshot = val;
     //Start the page by displaying all Classes
-    getJSON("cs_catalog.json", displayAllClasses);
+    getJSON("cs_catalog.json", displayMyClasses);
   }).catch(function(err) {
     // Handle Errors here.
+    alert(err.message);
+  });
+}
+
+function update_user_info() {
+  document.getElementById("firstName").value = get_user_first_name();
+  document.getElementById("lastName").value = get_user_last_name();
+  document.getElementById("major").value = get_user_major();
+  document.getElementById("minor").value = get_user_minor();
+}
+
+
+function removeFromSchedule(classId) {
+  var classes = get_my_classes();
+  var firstName = get_user_first_name();
+  var lastName = get_user_last_name();
+  var major = get_user_major();
+  var minor = get_user_minor();
+  var index = classes.indexOf(classId);
+  if (index > -1) {
+    classes.splice(index, 1);
+  }
+  var classesJson = JSON.stringify(classes);
+  firebase.database().ref('users/' + window.user.uid).set({
+    firstName: firstName,
+    lastName: lastName,
+    major: major,
+    minor: minor,
+    classes: classesJson
+  }).then(function() {
+    document.getElementById(classId).innerHTML = "";
+    document.getElementById(classId).remove();
+  }).catch(function(err) {
+    // Handle errors
     alert(err.message);
   });
 }

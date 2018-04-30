@@ -7,6 +7,9 @@
 <html lang="en">
 
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+
 <script>
   // Initialize Firebase
   var config = {
@@ -27,22 +30,23 @@
   <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
 
 </head>
-  <script src="js/Construct_Header.js"></script>
+<script src="js/Construct_Header.js"></script>
+<script src="js/Login.js"></script>
 
-  <div class="login">
+<div class="login">
 
-    <h1 class="logintext">Login</h1>
-     <div class="user_id">
-      <input type="text" placeholder="Student ID">
-     </div>
-      <div class="pass_id">
-      <input type="text" placeholder="Password">
-     </div>
-     <div>
-      <a href="homepage.html"><button onclick="myFunction()" class=login_button>Login</button></a>
-     </div>
-
+  <h1 class="logintext">Login</h1>
+  <div class="user_id">
+    <input type="text" id="email" placeholder="Student ID">
   </div>
+  <div class="pass_id">
+    <input type="password" id="pass" placeholder="Password">
+  </div>
+  <div>
+    <button onclick="login()" class=login_button>Login</button></a>
+  </div>
+
+</div>
 
 
 </body>

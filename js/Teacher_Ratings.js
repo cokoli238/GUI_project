@@ -1,26 +1,63 @@
 var userRating = 0;
+var snapshot;
+var snapshotUser;
 
-var getJSON = function(url, callback) {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.responseType = 'json';
-  xhr.onload = function() {
-    var status = xhr.status;
-    if (status === 200) {
-      callback(null, xhr.response);
-    } else {
-      callback(status, xhr.response);
+function get_user_first_name() {
+  return (snapshotUser.val() && snapshotUser.val().firstName) || "";
+}
+
+function get_user_last_name() {
+  return (snapshotUser.val() && snapshotUser.val().lastName) || "";
+}
+
+function removeReview(uid) {
+  var reviews = get_teacher_database();
+  var teacher = getTeacherName();
+  var name = get_user_first_name() + " " + get_user_last_name();
+  var uid = window.user.uid;
+  for (var i = 0; i < reviews.length; i++) {
+    if (reviews[i]["uid"] == uid) {
+      reviews.splice(i, 1);
     }
-  };
-  xhr.send();
-};
+  }
+  var reviewsJson = JSON.stringify(reviews);
+  firebase.database().ref('/teachers/' + teacher).set({
+    reviews: reviewsJson
+  }).then(function() {
+
+  }).catch(function(err) {
+    // Handle errors
+    alert(err.message);
+  });
+
+}
+
+function add_review(rating, text) {
+  var reviews = get_teacher_database();
+  var teacher = getTeacherName();
+  var name = get_user_first_name() + " " + get_user_last_name();
+  var uid = window.user.uid;
+  var obj = {};
+  obj.rating = rating;
+  obj.text = text;
+  obj.uid = uid;
+  obj.name = name;
+
+  reviews.push(obj);
+  var reviewsJson = JSON.stringify(reviews);
+  firebase.database().ref('/teachers/' + teacher).set({
+    reviews: reviewsJson
+  }).then(function() {
+
+  }).catch(function(err) {
+    // Handle errors
+    alert(err.message);
+  });
+}
+
 
 function constructTeacher(classObj, name) {
-
-  if (classObj.name != name) {
-    return false;
-  }
-
+  var reviewAlreadyPosted = false;
   //Create div for individual class and set class name
   var classDiv = document.createElement("div");
   classDiv.className = 'classDiv';
@@ -32,13 +69,13 @@ function constructTeacher(classObj, name) {
   //---Class labels---
 
   var titleLabel = document.createElement("Label");
-  titleLabel.innerHTML = "<p>" + classObj.name + "</p>";
+  titleLabel.innerHTML = "<p>" + name + "</p>";
   titleLabel.className = "classTextTitle";
   classDiv.appendChild(titleLabel);
 
 
 
-//Reviews
+  //Reviews
   var reviewsLabel = document.createElement("Label");
   reviewsLabel.id = "reviews";
   reviewsLabel.className = "classText";
@@ -49,22 +86,25 @@ function constructTeacher(classObj, name) {
   reviewDiv.className = 'classHiddenDiv';
   var reviewText = "";
   var avgRev = 0;
-  if (typeof classObj.reviews != "undefined" && classObj.reviews.length > 0) {
-    for (var i = 0, l = classObj.reviews.length; i < l; i += 1) {
+  if (typeof classObj != "undefined" && classObj.length > 0) {
+    for (var i = 0, l = classObj.length; i < l; i += 1) {
+      if (classObj[i].uid == window.user.uid) {
+        reviewAlreadyPosted = true;
+      }
       var ratingText = "";
       for (j = 1; j < 6; j++) {
-        if (j <= classObj.reviews[i].rating) {
+        if (j <= classObj[i].rating) {
           ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
         } else {
           ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
         }
       }
-      reviewText = reviewText + "<p>" + ratingText + "</p> <p>" + classObj.reviews[i].text + "</p>";
-      avgRev = avgRev + classObj.reviews[i].rating;
+      reviewText = reviewText + "<p>" + ratingText + "</p> <p>" + classObj[i].text + "</p> <p>" + "- " + classObj[i].name + "</p>";
+      avgRev = avgRev + classObj[i].rating;
     }
     reviewsLabel.innerHTML = "<p>" + reviewText + "</p>";
 
-    avgRev = avgRev / classObj.reviews.length;
+    avgRev = avgRev / classObj.length;
     var ratingText = "";
     for (j = 1; j < 6; j++) {
       if (j <= avgRev) {
@@ -75,7 +115,7 @@ function constructTeacher(classObj, name) {
     }
     //After processing the reviews, get the average we calculated
     var avgReviewLabel = document.createElement("Label");
-    avgReviewLabel.innerHTML = "<p>Avgerage Rating: </p><p>" + ratingText + " (" + avgRev + ")" + "</p>";
+    avgReviewLabel.innerHTML = "<p>Average Rating: </p><p>" + ratingText + " (" + avgRev + ")" + "</p>";
     avgReviewLabel.className = "classTextTitle";
     classDiv.appendChild(avgReviewLabel);
   }
@@ -92,126 +132,149 @@ function constructTeacher(classObj, name) {
   reviewText.style.fontSize = "25px";
   reviewTextDiv.appendChild(reviewText);
 
-var starDiv = document.createElement("div");
-var starOne = document.createElement("Label");
-starOne.innerHTML = "<span class=\"fa fa-star\"></span>";
-starOne.onclick = function(){
-  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+  var starDiv = document.createElement("div");
+  var starOne = document.createElement("Label");
+  starOne.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starOne.onclick = function() {
+    starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starTwo.innerHTML = "<span class=\"fa fa-star\"></span>";
+    starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
+    starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+    starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+    //Clear the div and readd the stars
+    starDiv.innerHTML = "";
+    starDiv.appendChild(starOne);
+    starDiv.appendChild(starTwo);
+    starDiv.appendChild(starThree);
+    starDiv.appendChild(starFour);
+    starDiv.appendChild(starFive);
+    userRating = 1;
+  }
+  starDiv.appendChild(starOne);
+
+  var starTwo = document.createElement("Label");
   starTwo.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starTwo.onclick = function() {
+    starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
+    starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+    starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+    //Clear the div and readd the stars
+    starDiv.innerHTML = "";
+    starDiv.appendChild(starOne);
+    starDiv.appendChild(starTwo);
+    starDiv.appendChild(starThree);
+    starDiv.appendChild(starFour);
+    starDiv.appendChild(starFive);
+    userRating = 2;
+  }
+  starDiv.appendChild(starTwo);
+
+  var starThree = document.createElement("Label");
   starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starThree.onclick = function() {
+    starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+    starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+    //Clear the div and readd the stars
+    starDiv.innerHTML = "";
+    starDiv.appendChild(starOne);
+    starDiv.appendChild(starTwo);
+    starDiv.appendChild(starThree);
+    starDiv.appendChild(starFour);
+    starDiv.appendChild(starFive);
+    userRating = 3;
+  }
+  starDiv.appendChild(starThree);
+
+  var starFour = document.createElement("Label");
   starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
+  starFour.onclick = function() {
+    starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starFour.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
+    //Clear the div and readd the stars
+    starDiv.innerHTML = "";
+    starDiv.appendChild(starOne);
+    starDiv.appendChild(starTwo);
+    starDiv.appendChild(starThree);
+    starDiv.appendChild(starFour);
+    starDiv.appendChild(starFive);
+    userRating = 4;
+  }
+  starDiv.appendChild(starFour);
+
+  var starFive = document.createElement("Label");
   starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
-  //Clear the div and readd the stars
-  starDiv.innerHTML = "";
-  starDiv.appendChild(starOne);
-  starDiv.appendChild(starTwo);
-  starDiv.appendChild(starThree);
-  starDiv.appendChild(starFour);
+  starFive.onclick = function() {
+    starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starFour.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    starFive.innerHTML = "<span class=\"fa fa-star checked\"></span>";
+    //Clear the div and readd the stars
+    starDiv.innerHTML = "";
+    starDiv.appendChild(starOne);
+    starDiv.appendChild(starTwo);
+    starDiv.appendChild(starThree);
+    starDiv.appendChild(starFour);
+    starDiv.appendChild(starFive);
+    userRating = 5;
+  }
   starDiv.appendChild(starFive);
-  userRating = 1;
-}
-starDiv.appendChild(starOne);
 
-var starTwo = document.createElement("Label");
-starTwo.innerHTML = "<span class=\"fa fa-star\"></span>";
-starTwo.onclick = function(){
-  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
-  starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
-  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
-  //Clear the div and readd the stars
-  starDiv.innerHTML = "";
-  starDiv.appendChild(starOne);
-  starDiv.appendChild(starTwo);
-  starDiv.appendChild(starThree);
-  starDiv.appendChild(starFour);
-  starDiv.appendChild(starFive);
-  userRating = 2;
-}
-starDiv.appendChild(starTwo);
-
-var starThree = document.createElement("Label");
-starThree.innerHTML = "<span class=\"fa fa-star\"></span>";
-starThree.onclick = function(){
-  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
-  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
-  //Clear the div and readd the stars
-  starDiv.innerHTML = "";
-  starDiv.appendChild(starOne);
-  starDiv.appendChild(starTwo);
-  starDiv.appendChild(starThree);
-  starDiv.appendChild(starFour);
-  starDiv.appendChild(starFive);
-  userRating = 3;
-}
-starDiv.appendChild(starThree);
-
-var starFour = document.createElement("Label");
-starFour.innerHTML = "<span class=\"fa fa-star\"></span>";
-starFour.onclick = function(){
-  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starFour.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
-  //Clear the div and readd the stars
-  starDiv.innerHTML = "";
-  starDiv.appendChild(starOne);
-  starDiv.appendChild(starTwo);
-  starDiv.appendChild(starThree);
-  starDiv.appendChild(starFour);
-  starDiv.appendChild(starFive);
-  userRating = 4;
-}
-starDiv.appendChild(starFour);
-
-var starFive = document.createElement("Label");
-starFive.innerHTML = "<span class=\"fa fa-star\"></span>";
-starFive.onclick = function(){
-  starOne.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starTwo.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starThree.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starFour.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  starFive.innerHTML = "<span class=\"fa fa-star checked\"></span>";
-  //Clear the div and readd the stars
-  starDiv.innerHTML = "";
-  starDiv.appendChild(starOne);
-  starDiv.appendChild(starTwo);
-  starDiv.appendChild(starThree);
-  starDiv.appendChild(starFour);
-  starDiv.appendChild(starFive);
-  userRating = 5;
-}
-starDiv.appendChild(starFive);
-
-reviewTextDiv.appendChild(starDiv);
+  reviewTextDiv.appendChild(starDiv);
 
   var submitButton = document.createElement("Label");
   submitButton.className = 'button';
   submitButton.innerHTML = "Submit Review";
   submitButton.className = "classButton";
+
+  var removeButton = document.createElement("Label");
+  removeButton.className = 'button';
+  removeButton.innerHTML = "Remove Review";
+  removeButton.className = "classButton";
   //Hides and unhides the description and keywords on click
+
+  removeButton.onclick = function() {
+    removeReview(window.user.uid);
+    removeButton.style.display = 'none';
+    submitButton.style.display = '';
+  };
+
   submitButton.onclick = function() {
+
     var reviews = document.getElementById("reviews");
     var userText = document.getElementById("userReview").value;
+    add_review(userRating, userText)
     var ratingTextStars = "";
-      for (var j = 1; j < 6; j++) {
-        if (j <= userRating) {
-          ratingTextStars = ratingTextStars + "<span class=\"fa fa-star checked\"></span>";
-        } else {
-          ratingTextStars = ratingTextStars + "<span class=\"fa fa-star\"></span>";
-        }
+    for (var j = 1; j < 6; j++) {
+      if (j <= userRating) {
+        ratingTextStars = ratingTextStars + "<span class=\"fa fa-star checked\"></span>";
+      } else {
+        ratingTextStars = ratingTextStars + "<span class=\"fa fa-star\"></span>";
       }
+    }
 
     reviews.innerHTML = "<p>" + ratingTextStars + "</p>" + "<p>" + userText + "</p>" + reviews.innerHTML;
 
-    this.innerHTML = "Thanks for reviewing!";
-    submitButton.onclick = "";
+    submitButton.style.display = 'none';
+    removeButton.style.display = '';
   };
+
+  if (reviewAlreadyPosted) {
+    removeButton.style.display = '';
+    submitButton.style.display = 'none';
+  } else {
+    removeButton.style.display = 'none';
+    submitButton.style.display = '';
+  }
+  reviewTextDiv.appendChild(removeButton);
   reviewTextDiv.appendChild(submitButton);
 
 
@@ -241,25 +304,66 @@ reviewTextDiv.appendChild(starDiv);
   return true;
 }
 
-function displayTeacher(err, data) {
+function get_teacher_database() {
+  return JSON.parse(get_teacher_reviews());
+}
+
+function get_teacher_reviews() {
+  var val = (snapshot.val() && snapshot.val().reviews) || "[]";
+  return val;
+}
+
+function displayTeacher() {
   var found = false;
   var name = getTeacherName();
-  data.database.forEach(function(obj){
-    found = constructTeacher(obj,name);
-  });
-  if(!found){
-    var notFoundLabel = document.createElement("Label");
-    notFoundLabel.innerHTML = "<p>" + "Couldn't find a teacher by the name of " + name + "</p>";
-    notFoundLabel.style.fontSize = "30px";
-    document.getElementById("Class").appendChild(notFoundLabel);
+  var data = get_teacher_database();
+
+  if (snapshot.val()) {
+    constructTeacher(data, name);
+  } else {
+    var objTemp = {};
+    objTemp.id = name;
+    objTemp.name = name;
+    objTemp.reviews = [];
+    constructTeacher(objTemp, name);
   }
 }
 
 function getTeacherName() {
   var a = window.location.toString();
   var name = a.substring(a.indexOf('?') + 1);
-  name = name.replace("_"," ");
+  name = name.replace("_", " ");
   return name;
 }
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    window.user = user;
+    get_snapshot_user();
+  } else {
+    window.user = user;
+  }
+});
 
-getJSON("teacher_ratings_catalog.json", displayTeacher);
+
+function get_snapshot_user() {
+  firebase.database().ref('/users/' + window.user.uid).once('value').then(function(val) {
+    snapshotUser = val;
+    //Start the page by displaying all Classes
+    get_snapshot();
+  }).catch(function(err) {
+    // Handle Errors here.
+    alert(err.message);
+  });
+}
+
+function get_snapshot() {
+  var teacher = getTeacherName();
+  firebase.database().ref('/teachers/' + teacher).once('value').then(function(val) {
+    snapshot = val;
+    //Start the page by displaying all Classes
+    displayTeacher();
+  }).catch(function(err) {
+    // Handle Errors here.
+    alert(err.message);
+  });
+}

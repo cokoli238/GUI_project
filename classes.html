@@ -15,25 +15,43 @@
   <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
 
 </head>
-  <script src="js/Construct_Header.js"></script>
 
-  <div class="class_search">
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
 
-    <div>
-      <input id="textSearch" type="text" placeholder="Search.." name="search2" class="search_input">
-    </div>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCt8C-S2Z-T6ROWW52P-m5mE4FbOVlJ_dY",
+    authDomain: "plan-by-requirments.firebaseapp.com",
+    databaseURL: "https://plan-by-requirments.firebaseio.com",
+    projectId: "plan-by-requirments",
+    storageBucket: "plan-by-requirments.appspot.com",
+    messagingSenderId: "25522755792"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/Construct_Header.js"></script>
 
-    <div>
-      <button type="button" id="Class_Search" onClick="searchJson()" class="search_button">Class Search</button></a>
-      <button type="button" id="Clear_Search" onClick="clearSearch()" class="search_button">Clear Search</button></a>
-    </div>
+<div class="class_search">
 
-
+  <div>
+    <input id="textSearch" type="text" placeholder="Search.." name="search2" class="search_input">
   </div>
 
-  <div id="Classes">
-
+  <div>
+    <button type="button" id="Class_Search" onClick="searchJson()" class="search_button">Class Search</button></a>
+    <button type="button" id="Clear_Search" onClick="clearSearch()" class="search_button">Clear Search</button></a>
   </div>
+
+
+</div>
+
+<div id="Classes">
+
+</div>
 
 </body>
 <script src="./js/Class_Parser.js"></script>
