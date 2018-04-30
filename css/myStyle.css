@@ -178,7 +178,7 @@ input[type=text] {
 /* */
 
 .classDiv {
-  width: 85%;
+  width: 1500px;
   margin: auto;
   overflow: hidden;
   background-image: url("umlbg.png");
@@ -192,7 +192,7 @@ input[type=text] {
 }
 
 .classTextTitle {
-  width: 250px;
+  width: 230px;
   padding: 20px;
   padding-left: 30px;
   padding-right: 0px;
@@ -228,7 +228,6 @@ input[type=text] {
 
 .classHiddenDiv {
   font-size: 20px;
-  width: 80%;
   clear: both;
   display: block;
 }

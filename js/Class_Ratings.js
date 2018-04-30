@@ -126,7 +126,7 @@ function constructClass(classObj, name, id) {
           ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
         }
       }
-      reviewText = reviewText + "<p>" + ratingText + "</p> <p>" + classObj[i].text + "</p>";
+      reviewText = reviewText + "<p>" + ratingText + "</p> <p>" + classObj[i].text + "</p> <p>" + "- " + classObj[i].name + "</p>";
       avgRev = avgRev + classObj[i].rating;
     }
     reviewsLabel.innerHTML = "<p>" + reviewText + "</p>";
