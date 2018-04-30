@@ -35,15 +35,17 @@
 
 <div class="login">
 
-  <h1 class="logintext">Login</h1>
-  <div class="user_id">
-    <input type="text" id="email" placeholder="Email">
-  </div>
-  <div class="pass_id">
-    <input type="password" id="pass" placeholder="Password">
+  <h2 class="registerHeader">Login</h2>
+  <hr>
+  <div>
+    <br><input class="inputBox" type="text" id="email" placeholder="Email"><br><br>
   </div>
   <div>
-    <button onclick="login()" id="login" class=login_button>Login</button></a>
+    <input class="inputBox" type="password" id="pass" placeholder="Password"><br><br>
+  </div>
+  <div>
+    <button onclick="login()" id="login" class=login_button>Login</button>
+    <a href="register.html"><button onclick="" class="login_button">Register</button></a>
   </div>
 
 </div>
@@ -52,33 +54,33 @@
 </body>
 
 <script>
-//Associate enter key with search
-// Get the input field
-var input = document.getElementById("pass");
-var input1 = document.getElementById("email");
+  //Associate enter key with search
+  // Get the input field
+  var input = document.getElementById("pass");
+  var input1 = document.getElementById("email");
 
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Cancel the default action, if needed
-  event.preventDefault();
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Trigger the button element with a click
-    document.getElementById("login").click();
-  }
-});
+  // Execute a function when the user releases a key on the keyboard
+  input.addEventListener("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Trigger the button element with a click
+      document.getElementById("login").click();
+    }
+  });
 
 
-// Execute a function when the user releases a key on the keyboard
-input1.addEventListener("keyup", function(event) {
-  // Cancel the default action, if needed
-  event.preventDefault();
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Trigger the button element with a click
-    document.getElementById("login").click();
-  }
-});
+  // Execute a function when the user releases a key on the keyboard
+  input1.addEventListener("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Trigger the button element with a click
+      document.getElementById("login").click();
+    }
+  });
 </script>
 
 </html>

@@ -399,6 +399,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     get_snapshot_teachers();
   } else {
     window.user = user;
+    window.location = "login.html";
   }
 });
 
@@ -467,7 +468,7 @@ function getSearch() {
 }
 
 //If theres a ?, then we have a search we want to perform on page load
-if (a.indexOf('?') > -1) {
+if (window.location.toString().indexOf('?') > -1) {
   var val = getSearch();
   //Associate enter key with search
   // Get the input field
