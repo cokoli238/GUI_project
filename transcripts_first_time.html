@@ -1,0 +1,380 @@
+<!--
+ Christian Okoli, Rushabh Doshi, Tim Barber
+ GUI Programming II
+-->
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Plan By Requirement</title>
+  <link href="css/myStyle.css" type="text/css" rel="stylesheet" />
+  <script src="js/Class_Object1.js"></script>
+  <style>
+    #mTable {
+      display: none;
+    }
+
+    #tutorial {
+      display: none;
+    }
+
+    li {
+      display: block;
+      color: black;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      width: 50%;
+      color: black;
+      background: white;
+    }
+
+    th {
+      background-color: black;
+      color: white;
+      font-size: 10pt;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    td {
+      font-size: 10pt;
+    }
+
+    .slot {
+      color: red;
+    }
+
+    th.left {
+      border-right: 1px solid white;
+    }
+
+    th.right {
+      border-left: 1px solid white;
+    }
+
+    td.left {
+      border: 1px solid black;
+      border-left: 2px solid black;
+    }
+
+    td.right {
+      border: 1px solid black;
+      border-right: 2px solid black;
+    }
+
+    td.bottom {
+      border-bottom: 2px solid black;
+    }
+  </style>
+
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCt8C-S2Z-T6ROWW52P-m5mE4FbOVlJ_dY",
+    authDomain: "plan-by-requirments.firebaseapp.com",
+    databaseURL: "https://plan-by-requirments.firebaseio.com",
+    projectId: "plan-by-requirments",
+    storageBucket: "plan-by-requirments.appspot.com",
+    messagingSenderId: "25522755792"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/Construct_Header.js"></script>
+
+
+<body>
+
+  <div class="register">
+    <h3>Transfer Your SIS Transcript</h3>
+    <h4>This will allow you to quickly store your course history on this site</h4>
+    <h4>You can do this anytime under "My Account"</h4>
+    <table style="background: lightgrey;">
+      <tr>
+        <input type="text" class="inputBox" name="start" id="start">
+      </tr>
+      <tr>
+        <button class="button" onclick="makeClass()">Insert Course History</button>
+      </tr>
+      <tr>
+        <button class="button" id="tutBtn" onclick="hide()">Show Tutorial</button>
+      </tr>
+      <tr>
+        <button class="button" onclick='window.location = "account.html"'>Skip</button>
+      </tr>
+    </table>
+  </div>
+  <div id="tutorial">
+    <div style="position:relative;width:90%;margin:auto;height:630px;padding-top:50px;">
+      <div class="register" style="position:relative;display:inline-block;min-width:350px;width:22%;vertical-align: middle;height:600px;">
+        <h4>1. Log on to SIS website. On the left panel go to Classic View</h4>
+        <img src="image1.png" width="300px" alt="p1">
+      </div>
+      <div class="register" style="position:relative;display:inline-block;min-width:650px;width:44%;vertical-align: middle;height:600px;">
+        <h4>2. Next scroll to Quick Links and go to Course History</h4>
+        <img src="clip2.png" width="300px" alt="p2"> <img src="clip3.png" alt="p3" width="300px">
+      </div>
+      <div class="register" style="position:relative;display:inline-block;min-width:350px;width:22%;vertical-align: middle;height:600px;">
+        <h4>3. Then highlight all the columns in transcripts including the status symbol and copy and paste into the textbox</h4>
+        <img src="clip4.png" width="300px" alt="p4" style="padding-bottom: 100px">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="mTable">
+    <table id="freshmanTable">
+      <tr>
+        <th colspan="4">Freshman Fall</th>
+        <th colspan="4">Freshman Spring</th>
+      </tr>
+      <tr>
+        <td>COMP.1010/COMP.1030L</td>
+        <td> 3/1</td>
+        <td>Computing I</td>
+        <td id="Computing I"> </td>
+        <td>COMP.1020/COMP.1040L </td>
+        <td> 3/1</td>
+        <td>Computing II</td>
+        <td id="Computing II"> </td>
+      </tr>
+      <tr>
+        <td>MATH.1310</td>
+        <td> 4 </td>
+        <td>Calculus I</td>
+        <td id="Calculus I"> </td>
+        <td>MATH.1320</td>
+        <td> 4 </td>
+        <td>Calculus II</td>
+        <td id="Calculus II"> </td>
+      </tr>
+      <tr>
+        <td>ENGL.1010</td>
+        <td> 3 </td>
+        <td>College Writing I</td>
+        <td id="College Writing I"> </td>
+        <td>ENGL.1020</td>
+        <td> 3 </td>
+        <td>College Writing II</td>
+        <td id="College Writing II"> </td>
+      </tr>
+      <tr>
+        <td id="ah1_id"> </td>
+        <td> 3 </td>
+        <td>Gen Ed (AH)</td>
+        <td id="AH1"> N/A </td>
+        <td id="ah2_id"> </td>
+        <td> 3 </td>
+        <td>Gen Ed (AH)</td>
+        <td id="AH2"> N/A </td>
+      </tr>
+
+    </table>
+
+
+    <br/>
+
+    <table id="sophmoreTable">
+      <tr>
+        <th colspan="4">Sophmore Fall</th>
+        <th colspan="4">Sophmore Spring</th>
+      </tr>
+      <tr>
+        <td>COMP.1010/COMP.1030L</td>
+        <td> 3/1</td>
+        <td>Computing III</td>
+        <td id="Computing III"> </td>
+        <td>COMP.2010/COMP.2010L </td>
+        <td> 4</td>
+        <td>Computing IV</td>
+        <td id="Computing IV"> </td>
+      </tr>
+      <tr>
+        <td>COMP.2030/COMP.2030L</td>
+        <td> 3/1 </td>
+        <td>Assembly Language</td>
+        <td id="Comp Org & Assembly Lang"> </td>
+        <td>MATH.3860</td>
+        <td> 3 </td>
+        <td>Prob. & Stats I</td>
+        <td id="Prob. & Stats. I"> </td>
+      </tr>
+      <tr>
+        <td>MATH.3210</td>
+        <td> 3 </td>
+        <td>Discrete Structures I</td>
+        <td id="Discrete Structures I"> </td>
+        <td>MATH.3220</td>
+        <td> 3 </td>
+        <td>Discrete Structures II</td>
+        <td id="Discrete Structures II"> </td>
+      </tr>
+      <tr>
+        <td> EECE.2650</td>
+        <td> 3 </td>
+        <td>Logic Design</td>
+        <td id="Logic Design"> </td>
+        <td id="oral">ENGL.2200 </td>
+        <td> 3 </td>
+        <td>Gen Ed: Oral & Written (AH)</td>
+        <td id="Oral & Written"> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td id="blank12">N/A</td>
+        <td id="ns1_id"> </td>
+        <td> 4 </td>
+        <td>Natural Lab Sciene: </td>
+        <td id="NS1">N/A</td>
+      </tr>
+
+    </table>
+
+    <br/>
+
+    <table id="JuniorTable">
+      <tr>
+        <th colspan="4">Junior Fall</th>
+        <th colspan="4">Junior Spring</th>
+      </tr>
+      <tr>
+        <td>COMP.3040 </td>
+        <td> 3</td>
+        <td>Foundations of CS</td>
+        <td id="Foundations of CS"> </td>
+        <td>COMP.3010</td>
+        <td> 3 </td>
+        <td>Org. of Prog. Lang.</td>
+        <td id="Org. of Prog. Lang."> </td>
+      </tr>
+      <tr>
+        <td>COMP.3050 </td>
+        <td> 3 </td>
+        <td>Computer Architecture</td>
+        <td id="Computer Architecture"> </td>
+        <td>MATH.3880</td>
+        <td> 3 </td>
+        <td>Intro to Operating Sys.</td>
+        <td id="Intro to Operating Sys."> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> 4 </td>
+        <td>Natural Science & Lab </td>
+        <td id="nat_sci2"> N/A </td>
+        <td> </td>
+        <td> 4 </td>
+        <td>Natural Science & Lab </td>
+        <td id="nat_sci3"> N/A </td>
+      </tr>
+
+      <tr>
+        <td id="social_sci1_id"> </td>
+        <td> 3 </td>
+        <td>Gen Ed: (SS)</td>
+        <td id="SS1"> N/A </td>
+        <td id="social_sci2_id"> </td>
+        <td> 3 </td>
+        <td>Gen Ed: (SS)</td>
+        <td id="SS2">N/A </td>
+      </tr>
+
+      <tr>
+        <td> </td>
+        <td> 3 </td>
+        <td>Free Elective </td>
+        <td id="FE1"> N/A</td>
+        <td> </td>
+        <td> 3 </td>
+        <td>Free Elective </td>
+        <td id="FE2"> N/A</td>
+      </tr>
+
+    </table>
+    <br/>
+
+    <table id="SeniorTable">
+      <tr>
+        <th colspan="4">Senior Fall</th>
+        <th colspan="4">Senior Spring</th>
+      </tr>
+      <tr>
+        <td>COMP. </td>
+        <td> 3 </td>
+        <td>CS Elective: </td>
+        <td id="cs_elect1"> </td>
+        <td>COMP.</td>
+        <td> 3 </td>
+        <td>CS Elective: </td>
+        <td id="cs_elect2"> </td>
+      </tr>
+
+      <tr>
+        <td>COMP. </td>
+        <td> 3 </td>
+        <td>Project Course I: </td>
+        <td id="project1"> N/A </td>
+        <td>COMP. </td>
+        <td> 3 </td>
+        <td>Project Course II:.</td>
+        <td id="project2"> N/A </td>
+      </tr>
+
+      <tr>
+        <td>COMP.4040 </td>
+        <td> 3 </td>
+        <td>Analysis of Algorithms </td>
+        <td id="alog"> </td>
+        <td id="tech_elect1_id"> </td>
+        <td> 3 </td>
+        <td>Technical Elective: </td>
+        <td id="tech_elect1"> N/A </td>
+      </tr>
+
+      <tr>
+        <td id="tech_elect2_id"> </td>
+        <td> 3 </td>
+        <td>Technical Elective: </td>
+        <td id="tech_elect2"> N/A </td>
+        <td id="fe3_id"> </td>
+        <td> 3 </td>
+        <td>Free Elective </td>
+        <td id="FE3">N/A </td>
+      </tr>
+
+      <tr>
+        <td id="social_sci3_id"> </td>
+        <td> 3 </td>
+        <td>Free Elective </td>
+        <td id="SS3"> N/A</td>
+        <td id="fe4_id"> </td>
+        <td> 3 </td>
+        <td>Free Elective </td>
+        <td id="FE4">N/A</td>
+      </tr>
+
+    </table>
+  </div>
+
+
+</body>
+
+</html>

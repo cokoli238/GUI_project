@@ -1,6 +1,6 @@
 var snapshot;
 //Called by the submit button, checks if every paremeter is correct to build a valid table
-function validateFormUserInfo() {
+function validateFormUserInfo(goTo) {
   var user = firebase.auth().currentUser;
   if (user == null) {
     alert("Not signed in");
@@ -25,7 +25,7 @@ function validateFormUserInfo() {
     minor: minor,
     classes: classes
   }).then(function() {
-    window.location = "account.html";
+    window.location = goTo;
   }).catch(function(err) {
     // Handle errors
     alert(err.message);
