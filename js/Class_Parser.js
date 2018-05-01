@@ -1,3 +1,6 @@
+var snapshotTeachers;
+var snapshotClasses;
+
 var getJSON = function(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
@@ -12,6 +15,37 @@ var getJSON = function(url, callback) {
   };
   xhr.send();
 };
+
+function get_average_class_rating(id) {
+  var snapshotClass = snapshotClasses.child(id);
+  var val = JSON.parse((snapshotClass.val() && snapshotClass.val().reviews) || "[]");
+  var avg = 0;
+  val.forEach(function(obj) {
+    avg += obj.rating;
+  });
+  if (val.length > 0) {
+    avg = avg / val.length;
+    return avg;
+  } else {
+    return 0;
+  }
+
+}
+
+function get_average_teacher_rating(name) {
+  var snapshotTeacher = snapshotTeachers.child(name);
+  var val = JSON.parse((snapshotTeacher.val() && snapshotTeacher.val().reviews) || "[]");
+  var avg = 0;
+  val.forEach(function(obj) {
+    avg += obj.rating;
+  });
+  if (val.length > 0) {
+    avg = avg / val.length;
+    return avg;
+  } else {
+    return 0;
+  }
+}
 
 function addToSchedule(classId) {
   firebase.database().ref('/users/' + window.user.uid).once('value').then(function(val) {
@@ -103,10 +137,24 @@ function constructClass(classObj, index) {
 
   //Add info to the child here
   //---Class labels---
+  var ratingText = "";
+  var classRate = get_average_class_rating(classObj.id.replace(".", ""));
+  for (i = 1; i < 6; i++) {
+    if (i <= classRate) {
+      ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
+    } else {
+      ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
+    }
+  }
   var idLabel = document.createElement("Label");
-  idLabel.innerHTML = "<p>" + classObj.id + "</p>";
+  idLabel.innerHTML = "<p>" + classObj.id + "</p> <p>" + ratingText + "</p>";
   idLabel.className = "classTextTitle";
+  idLabel.onclick = function() {
+    window.location = 'class_ratings.html?' + classObj.id;
+  };
+  idLabel.style.cursor = "pointer";
   classDiv.appendChild(idLabel);
+
 
   var titleLabel = document.createElement("Label");
   titleLabel.innerHTML = "<p>" + classObj.name + "</p>";
@@ -119,8 +167,17 @@ function constructClass(classObj, index) {
   classDiv.appendChild(creditsLabel);
 
   if (typeof classObj.teacher != "undefined") {
+    var teacherRate = get_average_teacher_rating(classObj.teacher);
+    var ratingText = "";
+    for (i = 1; i < 6; i++) {
+      if (i <= teacherRate) {
+        ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
+      } else {
+        ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
+      }
+    }
     var teacherLabel = document.createElement("Label");
-    teacherLabel.innerHTML = "<p>Teacher: " + "</p><p>" + classObj.teacher + "</p>";
+    teacherLabel.innerHTML = "<p>" + classObj.teacher + "</p> <p>" + ratingText + "</p>";
     teacherLabel.className = "classTextTitle";
     //teacherLabel.style.textDecoration = "underline";
     teacherLabel.style.cursor = "pointer";
@@ -157,105 +214,50 @@ function constructClass(classObj, index) {
   }
 
 
-
-  var preReqLabel = document.createElement("Label");
   if (typeof classObj.prerequisites != "undefined" && classObj.prerequisites.length > 0) {
-    var text = classObj.prerequisites.reduce(function(final, object) {
-      return final + ", " + object;
+    var preReqDiv = document.createElement("div");
+    preReqDiv.className = "classText";
+    preReqDiv.innerHTML = "<p>";
+    var preReqLabel = document.createElement("Label");
+    preReqDiv.appendChild(preReqLabel);
+    preReqLabel.innerHTML = "Pre-Reqs: ";
+    classObj.prerequisites.forEach(function(obj) {
+      var val = document.createElement("Label");
+      val.style.cursor = "pointer";
+      val.innerHTML = obj + ", ";
+      val.onclick = function() {
+        var input = document.getElementById("textSearch");
+        input.value = obj.replace(" ", ".");
+        document.getElementById("Class_Search").click();
+      };
+      preReqDiv.appendChild(val);
     });
-    text = text.substring(0, text.length);
-    preReqLabel.className = "classText";
-    preReqLabel.innerHTML = "<p> Pre Reqs: " + text + "</p>";
-    hiddenDiv.appendChild(preReqLabel);
+    preReqDiv.innerHTML += "</p>";
+    hiddenDiv.appendChild(preReqDiv);
   }
 
-  var coReqLabel = document.createElement("Label");
 
   if (typeof classObj.corequisites != "undefined" && classObj.corequisites.length > 0) {
-    var text = classObj.corequisites.reduce(function(final, object) {
-      return final + ", " + object;
+    var coReqDiv = document.createElement("div");
+    coReqDiv.className = "classText";
+    coReqDiv.innerHTML = "<p>";
+    var coReqLabel = document.createElement("Label");
+    coReqDiv.appendChild(coReqLabel);
+    coReqLabel.innerHTML = "Co-Reqs: ";
+    classObj.corequisites.forEach(function(obj) {
+      var val = document.createElement("Label");
+      val.style.cursor = "pointer";
+      val.innerHTML = obj + ", ";
+      val.onclick = function() {
+        var input = document.getElementById("textSearch");
+        input.value = obj.replace(" ", ".");
+        document.getElementById("Class_Search").click();
+      };
+      coReqDiv.appendChild(val);
     });
-    text = text.substring(0, text.length);
-    coReqLabel.className = "classText";
-    coReqLabel.innerHTML = "<p> Pre Reqs: " + text + "</p>";
-    hiddenDiv.appendChild(coReqLabel);
+    coReqDiv.innerHTML += "</p>";
+    hiddenDiv.appendChild(coReqDiv);
   }
-
-
-  var classRatingDiv = document.createElement("div");
-  classRatingDiv.className = "classText";
-  var classRating = document.createElement("Label");
-  var ratingText = "";
-  for (i = 1; i < 6; i++) {
-    if (i <= classObj.rating) {
-      ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
-    } else {
-      ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
-    }
-  }
-  var classRatingStars = document.createElement("Label");
-  classRatingStars.innerHTML = ratingText;
-  classRatingStars.className = "classText";
-  classRatingStars.style.paddingLeft = "5px";
-  classRatingStars.style.paddingRight = "5px";
-
-  classRating.innerHTML = "Class Rating: ";
-  classRating.className = "classText";
-  classRating.style.paddingRight = "5px";
-  classRatingDiv.appendChild(classRating);
-  classRatingDiv.appendChild(classRatingStars);
-
-  var reviewButtonDiv = document.createElement("div");
-  var reviewButton = document.createElement("Label");  
-  reviewButton.className = 'classButton';  
-  reviewButton.innerHTML = "Class Reviews";  
-  reviewButton.className = "classButton";  
-  reviewButton.style.float = "none";
-  reviewButton.style.padding = "5px";
-  reviewButton.onclick = function() {
-    window.location = 'class_ratings.html?' + classObj.id;
-  };
-  reviewButtonDiv.appendChild(reviewButton);
-  classRatingDiv.appendChild(reviewButtonDiv);
-  hiddenDiv.appendChild(classRatingDiv);
-
-  var teacherRatingDiv = document.createElement("div");
-  teacherRatingDiv.className = "classText";
-  var teacherRating = document.createElement("Label");
-  var ratingText = "";
-  for (i = 1; i < 6; i++) {
-    if (i <= classObj.rating) {
-      ratingText = ratingText + "<span class=\"fa fa-star checked\"></span>";
-    } else {
-      ratingText = ratingText + "<span class=\"fa fa-star\"></span>";
-    }
-  }
-  var teacherRatingStars = document.createElement("Label");
-  teacherRatingStars.innerHTML = ratingText;
-  teacherRatingStars.className = "classText";
-  teacherRatingStars.style.paddingLeft = "5px";
-  teacherRatingStars.style.paddingRight = "5px";
-
-  teacherRating.innerHTML = "Teacher Rating: ";
-  teacherRating.className = "classText";
-  teacherRating.style.paddingRight = "5px";
-  teacherRatingDiv.appendChild(teacherRating);
-  teacherRatingDiv.appendChild(teacherRatingStars);
-
-  var teacherReviewButtonDiv = document.createElement("div");
-  var teacherReviewButton = document.createElement("Label");  
-  teacherReviewButton.className = 'classButton';  
-  teacherReviewButton.innerHTML = "Teacher Reviews";  
-  teacherReviewButton.className = "classButton";  
-  teacherReviewButton.style.float = "none";
-  teacherReviewButton.style.padding = "5px";
-  teacherReviewButton.onclick = function() {
-    window.location = 'teacher_ratings.html?' + classObj.teacher.replace(" ", "_");
-  };
-  teacherReviewButtonDiv.appendChild(teacherReviewButton);
-  teacherRatingDiv.appendChild(teacherReviewButtonDiv);
-  hiddenDiv.appendChild(teacherRatingDiv);
-
 
   //---Buttons---
   var detailsButton = document.createElement("Label");
@@ -290,7 +292,7 @@ function constructClass(classObj, index) {
   };
   var removeButton = document.createElement("Label");
   removeButton.innerHTML = "Remove From Schedule";
-  removeButton.className = "classButton";
+  removeButton.className = "classButtonRemove";
   removeButton.onclick = function() {
     removeFromSchedule(classObj.id);
     removeButton.style.display = 'none';
@@ -394,9 +396,10 @@ input.addEventListener("keyup", function(event) {
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     window.user = user;
-    get_snapshot();
+    get_snapshot_teachers();
   } else {
     window.user = user;
+    window.location = "login.html";
   }
 });
 
@@ -432,4 +435,44 @@ function get_snapshot() {
     // Handle Errors here.
     alert(err.message);
   });
+}
+
+
+
+function get_snapshot_teachers() {
+  firebase.database().ref('/teachers/').once('value').then(function(val) {
+    snapshotTeachers = val;
+    //Start the page by displaying all Classes
+    get_snapshot_classes();
+  }).catch(function(err) {
+    // Handle Errors here.
+    alert(err.message);
+  });
+}
+
+function get_snapshot_classes() {
+  firebase.database().ref('/classes/').once('value').then(function(val) {
+    snapshotClasses = val;
+    //Start the page by displaying all Classes
+    get_snapshot();
+  }).catch(function(err) {
+    // Handle Errors here.
+    alert(err.message);
+  });
+}
+
+function getSearch() {
+  var a = window.location.toString();
+  var name = a.substring(a.indexOf('?') + 1);
+  return name;
+}
+
+//If theres a ?, then we have a search we want to perform on page load
+if (window.location.toString().indexOf('?') > -1) {
+  var val = getSearch();
+  //Associate enter key with search
+  // Get the input field
+  var input = document.getElementById("textSearch");
+  input.value = val;
+  document.getElementById("Class_Search").click();
 }
