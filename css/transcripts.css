@@ -1,0 +1,40 @@
+
+table {
+    font-family: arial, sans-serif;
+    width: 50%;
+    color: black;
+    background: white;
+}
+
+th{
+      background-color: black ;
+      color: white ;
+      font-size: 10pt ;
+      font-weight: normal ;
+      text-align: left ;
+    }
+    td {
+      font-size: 10pt ;
+    }
+    .slot {
+      color: red ;
+    }
+    th.left {
+      border-right: 1px solid white ;
+    }
+    th.right {
+      border-left: 1px solid white ;
+    }
+    td.left {
+      border: 1px solid black ;
+      border-left: 2px solid black ;
+    }
+    td.right {
+      border: 1px solid black ;
+      border-right: 2px solid black ;
+    }
+    td.bottom {
+      border-bottom: 2px solid black ;
+    }
+
+

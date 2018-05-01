@@ -1,0 +1,590 @@
+AMST.2480Values in American Culture (Formerly 40/42.248)
+Id: 001248Credits: 3
+Description
+
+Deals with the development and interrelationship of American views on individualism, nature, science, technology, democracy, ethnicity, and the American dream. Readings begin with the Puritans and end with contemporary essayists. Deals with the development and interrelationship of American views on individualism, nature, science, technology, democracy, ethnicity, and the American dream. Readings begin with the Puritans and end with contemporary essayists. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ARHI.3600Museum Issues (Formerly 58.360)
+Id: 006246Credits: 3
+Description
+
+The art museum in the United States is a unique social institution because of its blend of public and private support and its intricate involvement with artists, art historians, collectors, the art market, and the government. This course will study the art museumÆs history and status in our society today. Special consideration will be given to financial, legal and ethical issues that face art museums in our time. Short papers, oral reports and visits with directors, curators and other museum officials in nearby museums will be included along with a detailed study of a topic of ones choice.
+ARHI.3650Art and Environment (Formerly ARHI.2300)
+Id: 039594Credits: 3
+Description
+
+This course surveys developments in land, environmental, and ecological art. Some of the most compelling artists today engage with the politics of land use, including the conditions of the global economy, climate change, environmental justice, sustainability, sovereignty and land claims, uneven geographies and expanding megacities, and the privatization of public space.
+ARTS.2010Form And Content (formerly 70.201)
+Id: 006827Credits: 3
+Description
+
+Form and Content is considered the capstone course of the Art Foundations Requirement. Through a variety of studio assignments and individual projects students will explore theintegration of humanities related concepts and develop an understanding of how visual artists think, live and function in the twenty first century. As part of the course requirements students will participate in the foundations exhibition at the end of the semester. Art majors only. Fall and Spring.
+Prerequisites
+
+Pre-req: ARTS 1010 Art Concepts I, ARTS 1550 Drawing I, and ARTS 1130 Digital Foundations.
+ASAM.2120Introduction to Asian American Studies
+Id: 039554Credits: 3
+Description
+
+This course provides students with an overview of the multidisciplinary field of Asian American Studies from two distinct disciplines. The course begins with the history of Asian American Studies and the methods used to advance the field. Next, various aspects of the Asian American experience, such as gender and sexuality, are examined. Students also participate in service learning in partnership with Asian-serving community organizations in and around Lowell, MA. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL 1010 or 1020 College Writing I or II or (42.103 Col Writing I-Internatl or ENGL 1110 College Writing I ESL) or HONR.1100.
+BMSC.1010Biomedical Sciences Freshman Seminar
+Id: 040459Credits: 1
+Description
+
+This course is intended to provide the student with an introduction to the professions available within the field of biomedical sciences. Topics include history of the profession, stat and federal laboratory regulations, professional organizations, ethics and professionalism, and an overview of each laboratory discipline. The role of the biomedical scientist in the clinical setting will be explored further through laboratory and industry tours.
+CHEM.3600The Responsible Chemist (Formerly 84.360)
+Id: 007684Credits: 3
+Description
+
+This course is required of chemistry majors and addresses ethical, regulatory, and environmental aspects of their profession. Students are exposed to a wide range of research integrity issues that include TSCA (Toxic Substance Control Act), SOPs (Standard Operating Procedures) and quality management. Compliance issues include an overview of OSHA (Occupational Safety and Health Administration) and EPA (Environmental Protection Agency), as well as an introduction to patent law. The importance of maintaining integrity in their discipline is emphasized, and case studies are presented for study and discussion. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE) and Essential Learning Outcome for Written & Oral Communication (WOC).
+Prerequisites
+
+Chemistry Majors Only
+CRIM.3900Criminal Justice Research Methods (Formerly 44.390)
+Id: 005404Credits: 3
+Description
+
+An introduction to research methods for the criminal justice professional including terminology, standard methodologies, and elementary statistics. Meets Core Curriculum Essential Learning Outcome for Information Literacy (IL).
+Prerequisites
+
+Academic Plan Criminal Justice (BS) and Junior/Senior Standing only.
+ECON.3450Health Economics (Formerly 49.345)
+Id: 005926Credits: 3
+Description
+
+An introduction to the economic analysis of health care market The course presents microeconomic models, empirical findings and public policies referring to the following topics: the production and demand for health (the investment/consumption aspects of health and the relationship between socio economic status and health status), the issues of moral hazard and adverse selection in the insurance market, the role of information in the physician-patient relationship, the different regulation and payment systems for providers, the Medicare and Medicaid programs, and the comparisons between the US system and the health systems of other western economies and developing countries. This class aims to help students becoming more informed future citizens and consumers or producers of healthcare. Prerequisites: 49.201 or instructor's approval. Meets Core Curriculum Essential Learning Outcome for Critical Thinking & Problem Solving (CTPS) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ECON.2010 Economics I (Microeconomics).
+ENGL.2160Monsters, Apes & Nightmares (Formerly 42.216)
+Id: 005033Credits: 3
+Description
+
+This course examines literary responses to science in England and the United States from the early Nineteenth Century to the present. Readings include novels--Frankenstein, The Island of Doctor Moreau, Dr. Jekyll and Mr. Hyde, Jurassic Park--essays, and poems. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.2490Literature on Technology and Human Values (Formerly 42.249)
+Id: 005060Credits: 3
+Description
+
+A study of the relationship between works of fiction, cultural attitudes toward technology, and social values. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.2510War in Literature (Formerly 42.251)
+Id: 005062Credits: 3
+Description
+
+In "War in Lierature" we will study conflict and human values in times of war, focusing on the literature of World War I, World War II, Vietnam, and the Gulf War. Content covered includes a selection of representative (and divergent) literary texts written throughout the 20th century in a variety of genres (poetry, essays, memoir, short story, novel, and hybrid forms like the "graphic novel"). Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.2580Disability in Literature (Formerly 42.258)
+Id: 034574Credits: 3
+Description
+
+The course will focus on historical and contemporary portrayals of disability and disabled people in literature. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3330American Autobiography (Formerly 42.333)
+Id: 005118Credits: 3
+Description
+
+A Study of autobiographical writing from Colonial America to the present. Works from the 17th to the 21st century will allow students to explore the genre of autobiography and related sub-genres, including the captivity narrative, the slave narrative, and the immigration narrative. Readings will also explore literary and political autobiographies. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3350American Women Novelists (Formerly 42.335)
+Id: 005119Credits: 3
+Description
+
+A study of selected novels by American women. Focus on the female voice within the American tradition. Treatment of such issues as domesticity, education, and authorship. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3420Women Writers and the Past (Formerly 42.342)
+Id: 030861Credits: 3
+Description
+
+Women Writers and the Past. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3450British Women Novelists (Formerly 42.345)
+Id: 005121Credits: 3
+Description
+
+Selected novels by writers such as Austen, the Brontes, Eliot, Woolf, Bowen, and Drabble. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3640African American Drama (Formerly 42.364)
+Id: 038101Credits: 3
+Description
+
+A study of the history and development of African American drama, with emphasis on major aesthetic, political, and social movements in African American culture. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3760African-American Literature (Formerly 42.376)
+Id: 005146Credits: 3
+Description
+
+A study of selected works by black American writers, such as Toomer, Wright, Ellison, Walker, and Morrison. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL.1020 College Writing II.
+ENGL.3780Asian American Literature (Formerly 42.378)
+Id: 036696Credits: 3
+Description
+
+Asian Americans hold an intriguing place in the cultural imagination: as perpetual foreigners, as so-called 'model minorities' that serve to maintain hegemonic power relations, and as living embodiments of America's memory of its involvement in recent wars. As artists, however, Asian Americans have contributed and impressive body of literary work, and we'll examine some of the most enduring and provocative of these texts. We'll explore themes such as trauma and the immigrant experience, issues of exile and dislocation, Asian Americans' embattled place in our country's history, and the intersections of race and ethnicity with gender and sexuality. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Req: ENGL 1020 College Writing II.
+EXER.4120Clinical Practicum I and II (Formerly 38.412)
+Id: 004888Credits: 4
+Description
+
+This course is an off-campus experience in either a cardiac/pulmonary rehab clinical facility or in a fitness setting. Students experience practical applications of the concepts and theories learned in the classroom settings. Strength and conditioning, research or industry related setting, or other setting appropriate to the particular student's interests.
+Prerequisites
+
+Pre-Req: PSYC.2720, EXER.4060/4080, EXER.3560, EXER.3010 and Co-Req: EXER.4180
+FAHS.2130Foundations in Liberal Studies (Formerly 59.213)
+Id: 039401Credits: 3
+Description
+
+Foundations of Liberal Studies is a required course for all BLA majors. This course examines the value and importance of drawing on several academic disciplines to understand issues that are too complex to be addressed effectively using any single discipline. Using a case study approach, we will examine how the elements of various disciplines can be integrated and synthesized to understand and give voice to complex issues dealing with health, environment, governance, peace and conflict, etc. Upon completing the course, students will be able to view the courses in their tow BLA concentrations from an interdisciplinary perspective by observing how elements of each discipline can contribute to the understanding of global problems. These skills will be applied in the BLA Capstone Course.
+Prerequisites
+
+Pre-Req: BLA Maj & ENGL.1010 or 1020 College Writing 1 or 2, or HONR.1100 or equivalent.
+FAHS.2200Designing the Future World (Formerly 57.220)
+Id: 033440Credits: 3
+Description
+
+All purposeful human activity involves design. Every day we are surrounded by the products of design processes--buildings, cars, entertainment, corporations, schools, even laws and regulations. They make our lives easier in many ways, but they may also create significant social and environmental problems. In the past, designers often did not consider the impact of their deigns on society, or ignored the negative consequences. Our culture and legal system usually permitted, or even encouraged, this irresponsibility. Today, a small group of scholars, businessmen and women, and activists are rethinking how we design the things around us, with the goal of addressing the most pressing social and environmental issues. This class will introduce students to some of these issues, the people who are confronting them, and the ways in which all of us can contribute to designing a better Future World. With a series of hands on projects, coupled with readings and other resources, students will work to design aspects of the future. In the process you will learn about possible solutions to complex, important problems, but also learn valuable life skills such as problem framing, problem solving, critical thinking, active learning, communication, and simple construction methods. No previous experience is required-only curiosity and eagerness to learn.
+GNDR.2400Introduction to Gender Studies (Formerly GNDR 240)
+Id: 036625Credits: 3
+Description
+
+This course is an interdisciplinary introduction to the field of Gender Studies that examines both commonalities and differences among diverse groups of women. A variety of topics are presented such as past and present stratification in work and family, sexual identities, medial representations of women, and violence against women. Social movements for women's equality and feminist theories and methods are also introduced.
+HIST.2980Introduction to Historical Methods (Formerly 43.298)
+Id: 005255Credits: 3
+Description
+
+An introduction for the undergraduate student to the nature and principles of history. The course takes up methodology, historiography, research methods, electronic resources, bibliography, and the technical and stylistic problems involved in the presentation of research in scholarly form. Required of all history majors in the sophomore year. Meets Core Curriculum Essential Learning Outcome for Information Literacy (IL) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+No Freshman, History and American Studies Majors only.
+MGMT.3800Business Ethics (Formerly BUSI 380/3800)
+Id: 039398Credits: 3
+Description
+
+This course will explore the intersection between business leadership and ethics in various context. It provides the opportunity for students to explore complex issues in societal and professional contexts while engaging in probing conversations with classmates.
+Prerequisites
+
+Pre-Req: MGMT.3010 Organizational Behavior.
+MLSC.2730Introduction to Clinical Laboratory Science (Formerly 36.273)
+Id: 004780Credits: 2
+Description
+
+This course is intended to provide the student with an overview of the medical laboratory. Topics include the history of the field, hospital and laboratory professional organizations, state and federal regulations, and careers in the clinical setting, in research and in industry. The role of the medical laboratory scientist in the clinical setting will be explored further through examination of each laboratory department. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+MUBU.3010Music Business 1 (Formerly 77.301)
+Id: 007373Credits: 3
+Description
+
+A systematic look at career options in the Music Industry. Topics discussed include: songwriting, music publishing, national and international copyright law, music licensing, artist management, and concert promotion.
+Prerequisites
+
+Pre-req: MUTH.1080 Musicianship & Analysis I.
+MUSR.4500The Recording Industry (Formerly 78.450)
+Id: 007400Credits: 3
+Description
+
+A detailed survey of the many career options of the audio-recording industry: position duties and responsibilities. Guest lecturers from diverse careers in the industry share their experiences, disciplines, and backgrounds. Permission of Coordinator and Chair.
+Prerequisites
+
+Pre-Req: MUSR.4100 Recording Production.
+NURS.3070Concepts for Baccalaureate Nursing (Formerly 33.307)
+Id: 004551Credits: 3
+Description
+
+This course is designated as a transition course for registered nurse students pursuing a baccalaureate degree with a major in nursing. This course aims to refine critical thinking skills and analyze nursing's unique contribution to health care. Consideration is given to the interrelationships of theory, research, and practice. Special emphasis is placed on the concepts of health promotion and risk reduction as they relate to individuals and families who are at risk for or experiencing health problems. This course includes a practicum component that focuses on the development of interventions to promote the health of individuals and families at risk.
+Prerequisites
+
+Academic Plan Nursing (BS); RN's only.
+NURS.3150Health Promotion Family Practicum II (Formerly 33.315)
+Id: 004558Credits: 4
+Description
+
+In this clinical course, students provide nursing care to adult clients and their families. The focus is the development of specifically tailored therapeutic interventions to promote the health of these clients and assist with potential or actual health problems. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+NUTR.3450Community Nutrition (Formerly 36.345)
+Id: 036921Credits: 3
+Description
+
+This course explores the role of the nutrition professional in community needs assessment, intervention development and evaluation, and in forming domestic nutrition policy. Nutrition problems in contemporary communities and of selected target groups in the United States and in developing countries are examined. Programs and strategies to meet nutrition needs outside the acute care setting, such as nutrition education and food assistance are explored. Local, state,and national nutrition policy and initiatives in nutrition will also be examined. Meets Core Curriculum Essential Learning Outcome for Diversity and Cultural Awareness (DCA) and Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-Reqs: NUTR 2050 Intro to Nutritional Science and NUTR 2060 Human Nutrition, and Nutritional Science (BS) only.
+PHIL.2030Introduction to Ethics (Formerly 45.203)
+Id: 005499Credits: 3
+Description
+
+Examines the basic issues and problems of ethics and values and a survey of some important alternative answers to the questions raised, on both an individual and a social level, by our necessity to act and to live in a rational and human way. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3230PhilosophyClassics: Nietzsche (Formerly 45.323)
+Id: 005531Credits: 3
+Description
+
+A detailed introduction to Nietzsche's thought and its reception. This course will examine Nietzsche's most important works and central concepts such as the Dionysian and Apollonian, the last man, overman, eternal recurrence, genealogy, and will to power.
+PHIL.3340Engineering and Ethics (Formerly 45.334)
+Id: 005541Credits: 3
+Description
+
+A philosophical analysis of the ethical dimensions and responsibilities of the engineering profession. Specific case studies and ethical issues are analyzed through the application of some of the basic concepts and principles of traditional and contemporary ethical theories. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3350Ethical Issues in Technology (Formerly 45.335)
+Id: 005542Credits: 3
+Description
+
+This course will examine important ethical issues and value conflicts emerging in contemporary science and technology. Through readings and class discussions students will not only have an opportunity to explore the manner in which ethical and technical problems are related, but to develop insight into areas of ethical philosophy and modes of reasoning essential to an intelligent understanding of such issues. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3520Existence & Anxiety (Formerly 45.352)
+Id: 031936Credits: 3
+Description
+
+Explores basic questions of human existence in 19th and 20th Century philosophy and literature. Topics include anxiety and alienation; freedom and responsibility; authenticity and bad faith; individuality and mass society; rationality and the absurd; values and nihilism; and God and meaninglessness. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3610Equality, Justice and the Law (Formerly 45.361)
+Id: 005559Credits: 3
+Description
+
+This class investigates the American fascination with the "rule of law." Questions to be considered include the following: What do we mean by the rule of law? What is the relation between law and morality? How does the rule of law promote justice, and what is its connection with the ideal of equality? What is the role of a written Constitution in protecting the rule of law? Special emphasis will be given to the Equal Protection clause of the Constitution and its role in prohibiting discrimination against disadvantaged groups, including racial minorities, women, and the handicapped. We will also consider in detail some theories of constitutional interpretation, including the Original Intent theory.
+PHIL.3620Democracy and Its Critics (Formerly 45.362)
+Id: 033499Credits: 3
+Description
+
+Explores the diverse roots of the democratic ideal and the opportunities and dangers associated with democratic politics. The arguments for and against democracy will be analyzed. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3690History of Moral Philosophy (Formerly 45.369)
+Id: 035841Credits: 3
+Description
+
+This course explores the history of moral philosophy by examining the writings of key thinkers in the Western philosophical canon, including Leibniz, Hume, Kant and Hegal. We will focus on four basic types of moral reasoning: perfectionism, utilitarianism, intuitionism, and Kantian constructivism. Our goal will be to understand how these thinkers from the modern period of moral philosophy have influenced the way contemporary philosophers think about morality. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3830Philosophy of Death and Dying (Formerly 45.383)
+Id: 037720Credits: 3
+Description
+
+This course is a philosophical and interdisciplinary examination of prominent issues concerning the meaning of life and death and the ethical concerns involved with life, death and end of life issues. Topics in the course include: definitions of death, metaphysics and death, cultural meanings of death, the ethics of killing vs. letting die, euthanasia and suicide, and rights of the dying. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+PHIL.3890Immigration and Global Justice
+Id: 039592Credits: 3
+Description
+
+This course addresses the question of justice in regards to immigration policy. We consider a variety of views including Communitarianism, Liberalism, Nationalism, Cosmopolitanism, and Democratic Theory. We will look at how these different positions have answered the following sorts of questions: Do we have duties to strangers of foreigners that are of equal weight to the duties we owe to members of our family, our circle of friends or our nation? Does part of the definition of "self-determined state" include the right to unilaterally reject petitions of inclusion from non-citizens? Does a commitment to equality demand that borders be open?
+POLI.1010Introduction to American Politics (Formerly 46.101)
+Id: 001243Credits: 3
+Description
+
+An introduction to the politics, structure, and behavior of the American National Political Community. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+POLI.1100Introduction to Politics (Formerly 46.110)
+Id: 005571Credits: 3
+Description
+
+An introductory exploration of basic political concepts, ideologies, and themes. Stresses the importance of understanding politics for everyday life.
+PSYC.4710Seminar in Community Psychology: Selected Topics.
+Id: 039826Credits: 3
+Description
+
+An advanced seminar to consider special topics in community psychology with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as racism, diversity, empowerment, and social change in the contest of social and community life. This is a writing intensive course.
+Prerequisites
+
+Pre-Reqs: PSYC.1010 Intro to Psychological Science and PSYC.2690 Research I:Methods.
+PSYC.4711Seminar in Community Psychology: Racism
+Id: 040479Credits: 3
+Description
+
+An advanced seminar to consider special topics in community psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. The topic of this seminar is racism. In this course we will investigate roots of racism, kinds of racism, reasons for perpetuation of racism, possible solutions to ending racism. Many believer that racism is a thing of the past. Yet, research shows that many of us are unconsciously racist and hurt communities of color without any malicious intent. We will explore our own posting in terms of racism. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4712Seminar in Community Psychology: Immigration
+Id: 040480Credits: 3
+Description
+
+An advanced seminar to consider special topics in community psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. The topic of this seminar is immigration, a very important issue in the United States and around the world. In this seminar we will study the complex process of migration from a community social psychological point of view. Motivations, expectations, acculturation, immigrant status, deportations, policy and more will be covered. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4713Seminar in Community Psychology: Prevent Youth Violence
+Id: 040481Credits: 3
+Description
+
+An advanced seminar to consider special topics in community psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. The topic of this seminar is youth violence, which continues to be a major public health concern in the United States. Preventing youth violence is an important component of creating peaceful and safe neighborhoods and just communities. In this course, we will use ecological and multicultural perspectives to understand different types of youth violence, the contexts in which they occur, and intervention strategies to address the violence. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4714Seminar in Community Psychology: Bridging Differences
+Id: 040482Credits: 3
+Description
+
+An advanced seminar to consider special topics in community psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This course explores dilemmas that can emerge when working to bridge diverse groups in community-based work. The seminar will be organized around narratives that address multiple dimensions of diversity including race, ethnicity, gender, class, sexual orientation, disability, and religion. Too often, guidelines for addressing very complex diversity dynamics are presented as neatly packaged lists of recommendations. However, it is within the stories of the challenges and dilemmas that the complexity of the political, historical, social, and psychological dynamics of diversity are most evident. Students will explore examples of everyday diversity challenges and utilize psychological theories to better understand how the challenges can be shaped by struggles over limited resources, deep historical conflicts between groups, privilege dynamics, intragroup dynamics, organizational cultural norms, and/or other issues. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4730Seminar in Social Psychology (Formerly 47.473)
+Id: 005748Credits: 3
+Description
+
+An advanced seminar to consider special topics in social psychology, with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as social aspects of health and illness; inequalities in education; the impact of globalization; attitude formation and prejudice; and psychology of sex roles. This is a writing intensive course.
+Prerequisites
+
+Pre-Reqs: PSYC.1010 Intro to Psychological Science and PSYC.2690 Research I:Methods.
+PSYC.4731Seminar in Social Psychology: Social (In)justice
+Id: 040483Credits: 3
+Description
+
+An advances seminar to consider special topics in social psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. The topic of this seminar is social injustice, its causes, manifestations, explanations, and social psychological theories that help us understand them. We will explore how and why social injustice prevails in today's world full of resources; why small number of people own majority of world's wealth; why some countries are poorer than others. We will study our own standpoints and where they come from and we will work on possible remedies that could lead to a more just world.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4732Seminar in Social Psychology: Achievement Motivation
+Id: 040484Credits: 3
+Description
+
+An advanced seminar to consider special topics in social psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This course will cover psychological theory and research on the various factors that explain people's motivation to achieve and their performance in different domains. These factors include emotions, needs, personality, efficiency, group membership, identity, goal type, and context. Course goals include honing students' ability to understand, critique, write about, and discuss theoretical and empirical papers within psychology. Students will also develop their skills in generating testable hypotheses. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4733Seminar in Social Psychology: the Mind-Body Perspective in Communication
+Id: 040485Credits: 3
+Description
+
+An advanced seminar to consider special topics in social psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar will focus on the role communication processes (including Intra-Personal, interpersonal, and Mediated-Communication) play in a variety of health related contexts, effects, and processes. Included will be: Self-regulation theories; placebo and nocebo effects; unconscious processes; biofeedback effects and mechanisms; hypnosis; imagery; pain management; emotion regulation; well-being; and the ability to consciously influence autonomic processes such as the immune and endocrine systems. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4734Seminar in Social Psychology: Health Campaigns
+Id: 040486Credits: 3
+Description
+
+An advanced seminar to consider special topics in social psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar will review the stat of the science and art of effective medial health campaigns in light o how they are developed, delivered, and evaluated. Seminar participants will discuss and critically analyze campaigns relative to their effects on health-related awareness, knowledge, attitudes, and behaviors. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4735Seminar in Social Psychology: Workplace Diversity
+Id: 040487Credits: 3
+Description
+
+An advanced seminar to consider special topics in social psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Over the course of our lives, many of us will be working in organizations that include diverse workers, and thus it is important to understand the issues that shape interpersonal and system dynamics within such settings. In this seminar, we review theories and research relevant to how race, ethnicity, class, gender, sexual orientation, and disability dynamics affect workplace systems. Classes will be highly interactive and discussion-oriented as students learn about the challenges diverse organizations face in fostering positive working relationships and about strategies adopted to enhance the effectiveness of the diverse workplace. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4736Seminar in Social Psychology: Psychology of Sustainability
+Id: 040488Credits: 3
+Description
+
+An advanced seminar to consider special topics in social psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. In this course we will explore unequal distribution of resources and power and the culture of consumerism in all parts of the world, including the United States. Once people are aware can make informed choices about what and why and how much they buy, about the companies that produce and sell the products and the political views they support. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4740Seminar in Developmental Psychology (Formerly 47.474)
+Id: 005749Credits: 3
+Description
+
+An advanced seminar to consider special topics in developmental psychology, with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as psychology of the family and parent-child relations; infant development; adjustment during adulthood; and death and dying. This is a writing intensive course.
+Prerequisites
+
+Pre-Reqs: PSYC.1010 Intro to Psychological Science and PSYC.2690 Research I:Methods.
+PSYC.4741Seminar in Developmental Psychology: Adolescent Identity
+Id: 040489Credits: 3
+Description
+
+An advanced seminar to consider special topics in developmental psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar will explore the phenomenon of adolescent identity development, beginning with Erik Erikson's seminal work on the subject and continuing through contemporary treatments. We will examine development of identity from extended consciousness, a sense of autobiographical self (1-2 years), to a theory of mind (4-5 years), conception of a personal fable (10-14 years), and the emergence of full life stories (17-25 years). Specific issues of focus will include ethnic, social class, and gender role identity development, identity crises and resolutions, and representations of relationships with family, friends, school, and work. Students will write and analyze their own life stories, as well as lead discussions, and prepare a research paper. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2600 Child & Adolescent Development, and PSYC.2690 Research I; Methods.
+PSYC.4742Seminar in Developmental Psychology: Psychology of Education
+Id: 040490Credits: 3
+Description
+
+An advanced seminar to consider special topics in developmental psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar takes an intensive look at the psychology of education and of learning. We will read about theories of education, research on learning, and study some historical and current trends in both formal education (school) and informal learning environments (hobby subcultures, museums,camps, etc). Readings will include both historical examples (John Dewey, Jane Addams, Paolo Friere) and schooling systems, and policymakers in higher education. In addition to reading, class discussion, and engaging hands on exercises, students will plan and deliver a term-length creative project on the psychology of learning and education. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2600 Child & Adolescent Development, and PSYC.2690 Research I; Methods.
+PSYC.4743Seminar in Developmental Psychology: The Role of Trauma in Child Development
+Id: 040491Credits: 3
+Description
+
+An advanced seminar to consider special topics in developmental psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Trauma is a relatively common experience of childhood. Far too many children and youth in the US are witnesses to domestic violence and victims of abuse, neglect, and other violent crimes. Worldwide, millions of children have been disabled, injured, orphaned, or recruited as child soldiers in armed conflicts. When natural disasters strike, children are often among those affected most severely. How do these experiences influence subsequent growth and development? This seminar examines the role of trauma in child development form an ecological perspective with a focus on neurophysiological, affective, and relational systems. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2600 Child & Adolescent Development, and PSYC.2690 Research I; Methods.
+PSYC.4750Seminar in Clinical Psychology (Formerly 47.475)
+Id: 005750Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology, with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as health psychology and behavioral medicine; the nature and causes of or interventions for specific psychological disorders (e.g.,autism spectrum disorder, schizophrenia); the community mental health movement; clinical methods of assessment. This is a writing intensive course.
+Prerequisites
+
+Pre-Reqs: PSYC.1010 Intro to Psychological Science and PSYC.2690 Research I:Methods.
+PSYC.4751Seminar in Clinical Psychology: Women's Health
+Id: 040492Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Physical health and illness do not occur in a vacuum. Rather, they are embedded in a complex and dynamic system. This biological (e.g., disease process), psychological (e.g., mental health status) and social (e.g., culture) factors. Topics will include reproductive health, cardiovascular illness, substance use, and eating behaviors. Sexual orientation, race, socioeconomic status and other issues of diversity will be integrated throughout the semester. Students will learn from reading and discussing scholarly articles and book chapters, critically watching relevant videos, and writing individual literature review papers. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4752Seminar in Clinical Psychology: Autism
+Id: 040493Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Autism spectrum disorder (ASD) is a complex neurological disorder that typically appears before the age of three and immediately and profoundly affects a young child's ability to communicate, develop language, form social relationships and respond appropriately to environmental cues. Over the last 15-20 years, autism has received an increasing level of attention in both scientific arenas and the popular press. Most recent estimates are that about 1 in 50 children are affected. This seminar will examine issues in the etiology, characteristics and treatment of autism and related developmental disabilities. The seminar will also explore some of the more prominent theories and controversies surrounding these disorders. Much of the seminar will be focused on a behavioral approach to understanding and treating children with autism and significant intellectual challenges. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4753Seminar in Clinical Psychology & Behavioral Medicine
+Id: 040494Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This course examines physical health and illness by integrating information about biological processes, psychological characteristics, and social contexts. We will discuss the following topics throughout the course: the roles of personality, emotion, mental health, and human development in physical well-being; the relationship between health psychology and other disciplines such as nursing, anthropology and genetics; the significance of prevention and public policy in physical health; and the ways in which health psychology is important in a variety of health problems, such as heart disease, cancer, and obesity. This i s a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4754Seminar in Clinical Psychology: Language Assessment and Intervention in Autism
+Id: 040495Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This course is designed to provide students with a working knowledge of behavioral language assessments and empirically validated interventions to improve language and communication for young children with autism and related disabilities. Successful completion of the course will help prepare students for a position as a behavior technician. Students will participate in class discussions, presentations, and application activities throughout the semester. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4755Seminar in Clinical Psychology: Autism in Adolescents & Young Adults
+Id: 040496Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar will focus on adolescents and young adults on the "high-functioning" end of the autism spectrum. Students will learn the behavioral and psychological characteristics associated with this population, diagnostic procedures, etiology, consider various interventions for this population, and discuss current controversies in the field. We will also consider the impact of autism spectrum disorders (ASD) on individual and their families. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4756Seminar in Clinical Psychology: Sexual Offending
+Id: 040497Credits: 3
+Description
+
+An advanced seminar to consider special topics in clinical psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. The purpose of this course is to examine current psychological theory and research relating to the causes and consequences of sexual aggression. It is designed to acquaint you with some of the key issues, questions, and findings in this field, as well as to allow you to develop some of the critical skills needed by research psychologists. The course is organized topically. We begin by reading and thinking about the social construction of masculinity and femininity (especially through representations in the media) and how these constructions might contribute to sexual aggression. The bulk of the course is devoted to an examination of psychological processes related to victimization and perpetration. The course concludes with a discussion of several special topics and an examination of rape prevention and education. Special topics may include a focus on juvenile and female offenders, specific risk factors for perpetration, campus sexual assault, pedophilia, child maltreatment, pornography, recidivism rates, offender laws, and victim testimonies. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4770Seminar in Contemporary Trends (Formerly 47.477)
+Id: 001242Credits: 3
+Description
+
+An advanced seminar to consider current trends in psychology, with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as contemporary models of addictive behavior; the interaction of psychology and law; existential psychology; psychology of technological change. This is a writing intensive course.
+Prerequisites
+
+Pre-Reqs: PSYC.1010 Intro to Psychological Science and PSYC.2690 Research I:Methods.
+PSYC.4771Seminar in Contemporary Trends: Addictions
+Id: 040498Credits: 3
+Description
+
+An advanced seminar to consider special current topics in psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. The focus of this seminar is on the psychology of addictions. Drawing upon current theory and research, we will look at the nature and causes of the problem behaviors associated with alcohol and drug use. We will also consider whether problems in such areas as shopping, eating, gambling, sex, video games, and the Internet can be understood as forms of addictions. In addition, we will examine the implications of whether or not such addictions should be viewed as diseases, and we will evaluate the relative importance of biological, psychological and socio-cultural factors. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2320 Psychology of Personality, or PSYC.2720 Abnormal Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4772Seminar in Contemporary Trends: Psychology & Law
+Id: 040499Credits: 3
+Description
+
+An advanced seminar to consider special current topics in psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This course is an introduction to many topics representing major fields of study within psychology and law. Topics may include: eyewitness testimony, lie detection, jury selection, child protection, forensic interviews, and the death penalty. In this course, students will learn about the diversity of interests among legal findings. The main goal is to provide students with an understanding of relevant theory, empirical findings, and research methodology. Guest speakers will enhance learning. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2690 Research I: Methods, and PSYC.3050 Psychology and Law.
+PSYC.4773Seminar in Contemporary Trends: Generational Identities and Relations
+Id: 040500Credits: 3
+Description
+
+An advanced seminar to consider special current topics in psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar will focus on generational identities and intergenerational relations. Generation is an important dimension of human experience in modern societies and a key aspect of self-identity, but it is also linked to tensions and misunderstandings between people of different ages. Specific topics to be addressed include: cultural and historical differences in ideas about generation and cohort; the development of generational identities: generation, mass marketing, and consumerism; the politics of generation and intergenerational tensions; bilateral socialization and positive intergenerational exchange; similarities and differences between Baby Boomers. Gen-X'ers, and Millennials; ageism and age segregation, and; generativity and the future of our planet. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2600 Child & Adolescent Development, and PSYC.2690 Research I; Methods.
+PSYC.4774Seminar in Contemporary Trends: Psychology of Globalization
+Id: 040501Credits: 3
+Description
+
+An advanced seminar to consider special current topics in psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. We know that we are part of a global world and that many of the things we buy and consume are produced in other countries. But what do we know of how they are made: Do we understand that there may be hidden costs in the price we pay for goods at the supermarket, in a coffee shop: Understanding the nature of globalization and its consequences is critical for us to be effective citizens in the world. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2090 Social Psychology, or PSYC.2550 Community Psychology, and PSYC.2690 Research I: Methods.
+PSYC.4780Seminar in Cognitive Psychology (Formerly 47.478)
+Id: 039175Credits: 3
+Description
+
+An advanced seminar to consider special topics in cognitive psychology, with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as attention and memory; mental imagery; decision-making; language; applications of cognitive psychology to education. This is a writing intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2690 Research I: Methods, and PSYC.2780 Cognitive Psychology.
+PSYC.4781Seminar in Cognitive Psychology: Educational Applications
+Id: 040502Credits: 3
+Description
+
+An advanced seminar to consider special topics in cognitive psychology with focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. This seminar is designed to give you an in-depth look into the impact of cognitive psychology on education. We will look at basic processes, including those of attention, memory, and motivation, starting first from basic theoretical principles. We will then read papers that have taken these theoretical principles as a starting point and applied them to real-life issues in education, such as exam performance and students' self-evaluations of their own performance. This is a writing-intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2690 Research I: Methods, and PSYC.2780 Cognitive Psychology.
+PSYC.4790Seminar in Behavioral Psychology
+Id: 040116Credits: 3
+Description
+
+An advanced seminar to consider special topics in behavioral psychology, with special focus on critique of the theoretical and empirical literature, identification of future research pathways, and the potential for application with consideration of ethics and social responsibility. Specific topics will vary and may include such topics as conceptual issues in behavioral psychology; applied behavior analysis; and the applications of behavioral psychology to education, language, symbolic behavior, and attention. This is a writing intensive course.
+Prerequisites
+
+Pre-req: PSYC.1010 Intro to Psychological Science, and PSYC.2690 Research I: Methods, and PSY.2760 Theories of Learning, or PSYC.3120 Learning and Behavior.
+PUBH.2080Principles of Environmental Health Science (Formerly PUBH.208)
+Id: 004487Credits: 3
+Description
+
+This is a survey course that provides an overview of the rapidly growing field of environmental health, through an introduction to the links between environmental stressors and impacts on public health. The course will explore human and industrial activities that impact on health such as overpopulation, food production, air and water pollution, waste, toxic substances, pests, and global climate change. The course will also examine the types of diseases and illnesses that result from environmental impacts. These impacts have multiple causes and understanding these can in turn provide clues as to the most effective prevention options. Students will explore topics of interest in greater detail through short writing assignments. Meets Core Curriculum Essential Learning Outcome for Social Responsibility & Ethics (SRE).
+Prerequisites
+
+Pre-req: Public Health or Community Health, or Environmental Health Majors only or Public Health or Community Health Minors, or Instructor Permission.
+PUBH.4010Public Health Senior Seminar
+Id: 040517Credits: 3
+Description
+
+The Public Health Senior Seminar prepares public health students for their capstone experience. Students will reflect on their career plans and their current state of preparedness for the next steps in professional development. This course provides an overview of the current stat of various professions in public health and the future of public health practice, both nationally and internationally.
+Prerequisites
+
+Pre-Req: Senior status.
+SOCI.1150Social Problems (Formerly 48.115)
+Id: 038335Credits: 3
+Description
+
+This entry level course uses the core concept of social problems to introduce basic social science reasoning-how social scientist define research questions, develop systematic methods to study them, gather evidence, search for pattern, in link findings to existent knowledge,. Cases provide opportunities to discuss how private problems develop into public issue, illustrating sociology as a discipline that evolves in response to social conflicts and inequalities. The course also meets General Education requirements for Ethics and Diversity.
+SOCI.3040Science, Technology and Society (Formerly SOCI.2220)
+Id: 039609Credits: 3
+Description
+
+The complex relationships between science, technology, and society are commonly obscured by a popular belief in the value-neutrality and objectivity of science and technology. Being able to analyze that belief as a myth is necessary in order to engage in critical analysis of the ways in which science, technology and society are mutually constituted. Social inequalities are both built into and perpetuated by science, technology, and engineering. Likewise, science, technology, and engineering shape and are shaped by various societal power relations. This course will provide the analytical tools necessary to understand science, technology, and engineering as fundamentally social enterprises and to understand how they shape society.
+Prerequisites
+
+Pre-Req: SOCI.1010 Intro to Sociology.
+SOCI.3210Social Theory I (Formerly 48.321)
+Id: 005848Credits: 3
+Description
+
+This course offers a critical examination of major classical sociological theories. It emphasizes the relationship between the individual and society and the competing pressures for social order and social conflict.
+Prerequisites
+
+Pre-req: 48.101 Intro to Sociology, and Sophomore level or higher, and Sociology Majors only or Permission of Instructor.
+WLIT.3730Italian Humanism (Formerly 52.373)
+Id: 006022Credits: 3
+Description
+
+A study of the waning of the Middle Ages and the dawning of the Renaissance as seen through the work of Petrarch and Boccaccio. Emphasis is on the study of sources and the influence of Petrarch and Boccaccio upon the literatures of western Europe. Conducted in English.
+WLIT.3780Italian Cinema and Culture (Formerly 52.378)
+Id: 006025Credits: 3
+Description
+
+A guide to contemporary Italian studies through literary and cultural approaches. The works of central figures in contemporary Italian letters are examined in view of their impact on Italian life. Emphasis is given to poets, novelists, the new cinema, the influences of existentialism, and the impact of America on Italian literature. Conducted in Italian/English.

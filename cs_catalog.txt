@@ -1,0 +1,9 @@
+   if (mCursorAdapter.getCursor().moveToFirst()){
+            do{
+                credits = mCursorAdapter.getCursor().getString(mCursorAdapter.getCursor().getColumnIndex(AdvisingEntry.COL_CREDITS));
+                creditsTracker = creditsTracker + Integer.parseInt(credits);
+            }while(mCursorAdapter.getCursor().moveToNext());
+        }
+
+        Log.v(TAG, "Here are the credits  " + creditsTracker + "  " +
+                "in our list\n");

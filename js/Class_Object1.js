@@ -1,4 +1,6 @@
  
+
+
 function Course(id, name, date, grade, credits, taken) {
     this.id = id;
     this.name = name;
@@ -119,7 +121,18 @@ for (i = 0; i < courseHistoryArray.length ; i++){
   }
 
 }
-
+function hide(){
+   
+    var btn = document.getElementById('tutBtn');
+    var tut = document.getElementById('tutorial');
+    if (tut.style.display === "none") {
+        tut.style.display = "block";
+        btn.innerHTML = "Hide Tutorial";
+    } else {
+        tut.style.display = "none";
+        btn.innerHTML = "Show Tutorial";
+    }
+}
 
 function makeClass(){
 /* Parsing patterns for course history */ 
