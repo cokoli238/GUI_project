@@ -1,4 +1,4 @@
-{
+var ahRequirements = {
 	"database": [{
 			"department": [{
 					"classId": "AMST.2480",

@@ -1,16 +1,27 @@
 /* CSS for adding content example */
 
-
-
 body {
-  background-color: darkgray;
+ /* background-color: darkgray;
+  background: linear-gradient(to bottom, #0066cc 0%, #ccffff 100%);
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-image:  url('notebook.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat; */ 
+  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
   padding: 20px;
+}
+ 
+
+html { 
+  background: url('notebook.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 li {
@@ -19,11 +30,16 @@ li {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  
 }
 
 .topnav a {
-  float: right;
+  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -47,20 +63,23 @@ li {
   display: block;
   width: 400px;
   text-align: center;
+  width: 50%;
 }
 
 /* Add a background color when the inputs get focus */
-
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+    background-color: #ddd;
+    outline: none;
 }
 
+
+
 .register {
+  box-shadow: 10px 10px 10px #888888;
   padding: 20px;
   margin: 5px 0 22px 0;
   border: none;
-  background: lightgrey;
+  background: #f1f1f1;
   border-radius: 10px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +89,7 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   width: 500px;
   font-size: 20px;
-  text-align: center;
+  text-align:center;
 }
 
 .myAccountButton {
@@ -91,58 +110,34 @@ input[type=text]:focus, input[type=password]:focus {
   opacity: 1;
 }
 
-.searchDiv {
-  padding: 30px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  /*border: 2px red solid;*/
-  float: center;
-  margin: 0 auto;
-  display: block;
-  width: 1455px;
-  font-size: 20px;
-  text-align: center;
-}
 
-.myAccountText {
-  padding: 20px;
-  text-align: center;
-  font-family: "Verdana", Times, sans-serif;
-  font-size: 23px;
-}
-
-.button {
+.button{
   background-color: blue;
   font-size: 20px;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-  border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
 }
-
 .button:hover {
-  opacity: 1;
+    opacity:1;
 }
 
-.registerHeader {
-  text-align: center;
-  font-size: 30px;
+.registerHeader{
+    text-align:center;
+    font-size: 30px;
 }
 
-.inputBox {
-  width: 80%;
+.inputBox{
+  width:80%;
   font-size: 15px;
 }
-
-.inputDropdown {
-  width: 80%;
+.inputDropdown{
+  width:80%;
   font-size: 30px;
 }
 
@@ -171,15 +166,32 @@ input[type=text]:focus, input[type=password]:focus {
   border-radius: 12%;
   transition: all 0.3s ease 0s;
   opacity: 0.8;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #524852;
+  -moz-box-shadow: 0px 1px 3px #524852;
+  box-shadow: 0px 1px 3px #524852;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .search_button:hover {
   opacity: 1.0;
+  background: #3cb0fd;
+  text-decoration: none;
 }
 
 .search_input {
-  width: 50%;
-  min-width: 100px;
+  width: 30%;
   height: 100%;
   font-size: 17px;
 }
@@ -204,16 +216,33 @@ input[type=text] {
   border-radius: 12%;
   transition: all 0.3s ease 0s;
   opacity: 0.8;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #524852;
+  -moz-box-shadow: 0px 1px 3px #524852;
+  box-shadow: 0px 1px 3px #524852;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .login_button:hover {
-  opacity: 1.0;
+  background: #3cb0fd;
+  text-decoration: none;
 }
 
 /* */
 
 .classDiv {
-  width: 1500px;
+  width: 85%;
   margin: auto;
   overflow: hidden;
   background-image: url("umlbg.png");
@@ -227,7 +256,7 @@ input[type=text] {
 }
 
 .classTextTitle {
-  width: 230px;
+  width: 250px;
   padding: 20px;
   padding-left: 30px;
   padding-right: 0px;
@@ -263,6 +292,7 @@ input[type=text] {
 
 .classHiddenDiv {
   font-size: 20px;
+  width: 80%;
   clear: both;
   display: block;
 }
@@ -281,24 +311,66 @@ input[type=text] {
   transition: all 0.3s ease 0s;
 }
 
-.classButtonRemove {
-  float: right;
-  margin-left: 20px;
-  margin-top: 20px;
-  background-color: red;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 12%;
-  transition: all 0.3s ease 0s;
-}
-
 .userReview {
   float: right;
   color: white;
   padding: 16px;
   font-size: 23px;
   border: none;
+}
+
+.classButton:hover, .classButton:focus {
+  background-color: #24248f;
+}
+
+/* Account.html button */
+
+.UpdateInfo_button, .ViewPreviousClass_button, .RateClasses_button, .RateTeachers_button, .ViewMySequences_button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #524852;
+  -moz-box-shadow: 0px 1px 3px #524852;
+  box-shadow: 0px 1px 3px #524852;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  /*display: block;*/
+  width: 20%;
+}
+
+.UpdateInfo_button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.ViewPreviousClass_button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.RateClasses_button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.RateTeachers_button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.ViewMySequences_button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }
