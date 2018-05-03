@@ -1,5 +1,4 @@
-function  getAH(){
-var ahReqs = {
+{
 	"database": [{
 			"department": [{
 					"classId": "AMST.2480",
@@ -843,10 +842,4 @@ var ahReqs = {
 			]
 		}
 	]
-	}
-	
-return ahReqs;	
 }
-
-
-

@@ -81,6 +81,14 @@ function viewSequnce(courseHistoryArray){
 	var comp_arch = document.getElementById('Computer Architecture');
 	var os = document.getElementById('Intro to Operating Sys.');
 	var opl  = document.getElementById('Org. of Prog. Lang.');
+    var ah1 = document.getElementById('');
+    var ah2 =  document.getElementById('');
+    var ah3 = document.getElementById('');
+    var ss1 = document.getElementById('');
+    var ss2 =  document.getElementById('');
+    var ss3 = document.getElementById('');
+    var _diversity = document.getElementById('');
+    var _ethics =  document.getElementById('');
     var ah_counter = 0;
     var ah_array = new Array();
 
@@ -152,7 +160,7 @@ for (var i = 0; i < courseHistoryArray.length ; i++){
     case "Org Programming Languages ":
        	opl.innerHTML = courseGrade;
         break;
-    /* case " ":
+    /* case "General Psychology":
         .innerHTML = courseGrade;
         break;
     case " ":
