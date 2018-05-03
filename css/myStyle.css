@@ -29,16 +29,19 @@ li {
 }
 
 .topnav {
-/*<<<<<<< HEAD
+
   overflow: hidden;
   background-color: black;
   font-size: 16px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
-  text-align: left;*/
-    background-color: #333;
+  text-align: left;
+  /* */
+  background-color: #333;
   box-shadow: 3px 3px 5px grey;
   box-shadow: inset 0 0 150px darkblue;
+  z-index: 99999;
+
 }
 
 .umlPic {
@@ -47,7 +50,7 @@ li {
 }
 
 .topnav a {
-  float: left;
+  float: right;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
