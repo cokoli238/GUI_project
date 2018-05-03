@@ -211,19 +211,41 @@ tr td:hover { background: #666; color: #FFF; }
   <input id="ahReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
-<label id="ssReq" class="container" style="color: blue;float: left;">Social Sciences (3)
-  <input type="checkbox">
+<label class="container" style="color: blue;float: left;">Social Sciences (3)
+  <input id="ssReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
-<label id="dReq" class="container" style="color: green;float: left;padding-bottom: 14px;">Diversity (1)
-  <input type="checkbox">
+<label class="container" style="color: green;float: left;padding-bottom: 14px;">Diversity (1)
+  <input id="dReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
-<label id="eReq" class="container" style="color: purple;float: left;">Ethics (1)
-  <input type="checkbox">
+<label class="container" style="color: purple;float: left;">Ethics (1)
+  <input id="eReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
 </div>
+
+<!--
+<div id="electives" class="register" style="position: absolute;top: 128px;left: 1150px;width: 200px;">
+<h3>My GenEds</h3> 
+<label class="container" style="color: orange; float: left;">Natural Science & Lab (3)
+  <input id="nsReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="color: blue;float: left;">CS Elective (2)
+  <input id="ssReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="color: green;float: left;padding-bottom: 14px;">Technical Elective (1)
+  <input id="dReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="color: purple;float: left;">Ethics (1)
+  <input id="eReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div> -->
+
 
   <div id="tutorial">
     <div style="position:relative;width:90%;margin:auto;height:630px;padding-top:50px;">
@@ -380,10 +402,10 @@ tr td:hover { background: #666; color: #FFF; }
         <td id="Intro to Operating Sys."> </td>
       </tr>
       <tr>
-        <td> </td>
+        <td id="nat_sci1_id"> </td>
         <td> 4 </td>
         <td>Natural Science & Lab </td>
-        <td id="nat_sci2"> N/A </td>
+        <td id="nat_sci1_grade"> N/A </td>
         <td> </td>
         <td> 4 </td>
         <td>Natural Science & Lab </td>
@@ -421,10 +443,10 @@ tr td:hover { background: #666; color: #FFF; }
         <th colspan="4">Senior Spring</th>
       </tr>
       <tr>
-        <td>COMP.XXXX</td>
+        <td id="cs_elec1_id">COMP.XXXX</td>
         <td> 3 </td>
-        <td>CS Elective: </td>
-        <td id="cs_elect1"> </td>
+        <td id="cs_elec1_name">CS Elective: </td>
+        <td id="cs_elec1_grade"> </td>
         <td>COMP.XXXX</td>
         <td> 3 </td>
         <td>CS Elective: </td>
@@ -432,10 +454,10 @@ tr td:hover { background: #666; color: #FFF; }
       </tr>
 
       <tr>
-        <td>COMP.XXXX</td>
+        <td id="project1_id">COMP.XXXX</td>
         <td> 3 </td>
-        <td>Project Course I: </td>
-        <td id="project1"> N/A </td>
+        <td id="project1_name">Project Course I: </td>
+        <td id="project1_grade"> N/A </td>
         <td>COMP.XXXX</td>
         <td> 3 </td>
         <td>Project Course II:.</td>

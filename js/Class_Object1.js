@@ -81,6 +81,8 @@ function viewSequnce(courseHistoryArray){
 	var comp_arch = document.getElementById('Computer Architecture');
 	var os = document.getElementById('Intro to Operating Sys.');
 	var opl  = document.getElementById('Org. of Prog. Lang.');
+    var ns1_grade = document.getElementById('nat_sci1_grade');
+    var ns1_id = document.getElementById('nat_sci1_id');
     var ah1_name = document.getElementById('ah1_name');
     var ah2_name =  document.getElementById('ah2_name');
     var ah3_name = document.getElementById('ah3_name');
@@ -93,18 +95,34 @@ function viewSequnce(courseHistoryArray){
     var ss1_grade = document.getElementById('ss1_grade');
     var ss2_grade =  document.getElementById('ss2_grade');
     var ss3_grade = document.getElementById('ss3_grade');
+    var ah1_id = document.getElementById('ah1_id');
+    var ah2_id =  document.getElementById('ah2_id');
+    var ah3_id = document.getElementById('ah3_id');
+    var ss1_id = document.getElementById('ss1_id');
+    var ss2_id =  document.getElementById('ss2_id');
+    var ss3_id = document.getElementById('ss3_id');
+    var dCheckbox = document.getElementById('dReq');
+    var eCheckbox = document.getElementById('eReq');
+    var ahCheckbox = document.getElementById('ahReq');
+    var ssCheckbox = document.getElementById('ssReq');
+    var cs_elec1_grade = document.getElementById('cs_elec1_grade');
+    var cs_elec1_id = document.getElementById('cs_elec1_id');
+    var cs_elec1_name = document.getElementById('cs_elec1_name');
+    var project1_grade = document.getElementById('project1_grade');
+    var project1_id = document.getElementById('project1_id');
+    var project1_name = document.getElementById('project1_name');
+
    // var _diversity = document.getElementById('');
    // var _ethics =  document.getElementById('');
     var ah_counter = 0;
     var ah_array = new Array();
+    var ss_counter = 0; 
 
-
-for (var i = 0; i < courseHistoryArray.length ; i++){
+    for (var i = 0; i < courseHistoryArray.length ; i++){
 	var courseName = courseHistoryArray[i].name;
     var courseID = courseHistoryArray[i].id;
 	var courseGrade = courseHistoryArray[i].grade;
-	console.log("\nCourse: " + courseName + "\nGrade: " + courseGrade);
-
+	console.log("\nCourse: " + courseName + "-\nGrade: " + courseGrade);
  	switch(courseName) {
     case "Computing I ":
         comp1.innerHTML = courseGrade;
@@ -129,15 +147,12 @@ for (var i = 0; i < courseHistoryArray.length ; i++){
         break;
     case "Computing III ":
         comp3.innerHTML = courseGrade;
-        console.log("\nNigga We MADE IT!");
         break;
     case "Computing IV ":
         comp4.innerHTML = courseGrade;
-        console.log("\nNigga We MADE IT!");
         break;
     case "Org & Assembly Lang ":
         assembly.innerHTML = courseGrade;
-        console.log("\nNigga We MADE IT!");
         break;
     case "Logic Design ":
         logic.innerHTML = courseGrade;
@@ -152,7 +167,9 @@ for (var i = 0; i < courseHistoryArray.length ; i++){
         probstat.innerHTML = courseGrade;
         break;
     case "Oral & Wrttn Comm for CS ":
-        oral.innerHTML = courseGrade;
+        ah3_grade.innerHTML = courseGrade;
+        ah_counter++;
+        console.log("ORAL: "+ ah_counter + "\n");
         break;
  	 case "Intro to Operating Systems ":
         os.innerHTML = courseGrade;
@@ -166,7 +183,56 @@ for (var i = 0; i < courseHistoryArray.length ; i++){
     case "Org Programming Languages ":
        	opl.innerHTML = courseGrade;
         break;
-    /* case "General Psychology":
+     case "General Psychology ":
+        ss1_grade.innerHTML = courseGrade;
+        ss1_name.innerHTML = courseName;
+        ss1_id.innerHTML = courseID;
+        ss_counter++;
+        break;
+    case "Intro to American Politics ":
+        ss2_grade.innerHTML = courseGrade;
+        ss2_name.innerHTML = courseName;
+        ss2_id.innerHTML = courseID;
+        ss_counter++;
+        break;
+    case "Intro to Sociology ":
+        ss3_grade.innerHTML = courseGrade;
+        ss3_name.innerHTML = courseName;
+        ss_counter++;
+        ss3_id.innerHTML = courseID + " (E)";
+        ss3_id.style.color = "green";
+        dCheckbox.checked = true;
+        break;
+    case "Introduction to Ethics ":
+        ah1_grade.innerHTML = courseGrade;
+        ah1_name.innerHTML = courseName;
+        ah1_id.innerHTML = courseID + " (D)";
+        ah1_id.style.color = "purple";
+        eCheckbox.checked = true;
+        console.log("ETHICS: "+ ah_counter + "\n");
+        break;
+    case "Introduction to Theatre ":
+       ah2_grade.innerHTML = courseGrade;
+       ah2_name.innerHTML = courseName;
+       ah2_id.innerHTML = courseID;
+       ah_counter++;
+       console.log("Thea: "+ ah_counter + "\n");
+       break;
+    case "Life Science I ":
+        ns1_grade.innerHTML = courseGrade;
+        ns1_id.innerHTML = courseID;
+        break;
+    case "Mobile App Programming l ":
+        cs_elec1_grade.innerHTML = courseGrade;
+        cs_elec1_id.innerHTML = courseID;
+        cs_elec1_name.innerHTML = courseName;
+        break;
+    case "GUI Programming I ":
+        project1_id.innerHTML = courseID;
+        project1_grade.innerHTML = courseGrade;
+        project1_name.innerHTML = courseName;
+        break;
+    /*case " ":
         .innerHTML = courseGrade;
         break;
     case " ":
@@ -191,20 +257,22 @@ for (var i = 0; i < courseHistoryArray.length ; i++){
         .innerHTML = courseGrade;
         break;
     case " ":
-        .innerHTML = courseGrade;
-        break;
-    case " ":
-        .innerHTML = courseGrade;
-        break;*/
+        .innerHTML = courseGrade;*/
     default:
+        
 	}
-   /* if( isAH(courseName,courseID) && ah_counter < 3){
-        ah_counter++;
-        ah_array.push(courseName);
-    } */
 
  }
 
+ if(ah_counter == 2){
+    ahCheckbox.checked = true;
+ }
+
+ if(ss_counter == 3){
+    ssCheckbox.checked = true;
+ }
+
+console.log("Here is ah_counter: " + ah_counter + "\nHere is ss_counter: " + ss_counter + "\n");
 }
 
 
