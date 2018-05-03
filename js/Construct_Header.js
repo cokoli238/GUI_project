@@ -1,5 +1,11 @@
+  //document.getElementById("header").remove();
+  var head = document.getElementById("header");
+  if(head != null){
+  head.innerHTML = "";
+  }
   var headerDiv = document.createElement("div");
   var blankDiv = document.createElement("div");
+  blankDiv.id = "blankheader";
   headerDiv.className = "topnav";
   headerDiv.id = "header";
   headerDiv.style.position = "fixed";
@@ -20,15 +26,19 @@
   //  headerDiv.innerHTML = "<ul></ul>";
 
   firebase.auth().onAuthStateChanged(function(user) {
+    var head = document.getElementById("header");
+    if(head != null){
+    head.innerHTML = "";
+    }
     //var headerDiv = document.createElement("div");
     var titleDiv = document.createElement("div");
     titleDiv.style.float = "left";
     var title = document.createElement("Label");
     title.innerHTML = "My Advisor";
     title.style.color = "white";
-    title.style.fontSize = "40px";
-    title.style.paddingLeft = "200px";
-    titleDiv.style.paddingTop = "20px";
+    title.style.fontSize = "50px";
+    title.style.paddingLeft = "150px";
+    titleDiv.style.paddingTop = "12px";
     title.style.fontFamily = "sans-serif";
     titleDiv.style.position = "fixed";
     titleDiv.style.display = "block";
@@ -51,7 +61,7 @@
 
     var x = document.createElement("IMG");
     x.src = "UMass-Lowell-logo.png";
-    x.style.width = "150px";
+    x.style.width = "100px";
     x.style.position = "fixed";
     x.style.display = "block";
     x.className = "umlPic";

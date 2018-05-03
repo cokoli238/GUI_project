@@ -71,6 +71,7 @@
       "teacher" : "Ravi Montenegro"
     },
     {
+      "teacher": "Tricia Chigan",
       "id" : "EECE.2650",
       "name" : "Logic Design",
       "credits" : "3",
@@ -87,6 +88,7 @@
       ]
     },
     {
+      "teacher": "Thomas Hersey",
       "id" : "ENGL.1010",
       "name" : "College Writing I",
       "credits" : "3",
@@ -97,6 +99,7 @@
       ]
     },
     {
+      "teacher": "Thomas Hersey",
       "id" : "ENGL.1020",
       "name" : "College Writing II",
       "credits" : "3",
@@ -110,6 +113,7 @@
       ]
     },
     {
+      "teacher": "Yu Cao",
       "id" : "COMP.1000",
       "name" : "Media Computing",
       "credits" : "3",
@@ -165,7 +169,7 @@
         "c++",
         "lab"
       ],
-      "teacher" : "David Adams"
+      "teacher" : "James Canning"
     },
     {
       "id" : "COMP.1040L",
@@ -206,6 +210,7 @@
       ]
     },
     {
+      "teacher": "Terence Watterson",
       "id" : "COMP.1130",
       "name" : "Exploring the Internet",
       "credits" : "3",
@@ -244,7 +249,7 @@
         "c++",
         "object-oriented"
       ],
-      "teacher" : "David Adams"
+      "teacher" : "Ayat Hatem"
     },
     {
       "id" : "COMP.2010L",
@@ -319,6 +324,7 @@
       "teacher" : "David Adams"
     },
     {
+      "teacher": "Terence Watterson",
       "id" : "COMP.3010",
       "name" : "Organization of Programming Languages",
       "credits" : "3",
@@ -333,6 +339,7 @@
       ]
     },
     {
+      "teacher": "Krishnan Seetharaman",
       "id" : "COMP.3040",
       "name" : "Foundations of Computer Science",
       "credits" : "3",
@@ -380,6 +387,7 @@
       "Teacher" : "Bill Maloney"
     },
     {
+      "teacher": "Cindy Chen",
       "id" : "COMP.3090",
       "name" : "Database I",
       "credits" : "3",
@@ -394,6 +402,7 @@
       ]
     },
     {
+      "teacher": "Cindy Chen",
       "id" : "COMP.3100",
       "name" : "Database II",
       "credits" : "3",
@@ -459,6 +468,7 @@
       ]
     },
     {
+      "teacher": "Siron Lin",
       "id" : "COMP.4040",
       "name" : "Analysis of Algorithms",
       "credits" : "3",
@@ -488,6 +498,7 @@
       ]
     },
     {
+      "teacher": "Jay Mcarthy",
       "id" : "COMP.4060",
       "name" : "Compiler Construction I",
       "credits" : "3",
@@ -593,6 +604,7 @@
       ]
     },
     {
+      "teacher": "Jerome Braun",
       "id" : "COMP.4220",
       "name" : "Machine Learning",
       "credits" : "3",
@@ -624,6 +636,7 @@
       ]
     },
     {
+      "teacher": "Haim Levkowitz",
       "id" : "COMP.4270",
       "name" : "Computer Graphics I",
       "credits" : "3",
@@ -638,6 +651,7 @@
       ]
     },
     {
+      "teacher": "Haim Levkowitz",
       "id" : "COMP.4280",
       "name" : "Computer Graphics",
       "credits" : "3",
@@ -678,6 +692,7 @@
       ]
     },
     {
+      "teacher": "Holly Yanco",
       "id" : "COMP.4500",
       "name" : "Mobile Robotics I",
       "credits" : "3",
@@ -691,6 +706,7 @@
       ]
     },
     {
+      "teacher": "Holly Yanco",
       "id" : "COMP.4510",
       "name" : "Mobile Robotics II",
       "credits" : "3",
@@ -733,6 +749,7 @@
       ]
     },
     {
+      "teacher": "Wenjin Zhou",
       "id" : "COMP.4610",
       "name" : "Graphical User Interface Programming I",
       "credits" : "3",
@@ -748,6 +765,7 @@
       ]
     },
     {
+      "teacher": "Wenjin Zhou",
       "id" : "COMP.4611",
       "name" : "Cyber Crime Investigation",
       "credits" : "3",
@@ -776,6 +794,7 @@
       ]
     },
     {
+      "teacher": "Cindy Chen",
       "id" : "COMP.4630",
       "name" : "Mobile App Programming l",
       "credits" : "3",
@@ -791,6 +810,7 @@
       ]
     },
     {
+      "teacher": "Cindy Chen",
       "id" : "COMP.4631",
       "name" : "Mobile App Programming ll",
       "credits" : "3",
