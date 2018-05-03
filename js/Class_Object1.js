@@ -81,14 +81,20 @@ function viewSequnce(courseHistoryArray){
 	var comp_arch = document.getElementById('Computer Architecture');
 	var os = document.getElementById('Intro to Operating Sys.');
 	var opl  = document.getElementById('Org. of Prog. Lang.');
-    var ah1 = document.getElementById('');
-    var ah2 =  document.getElementById('');
-    var ah3 = document.getElementById('');
-    var ss1 = document.getElementById('');
-    var ss2 =  document.getElementById('');
-    var ss3 = document.getElementById('');
-    var _diversity = document.getElementById('');
-    var _ethics =  document.getElementById('');
+    var ah1_name = document.getElementById('ah1_name');
+    var ah2_name =  document.getElementById('ah2_name');
+    var ah3_name = document.getElementById('ah3_name');
+    var ss1_name = document.getElementById('ss1_name');
+    var ss2_name =  document.getElementById('ss2_name');
+    var ss3_name = document.getElementById('ss3_name');
+    var ah1_grade = document.getElementById('ah1_grade');
+    var ah2_grade = document.getElementById('ah2_grade');
+    var ah3_grade = document.getElementById('ah3_grade');
+    var ss1_grade = document.getElementById('ss1_grade');
+    var ss2_grade =  document.getElementById('ss2_grade');
+    var ss3_grade = document.getElementById('ss3_grade');
+   // var _diversity = document.getElementById('');
+   // var _ethics =  document.getElementById('');
     var ah_counter = 0;
     var ah_array = new Array();
 
@@ -161,6 +167,27 @@ for (var i = 0; i < courseHistoryArray.length ; i++){
        	opl.innerHTML = courseGrade;
         break;
     /* case "General Psychology":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
+        .innerHTML = courseGrade;
+        break;
+    case " ":
         .innerHTML = courseGrade;
         break;
     case " ":
