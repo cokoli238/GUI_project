@@ -25,6 +25,13 @@ function Course(id, name, date, grade, credits, taken) {
     this.taken = taken;
 }
 
+/*
+courseHistoryArray.forEach((product) => {
+  product.sizes.forEach((size) => {
+    console.log(size);
+  });
+});*/
+
 function isAH(courseName,courseID){
     var class_type;
     var ah_req = getAH();
@@ -74,11 +81,11 @@ function viewSequnce(courseHistoryArray){
 	var comp_arch = document.getElementById('Computer Architecture');
 	var os = document.getElementById('Intro to Operating Sys.');
 	var opl  = document.getElementById('Org. of Prog. Lang.');
-    var ah_counter=0;
+    var ah_counter = 0;
     var ah_array = new Array();
 
 
-for (i = 0; i < courseHistoryArray.length ; i++){
+for (var i = 0; i < courseHistoryArray.length ; i++){
 	var courseName = courseHistoryArray[i].name;
     var courseID = courseHistoryArray[i].id;
 	var courseGrade = courseHistoryArray[i].grade;
@@ -108,12 +115,15 @@ for (i = 0; i < courseHistoryArray.length ; i++){
         break;
     case "Computing III ":
         comp3.innerHTML = courseGrade;
+        console.log("\nNigga We MADE IT!");
         break;
     case "Computing IV ":
         comp4.innerHTML = courseGrade;
+        console.log("\nNigga We MADE IT!");
         break;
     case "Org & Assembly Lang ":
         assembly.innerHTML = courseGrade;
+        console.log("\nNigga We MADE IT!");
         break;
     case "Logic Design ":
         logic.innerHTML = courseGrade;
@@ -153,12 +163,10 @@ for (i = 0; i < courseHistoryArray.length ; i++){
         break;*/
     default:
 	}
-
-    
-    if( isAH(courseName,courseID) && ah_counter < 3){
+   /* if( isAH(courseName,courseID) && ah_counter < 3){
         ah_counter++;
         ah_array.push(courseName);
-    }
+    } */
 
  }
 
@@ -166,7 +174,7 @@ for (i = 0; i < courseHistoryArray.length ; i++){
 
 
 function hide(){
-   
+   console.log("You should see the Tutorial\n");
     var btn = document.getElementById('tutBtn');
     var tut = document.getElementById('tutorial');
     if (tut.style.display === "none") {
@@ -183,6 +191,11 @@ function hide(){
 function makeClass(){
 /* Parsing patterns for course history */ 
 
+var btn = document.getElementById('tutBtn');
+var tut = document.getElementById('tutorial');
+   // tut.style.display = "none";
+  //  btn.innerHTML = "Show Tutorial";
+    
 var idP = /(\d{2} [0-9]{3})|([A-Z]{4} \w+)/gm;
 //var nameP = /(((\w\-*\#*\+*\s)+(\w\w*\s)*)|((\w\+*\s)+|(\w\w*\s)+))(?=\s+201[4-8])/gim;
 //var nameP = /(((\w+\-*\#*\+*\s)+)|((\w\+*\s)+|(\w\w*\s)+))(?=\s+201[4-8])/gim;
@@ -200,42 +213,45 @@ var gradeArray = userInput.match(gradeP);
 var creditsArray = userInput.match(creditsP);
 var takenArray = userInput.match(takenP);
 
-if( uniform_length != nameArray.length ){
-	window.alert("Parsing Error: Missing entries from name column" )
+if(uniform_length != nameArray.length ){
+	window.alert("Parsing Error: Missing entries from name column" );
 	return -1;
 }
 
 else if( uniform_length != dateArray.length ){
-	window.alert("Parsing Error: Missing entries from date column" )
+	window.alert("Parsing Error: Missing entries from date column" );
 	return -1;
 }
 
 else if( uniform_length != gradeArray.length ){
-	window.alert("Parsing Error: Missing entries from grade column" )
+	window.alert("Parsing Error: Missing entries from grade column" );
 	return -1;
 }
 
 else if( uniform_length != creditsArray.length ){
-	window.alert("Parsing Error: Missing entries from credits column" )
+	window.alert("Parsing Error: Missing entries from credits column" );
 	return -1;
 }
 
 else if( uniform_length != takenArray.length ){
-	window.alert("Parsing Error: Missing entries from status column" )
+	window.alert("Parsing Error: Missing entries from status column" );
 	return -1;
 }
 
 console.log("No parsing errors"); 
 var courseHistoryArray = makeCourseArray(idArray, nameArray, dateArray, gradeArray, creditsArray, takenArray);
-/*for(i =0 ; i < courseHistoryArray.length; i++){
+
+
+for(var i =0 ; i < courseHistoryArray.length; i++){
 	console.log("\n" + courseHistoryArray[i].name);
-}*/
-var myTable = document.getElementById('mTable');
+}
+
+/*var myTable = document.getElementById('mTable');
  if (myTable.style.display === "none") {
-        myTable.style.display = "block";
+        myTable.style.display = "inline-block";
     } else {
         myTable.style.display = "none";
-    } 
+    } */
     viewSequnce(courseHistoryArray);
 }
 
@@ -244,9 +260,10 @@ function makeCourseArray(idArr, nameArr, dateArr, gradeArr, creditsArr, takenArr
 
 var newCourse = new Course("ID","NAME","DATE","GRADE","CREDITS","TAKEN");
 var courseArray = [newCourse];
-	for(i =0; i < idArr.length; i++){
- 		newCourse	= new Course(idArr[i], nameArr[i], dateArr[i],gradeArr[i], creditsArr[i], takenArr[i]);
+	for(var i =0; i < idArr.length; i++){
+ 		newCourse= new Course(idArr[i], nameArr[i], dateArr[i],gradeArr[i], creditsArr[i], takenArr[i]);
  		courseArray.push(newCourse);
+        console.log("\nWe pushed " + nameArr[i]);
 	}	
 return courseArray;
 }
