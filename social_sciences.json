@@ -1,0 +1,453 @@
+{
+	"database": [{
+			"department": [{
+					"classId": "HSCI.1020",
+					"classType": "(D)",
+					"className": "Introduction to Public Health"
+				},
+
+				{
+					"classId": "HSCI.3060",
+					"className": "Introduction to Gerontology"
+				},
+
+				{
+					"classId": "HSCI.3080",
+					"classType": "(D)",
+					"className": "Global Health"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "LGST.2100",
+					"classType": "(E)",
+					"className": "Restorative Justice"
+				},
+
+				{
+					"classId": "LGST.2620",
+					"className": "Introduction to Business Law"
+				},
+
+				{
+					"classId": "LGST.3600",
+					"classType": "(D)",
+					"className": "Legal Issues in Racism"
+				},
+
+				{
+					"classId": "LGST.3710",
+					"className": "Law, Ethics, Cultural Heritage and the Visual Arts"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "CRIM.2210",
+					"className": "Criminology"
+				},
+
+				{
+					"classId": "CRIM.2480",
+					"classType": "(E)",
+					"className": "Terrorism"
+				},
+
+				{
+					"classId": "CRIM.3600",
+					"classType": "(D)",
+					"className": "Gender, Race, and Crime"
+				},
+
+				{
+					"classId": "CRIM.4770",
+					"className": "Intimate Partner Violence"
+				},
+
+				{
+					"classId": "CRIM.4780",
+					"classType": "(E)",
+					"className": "Child Maltreatment"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "POLI.1010",
+					"className": "Introduction to American Politics"
+				},
+
+				{
+					"classId": "POLI.1100",
+					"classType": "(D)",
+					"className": "Introduction to Politics"
+				},
+
+				{
+					"classId": "POLI.1120",
+					"classType": "(D)",
+					"className": "Comparative Political Systems"
+				},
+
+				{
+					"classId": "POLI.1210",
+					"classType": "(D)",
+					"className": "Introduction to International Relations"
+				},
+
+				{
+					"classId": "POLI.1750",
+					"className": "Introduction to Environmental Studies"
+				},
+
+				{
+					"classId": "POLI.2150",
+					"classType": "(D)",
+					"className": "African Politics"
+				},
+				{
+					"classId": "POLI.2180",
+					"classType": "(DE)",
+					"className": "Introduction to Politics and Sports"
+				},
+
+				{
+					"classId": "POLI.2310",
+					"classType": "(E)",
+					"className": "Introduction to Political Thought"
+				},
+
+				{
+					"classId": "POLI.2350",
+					"classType": "(D)",
+					"className": "Constitutional Law and Politics"
+				},
+
+				{
+					"classId": "POLI.2370",
+					"classType": "(D)",
+					"className": "Civil Liberties Law and Politics"
+				}
+			]
+		},
+
+		{
+			"department": [{
+				"classId": "PCST.2050",
+				"classType": "(E)",
+				"className": "Restorative Justice"
+			}]
+		},
+
+		{
+			"department": [{
+					"classId": "PSYC.1010",
+					"className": "General Psychology"
+				},
+
+				{
+					"classId": "PSYC.2090",
+					"classType": "(D)",
+					"className": "Social Psychology"
+				},
+
+				{
+					"classId": "PSYC.2320",
+					"className": "Psychology of Personality"
+				},
+
+				{
+					"classId": "PSYC.2550",
+					"classType": "(D)",
+					"className": "Community Psychology"
+				},
+
+				{
+					"classId": "PSYC.2600",
+					"className": "Child and Adolescent Development"
+				},
+
+				{
+					"classId": "PSYC.2720",
+					"className": "Abnormal Psychology"
+				},
+
+				{
+					"classId": "PSYC.2760",
+					"className": "Theories of Learning"
+				},
+
+				{
+					"classId": "PSYC.3330",
+					"className": "Psychology of Consciousness"
+				},
+
+				{
+					"classId": "PSYC.3350",
+					"classType": "(D)",
+					"className": "Psychology & Women"
+				},
+
+				{
+					"classId": "PSYC.3510",
+					"className": "Human Sexuality"
+				},
+
+				{
+					"classId": "PSYC.3550",
+					"className": "Sport and Exercise Psychology"
+				},
+
+				{
+					"classId": "PSYC.3600",
+					"className": "Adult Development and Aging"
+				},
+
+				{
+					"classId": "PSYC.3630",
+					"classType": "(D, E)",
+					"className": "Introduction to Disability Studies"
+				},
+
+				{
+					"classId": "PSYC.3650",
+					"classType": "(D)",
+					"className": "Psychology of Language"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "SOCI.1010",
+					"classType": "(D, E)",
+					"className": "Introduction to Sociology"
+				},
+				{
+					"classId": "SOCI.1020",
+					"classType": "(D)",
+					"className": "Social Anthropology"
+				},
+
+				{
+					"classId": "SOCI.1100",
+					"classType": "(D, E)",
+					"className": "Introduction to Social Values"
+				},
+
+				{
+					"classId": "SOCI.1150",
+					"classType": "(D)",
+					"className": "Social Problems"
+				},
+
+				{
+					"classId": "SOCI.2100",
+					"classType": "(D)",
+					"className": "Sociology of Food"
+				},
+
+				{
+					"classId": "SOCI.2150",
+					"classType": "(D, E)",
+					"className": "Peacemaking Alternatives"
+				},
+
+				{
+					"classId": "SOCI.2130",
+					"classType": "(D)",
+					"className": "Sociology of the Family"
+				},
+
+				{
+					"classId": "SOCI.2550",
+					"className": "Sociology of Deviance"
+				},
+
+				{
+					"classId": "SOCI.2700",
+					"className": "Self in Society"
+				},
+
+				{
+					"classId": "SOCI.3030",
+					"classType": "(D, E)",
+					"className": "Sociology of American Education"
+				},
+
+				{
+					"classId": "SOCI.3170",
+					"classType": "(D, E)",
+					"className": "Sociology of Genocide"
+				},
+
+				{
+					"classId": "SOCI.3300",
+					"classType": "(D)",
+					"className": "Fast Food, Hot Planet, Sociological Approaches"
+				},
+
+				{
+					"classId": "SOCI.3410",
+					"classType": "(D)",
+					"className": "Social Stratification"
+				},
+
+				{
+					"classId": "SOCI.3700",
+					"classType": "(D)",
+					"className": "Women in Society"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "ECON.1100",
+					"className": "The Future of Work in the Global Economy"
+				},
+
+				{
+					"classId": "ECON.2010",
+					"className": "Economics I"
+				},
+
+				{
+					"classId": "ECON.2020",
+					"className": "Macroeconomics"
+				},
+
+				{
+					"classId": "ECON.3020",
+					"classType": "(D)",
+					"className": "Labor Economics"
+				},
+
+				{
+					"classId": "ECON.3250",
+					"classType": "(D)",
+					"className": "U.S. Economic History"
+				},
+
+				{
+					"classId": "ECON.3450",
+					"classType": "(E)",
+					"className": "Health Economics"
+				},
+
+				{
+					"classId": "ECON.4150",
+					"classType": "(E)",
+					"className": "Introduction to Environmental Economics"
+				}
+			]
+		},
+
+
+		{
+			"department": [{
+					"classId": "57.201",
+					"className": "Regions of the Merrimack Valley"
+				},
+
+				{
+					"classId": "PUBH.2110",
+					"classType": "(E)",
+					"className": "Sustainable Development"
+				},
+				{
+					"classId": "57.218",
+					"classType": "(D)",
+					"className": "Regional Health and the Environment"
+				},
+
+				{
+					"classId": "FAHS.2200",
+					"classType": "(E)",
+					"className": "Designing the Future World"
+				},
+
+				{
+					"classId": "POLI.2150",
+					"classType": "(D)",
+					"className": "African Politics"
+				},
+				{
+					"classId": "57.420",
+					"classType": "(D)",
+					"className": "Gender, Work, and Public Policy"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "88.10",
+					"classType": "(D)",
+					"className": "World Regional Geography"
+				},
+				{
+					"classId": "88.102",
+					"className": "Geography of the US and Canada"
+				},
+				{
+					"classId": "88.104",
+					"classType": "(E)",
+					"className": "Foundations of Conservation and Environmental Concern"
+				}
+			]
+		},
+
+		{
+			"department": [{
+					"classId": "FAHS.2390",
+					"classType": "(D, E)",
+					"className": "Introduction to Gender Studies"
+				},
+
+				{
+					"classId": "FAHS.3490",
+					"classType": "(D, E)",
+					"className": "Literature, Politics and Genocide in Cambodia"
+				},
+
+				{
+					"classId": "FAHS.3560",
+					"classType": "(D)",
+					"className": "Village Empowerment: Overcoming Global Poverty"
+				},
+
+				{
+					"classId": "FAHS.3630",
+					"classType": "(D, E)",
+					"className": "Introduction to Disability Studies"
+				},
+
+				{
+					"classId": "FAHS.3800",
+					"classType": "(E)",
+					"className": "Challenges for Higher Ed"
+				},
+
+				{
+					"classId": "DGMD.1000",
+					"classType": "Introduction to Journalism and Mass Communication"
+				},
+
+				{
+					"classId": "UTCH.2010",
+					"classType": "Knowing and Learning in Math and Science"
+				},
+
+				{
+					"classId": "WLSO.2400",
+					"classType": "Work, Labor, and Society"
+				}
+			]
+		}
+	]
+}

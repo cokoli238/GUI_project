@@ -21,7 +21,7 @@
     }
 
     #tutorial {
-      display: none;
+      display: none; 
       position: relative;
     }
 
@@ -90,7 +90,7 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-}
+} 
 
 
     li {
@@ -104,24 +104,24 @@
     /* width: 50%; */
     color: #333;
     font-family: Helvetica, Arial, sans-serif;
-    width: 100%;
-    border-collapse:
-    collapse; border-spacing: 0;
+    width: 100%; 
+    border-collapse: 
+    collapse; border-spacing: 0;  
     }
 
-   td, th {
+   td, th {  
     border: 1px solid transparent; /* No more visible border */
-    height: 30px;
+    height: 30px; 
     transition: all 0.3s;  /* Simple transition for hover effect */
 }
 
-th {
+th {  
     background: #DFDFDF;  /* Darken header a bit */
     font-weight: bold;
     text-align: center;
 }
 
-td {
+td {  
     background: #FAFAFA;
     text-align: left;
 }
@@ -151,14 +151,14 @@ td {
       border-bottom: 2px solid black;
     }
 
- /* Cells in even rows (2,4,6...) are one color */
-tr:nth-child(even) td { background: #F1F1F1; }
+ /* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background: #F1F1F1; }   
 
-/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
-tr:nth-child(odd) td { background: #FEFEFE; }
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: #FEFEFE; }  
 
-tr td:hover { background: #666; color: #FFF; }
-/* Hover cell effect! */
+tr td:hover { background: #666; color: #FFF; }  
+/* Hover cell effect! */   
   </style>
 
 </head>
@@ -187,6 +187,8 @@ tr td:hover { background: #666; color: #FFF; }
 
   <div class="register">
     <h3>Transfer Your SIS Transcript</h3>
+    <h4>This will allow you to quickly store your course history on this site</h4>
+    <h4>You can do this anytime under "My Account"</h4>
     <table style="background: lightgrey;">
       <tr>
         <input type="text" class="inputBox" name="start" id="start">
@@ -198,30 +200,52 @@ tr td:hover { background: #666; color: #FFF; }
         <button class="button" id="tutBtn" onclick="hide();">Show Tutorial</button>
       </tr>
       <tr>
-        <button class="button" onclick='window.location = "account.html"'>Back</button>
+        <button class="button" onclick='window.location = "account.html"'>Skip</button>
       </tr>
     </table>
   </div>
 
 <div id="genEds" class="register" style="position: absolute;top: 128px;left: 200px;width: 200px;">
-<h3>My GenEds</h3>
+<h3>My GenEds</h3> 
 <label class="container" style="color: red; float: left;">Arts/Humanities (3)
   <input id="ahReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
-<label id="ssReq" class="container" style="color: blue;float: left;">Social Sciences (3)
-  <input type="checkbox">
+<label class="container" style="color: blue;float: left;">Social Sciences (3)
+  <input id="ssReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
-<label id="dReq" class="container" style="color: green;float: left;padding-bottom: 14px;">Diversity (1)
-  <input type="checkbox">
+<label class="container" style="color: green;float: left;padding-bottom: 14px;">Diversity (1)
+  <input id="dReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
-<label id="eReq" class="container" style="color: purple;float: left;">Ethics (1)
-  <input type="checkbox">
+<label class="container" style="color: purple;float: left;">Ethics (1)
+  <input id="eReq" type="checkbox">
   <span class="checkmark"></span>
 </label>
 </div>
+
+<!--
+<div id="electives" class="register" style="position: absolute;top: 128px;left: 1150px;width: 200px;">
+<h3>My GenEds</h3> 
+<label class="container" style="color: orange; float: left;">Natural Science & Lab (3)
+  <input id="nsReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="color: blue;float: left;">CS Elective (2)
+  <input id="ssReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="color: green;float: left;padding-bottom: 14px;">Technical Elective (1)
+  <input id="dReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container" style="color: purple;float: left;">Ethics (1)
+  <input id="eReq" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div> -->
+
 
   <div id="tutorial">
     <div style="position:relative;width:90%;margin:auto;height:630px;padding-top:50px;">
@@ -342,10 +366,10 @@ tr td:hover { background: #666; color: #FFF; }
         <td> </td>
         <td> </td>
         <td id="blank12">N/A</td>
-        <td id="ns1_id"> </td>
+        <td id="nat_sci1_id"> </td>
         <td> 4 </td>
-        <td>Natural Lab Sciene: </td>
-        <td id="NS1">N/A</td>
+        <td id="nat_sci1_name">Natural Lab Sciene: </td>
+        <td id="nat_sci1_grade">N/A</td>
       </tr>
 
     </table>
@@ -378,14 +402,14 @@ tr td:hover { background: #666; color: #FFF; }
         <td id="Intro to Operating Sys."> </td>
       </tr>
       <tr>
-        <td> </td>
+        <td id="nat_sci2_id"> </td>
         <td> 4 </td>
-        <td>Natural Science & Lab </td>
-        <td id="nat_sci2"> N/A </td>
-        <td> </td>
+        <td id="nat_sci2_name">Natural Science & Lab </td>
+        <td id="nat_sci2_grade"> N/A </td>
+        <td id="nat_sci3_id"> </td>
         <td> 4 </td>
-        <td>Natural Science & Lab </td>
-        <td id="nat_sci3"> N/A </td>
+        <td id="nat_sci3_name">Natural Science & Lab </td>
+        <td id="nat_sci3_grade"> N/A </td>
       </tr>
 
       <tr>
@@ -400,14 +424,14 @@ tr td:hover { background: #666; color: #FFF; }
       </tr>
 
       <tr>
-        <td> </td>
+        <td id="fe1_id"> </td>
         <td> 3 </td>
-        <td>Free Elective </td>
-        <td id="FE1"> N/A</td>
-        <td> </td>
+        <td id="fe1_name">Free Elective </td>
+        <td id="fe1_grade"> N/A</td>
+        <td id="fe2_id"> </td>
         <td> 3 </td>
-        <td>Free Elective </td>
-        <td id="FE2"> N/A</td>
+        <td id="fe2_name">Free Elective </td>
+        <td id="fe2_grade"> N/A</td>
       </tr>
 
     </table>
@@ -419,25 +443,25 @@ tr td:hover { background: #666; color: #FFF; }
         <th colspan="4">Senior Spring</th>
       </tr>
       <tr>
-        <td>COMP.XXXX</td>
+        <td id="cs_elec1_id">COMP.XXXX</td>
         <td> 3 </td>
-        <td>CS Elective: </td>
-        <td id="cs_elect1"> </td>
-        <td>COMP.XXXX</td>
-        <td> 3 </td>
-        <td>CS Elective: </td>
-        <td id="cs_elect2"> </td>
+        <td id="cs_elec1_name">CS Elective: </td>
+        <td id="cs_elec1_grade"> </td>
+        <td id="cs_elec2_id">COMP.XXXX</td>
+        <td > 3 </td>
+        <td id="cs_elec2_name">CS Elective: </td>
+        <td id="cs_elec2_grade"> </td>
       </tr>
 
       <tr>
-        <td>COMP.XXXX</td>
+        <td id="project1_id">COMP.XXXX</td>
         <td> 3 </td>
-        <td>Project Course I: </td>
-        <td id="project1"> N/A </td>
-        <td>COMP.XXXX</td>
+        <td id="project1_name">Project Course I: </td>
+        <td id="project1_grade"> N/A </td>
+        <td id="project2_id">COMP.XXXX</td>
         <td> 3 </td>
-        <td>Project Course II:.</td>
-        <td id="project2"> N/A </td>
+        <td id="project2_name">Project Course II:.</td>
+        <td id="project2_grade"> N/A </td>
       </tr>
 
       <tr>
@@ -445,21 +469,21 @@ tr td:hover { background: #666; color: #FFF; }
         <td> 3 </td>
         <td>Analysis of Algorithms </td>
         <td id="alog"> </td>
-        <td id="tech_elect1_id"> </td>
+        <td id="tech_elec1_id"> </td>
         <td> 3 </td>
-        <td>Technical Elective: </td>
-        <td id="tech_elect1"> N/A </td>
+        <td id="tech_elec1_name">Technical Elective: </td>
+        <td id="tech_elec1_grade"> N/A </td>
       </tr>
 
       <tr>
-        <td id="tech_elect2_id"> </td>
+        <td id="tech_elec2_id"> </td>
         <td> 3 </td>
-        <td>Technical Elective: </td>
-        <td id="tech_elect2"> N/A </td>
+        <td id="tech_elec2_name">Technical Elective: </td>
+        <td id="tech_elec2_grade"> N/A </td>
         <td id="fe3_id"> </td>
         <td> 3 </td>
-        <td>Free Elective </td>
-        <td id="FE3">N/A </td>
+        <td id="fe3_name">Free Elective </td>
+        <td id="fe3_grade">N/A </td>
       </tr>
 
       <tr>
@@ -469,8 +493,8 @@ tr td:hover { background: #666; color: #FFF; }
         <td id="ss3_grade"> N/A</td>
         <td id="fe4_id"> </td>
         <td> 3 </td>
-        <td>Free Elective </td>
-        <td id="FE4">N/A</td>
+        <td id="fe4_name">Free Elective </td>
+        <td id="fe4_grade">N/A</td>
       </tr>
 
     </table>

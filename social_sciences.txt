@@ -1,98 +1,155 @@
 Intercollegiate Health:
-HSCI.1020 (30.102)	(D) Introduction to Public Health
-HSCI.3060 (30.306)	Introduction to Gerontology
-HSCI.3080 (30.308)	(D) Global Health
+{"classId": "HSCI.1020", "classType": "(D)", "className": " Introduction to Public Health"},
+
+{"classId": "HSCI.3060", "className": "Introduction to Gerontology"},
+
+{"classId": "HSCI.3080", "classType": "(D)", "className": " Global Health
 
 Legal Studies:
-LGST.2100 (41.210)	(E) Restorative Justice (Also listed as PCST.2050)
-LGST.2620 (41.262)	Introduction to Business Law
-LGST.3600 (41.360)	(D) Legal Issues in Racism
-LGST.3710 (41.371)	Law, Ethics, Cultural Heritage and the Visual Arts
+{"classId": "LGST.2100", "classType": "(E)", "className": " Restorative Justice"},
+
+{"classId": "LGST.2620", "className": "Introduction to Business Law"},
+
+{"classId": "LGST.3600", "classType": "(D)", "className": " Legal Issues in Racism"},
+
+{"classId": "LGST.3710", "className": "Law, Ethics, Cultural Heritage and the Visual Arts"}]
 
 School of Criminology & Justice Studies:
-CRIM.2210 (44.221)	Criminology
-CRIM.2480 (44.248)	(E) Terrorism
-CRIM.3600 (44.360)	(D) Gender, Race, and Crime
-CRIM.4770 (44.477)	Intimate Partner Violence
-CRIM.4780 (44.478)	(E) Child Maltreatment
+{"classId": "CRIM.2210", "className": "Criminology"},
+
+{"classId": "CRIM.2480", "classType": "(E)", "className": " Terrorism"},
+
+{"classId": "CRIM.3600", "classType": "(D)", "className": " Gender, Race, and Crime"},
+
+{"classId": "CRIM.4770", "className": "Intimate Partner Violence"},
+
+{"classId": "CRIM.4780", "classType": "(E)", "className": " Child Maltreatment}]
 
 Political Science:
-POLI.1010 (46.101)	Introduction to American Politics
-POLI.1100 (46.110)	(D) Introduction to Politics
-POLI.1120 (46.112)	(D) Comparative Political Systems
-POLI.1210 (46.121)	(D) Introduction to International Relations
-POLI.1750 (46.175)	Introduction to Environmental Studies
-POLI.2150 (46.215)	(D) African Politics 
-POLI.2180 (46.218)	(DE) Introduction to Politics and Sports
-POLI.2310 (46.231)	(E) Introduction to Political Thought
-POLI.2350 (46.235)	(D) Constitutional Law and Politics
-POLI.2370 (46.237)	(D) Civil Liberties Law and Politics
+{"classId": "POLI.1010", "className": "Introduction to American Politics"},
+
+{"classId": "POLI.1100", "classType": "(D)", "className": " Introduction to Politics"},
+
+{"classId": "POLI.1120", "classType": "(D)", "className": " Comparative Political Systems"},
+
+{"classId": "POLI.1210", "classType": "(D)", "className": " Introduction to International Relations"},
+
+{"classId": "POLI.1750", "className": "Introduction to Environmental Studies"},
+
+{"classId": "POLI.2150", "classType": "(D)", "className": " African Politics 
+{"classId": "POLI.2180", "classType": "(DE)", "className": " Introduction to Politics and Sports"},
+
+{"classId": "POLI.2310", "classType": "(E)", "className": " Introduction to Political Thought"},
+
+{"classId": "POLI.2350", "classType": "(D)", "className": " Constitutional Law and Politics"},
+
+{"classId": "POLI.2370", "classType": "(D)", "className": " Civil Liberties Law and Politics}]
 
 Peace and Conflict Studies:
-PCST.2050 (PCS.205)	(E) Restorative Justice (Also listed as LGST.2100)
+{"classId": "PCST.2050", 	(E)", "className": " Restorative Justice 
 
 Psychology:
-PSYC.1010 (47.101)	 General Psychology
-PSYC.2090 (47.209)	(D) Social Psychology
-PSYC.2320 (47.232)	Psychology of Personality
-PSYC.2550 (47.255)	(D) Community Psychology
-PSYC.2600 (47.260)	Child and Adolescent Development
-PSYC.2720 (47.272)	Abnormal Psychology
-PSYC.2760 (47.276)	Theories of Learning
-PSYC.3330 (47.333)	Psychology of Consciousness
-PSYC.3350 (47.335)	(D) Psychology & Women
-PSYC.3510 (47.351)	Human Sexuality
-PSYC.3550 (47.355)	Sport and Exercise Psychology
-PSYC.3600 (47.360)	Adult Development and Aging
-PSYC.3630 (47.363)	(D, E) Introduction to Disability Studies
-PSYC.3650 (47.365)	(D) Psychology of Language
+{"classId": "PSYC.1010", "className": "General Psychology"},
+
+{"classId": "PSYC.2090", "classType": "(D)", "className": " Social Psychology"},
+
+{"classId": "PSYC.2320", "className": "Psychology of Personality"},
+
+{"classId": "PSYC.2550", "classType": "(D)", "className": " Community Psychology"},
+
+{"classId": "PSYC.2600", "className": "Child and Adolescent Development"},
+
+{"classId": "PSYC.2720", "className": "Abnormal Psychology"},
+
+{"classId": "PSYC.2760", "className": "Theories of Learning"},
+
+{"classId": "PSYC.3330", "className": "Psychology of Consciousness"},
+
+{"classId": "PSYC.3350", "classType": "(D)", "className": " Psychology & Women"},
+
+{"classId": "PSYC.3510", "className": "Human Sexuality"},
+
+{"classId": "PSYC.3550", "className": "Sport and Exercise Psychology"},
+
+{"classId": "PSYC.3600", "className": "Adult Development and Aging"},
+
+{"classId": "PSYC.3630", "classType": "(D, E)", "className": " Introduction to Disability Studies"},
+
+{"classId": "PSYC.3650", "classType": "(D)", "className": " Psychology of Language"}
 
 Sociology:
-SOCI.1010 (48.101)	(D, E) Introduction to Sociology  
-SOCI.1020 (48.102)	(D) Social Anthropology
-SOCI.1100 (48.110)	(D, E) Introduction to Social Values
-SOCI.1150 (48.115)	(D) Social Problems
-SOCI.2100 (48.210)	(D) Sociology of Food
-SOCI.2150 (48.215)	(D, E) Peacemaking Alternatives
-SOCI.2130 (48.231)	(D) Sociology of the Family
-SOCI.2550 (48.255)	Sociology of Deviance
-SOCI.2700 (48.270)	Self in Society
-SOCI.3030 (48.303)	(D, E) Sociology of American Education
-SOCI.3170 (48.317)	(D, E) Sociology of Genocide
-SOCI.3300 (48.330) 
-(D) Fast Food, Hot Planet, Sociological Approaches
-SOCI.3410 (48.341)	 (D) Social Stratification
-SOCI.3700 (48.370)	(D) Women in Society
+{"classId": "SOCI.1010", "classType": "(D, E)", "className": " Introduction to Sociology  
+{"classId": "SOCI.1020", "classType": "(D)", "className": " Social Anthropology"},
+
+{"classId": "SOCI.1100", "classType": "(D, E)", "className": " Introduction to Social Values"},
+
+{"classId": "SOCI.1150", "classType": "(D)", "className": " Social Problems"},
+
+{"classId": "SOCI.2100", "classType": "(D)", "className": " Sociology of Food"},
+
+{"classId": "SOCI.2150", "classType": "(D, E)", "className": " Peacemaking Alternatives"},
+
+{"classId": "SOCI.2130", "classType": "(D)", "className": " Sociology of the Family"},
+
+{"classId": "SOCI.2550", "className": "Sociology of Deviance"},
+
+{"classId": "SOCI.2700", "className": "Self in Society"},
+
+{"classId": "SOCI.3030", "classType": "(D, E)", "className": " Sociology of American Education"},
+
+{"classId": "SOCI.3170", "classType": "(D, E)", "className": " Sociology of Genocide"},
+
+{"classId": "SOCI.3300", "className": "(D)", "className": " Fast Food, Hot Planet, Sociological Approaches"},
+
+{"classId": "SOCI.3410", "className": "(D)", "className": " Social Stratification"},
+
+{"classId": "SOCI.3700", "classType": "(D)", "className": " Women in Society
 
 Economics:
-ECON.1100 (49.110)	The Future of Work in the Global Economy
-ECON.2010. (49.201)	Economics I
-ECON.2020 (49.202)	Macroeconomics
-ECON.3020 (49.302)	(D) Labor Economics
-ECON.3250 (49.325)	(D) U.S. Economic History
-ECON.3450 (49.345)	(E) Health Economics
-ECON.4150 (49.415)	(E) Introduction to Environmental Economics (previously listed as 49.315)
+{"classId": "ECON.1100", "className": "The Future of Work in the Global Economy"},
+
+{"classId": "ECON.2010",. "className": "Economics I"},
+
+{"classId": "ECON.2020", "className": "Macroeconomics"},
+
+{"classId": "ECON.3020", "classType": "(D)", "className": " Labor Economics"},
+
+{"classId": "ECON.3250", "classType": "(D)", "className": " U.S. Economic History"},
+
+{"classId": "ECON.3450", "classType": "(E)", "className": " Health Economics"},
+
+{"classId": "ECON.4150", "classType": "(E)", "className": " Introduction to Environmental Economics"}
 
   
-Regional Economic and Social Development (some courses not currently offered):
-57.201	 Regions of the Merrimack Valley
-57.211	(E) Sustainable Development (Now listed as PUBH.2110) 
-57.218	(D) Regional Health and the Environment
-57.220	(E) Designing the Future World (Now listed as FAHS.2200) 
-57.225	(D) African Politics (Now listed as POLI.2150)
-57.420	(D) Gender, Work, and Public Policy 
+Regional Economic and Social Development:
+57.201	 Regions of the Merrimack Valley"},
 
-Environmental, Earth and Atmospheric Sciences (courses not currently offered):
-88.101	(D) World Regional Geography
+{"classId": "PUBH.2110",	(E)", "className": " Sustainable Development  
+57.218	(D)", "className": " Regional Health and the Environment"},
+
+{"classId": "FAHS.2200",	(E)", "className": " Designing the Future World"},
+
+{"classId": "POLI.2150",	(D)", "className": " African Politics
+57.420	(D)", "className": " Gender, Work, and Public Policy 
+
+Environmental, Earth and Atmospheric Sciences:
+88.101	(D)", "className": " World Regional Geography
 88.102	Geography of the US and Canada
-88.104	(E) Foundations of Conservation and Environmental Concern
+88.104	(E)", "className": " Foundations of Conservation and Environmental Concern
 
 Interdisciplinary Programs:
-FAHS.2390 (59.239)	(D, E) Introduction to Gender Studies
-FAHS.3490 (59.349)	(D, E) Literature, Politics and Genocide in Cambodia
-FAHS.3560 (59.356)	(D) Village Empowerment: Overcoming Global Poverty 
-FAHS.3630 (59.363)	(D, E) Introduction to Disability Studies
-FAHS.3800 (59.380)	(E) Challenges for Higher Ed
-DGMD.1000 (JMS.100)	Introduction to Journalism and Mass Communication
-UTCH.2010 (UTL.201)	Knowing and Learning in Math and Science
-WLSO.2400 (WLS.240)	Work, Labor, and Society
+{"classId": "FAHS.2390", "classType": "(D, E)", "className": "Introduction to Gender Studies"},
+
+{"classId": "FAHS.3490", "classType": "(D, E)", "className": "Literature, Politics and Genocide in Cambodia"},
+
+{"classId": "FAHS.3560", "classType": "(D)", "className": "Village Empowerment: Overcoming Global Poverty"},
+
+{"classId": "FAHS.3630", "classType": "(D, E)", "className": "Introduction to Disability Studies"},
+
+{"classId": "FAHS.3800", "classType": "(E)", "className": "Challenges for Higher Ed"},
+
+{"classId": "DGMD.1000", "classType": "Introduction to Journalism and Mass Communication"},
+
+{"classId": "UTCH.2010", "classType": "Knowing and Learning in Math and Science"},
+
+{"classId": "WLSO.2400", "classType": "Work, Labor, and Society"}
